@@ -1,0 +1,107 @@
+
+#wrapper{
+    margin: 0;
+    width: 100%;
+}
+
+#BG{  
+    z-index: 1;
+    width: 100%;
+    height: 760px;
+}
+
+#Logo{
+    position: absolute;
+    width: 8%;
+    z-index: 0;
+    top: 5%;
+    margin-left:12%;
+}
+
+.Sign{
+    position: absolute;
+    width: 12%;
+    right: 16.5%;
+    top: 5%;
+}
+
+.Sign-In{
+    width: 44%;
+    margin-right: 5px;
+}
+
+.Sign-Up{
+    width: 44%;
+}
+
+.Menu{
+    position: absolute;
+    top: 4%;
+    right: 22%;
+    width: 30%;
+    font-size: 14px;
+}
+
+.Menu-item{
+    float: left;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-right: 5%;
+}
+
+.Cont{
+    position: absolute;
+    top: 32%;
+    left: 12%;
+}
+
+.Cont-cont1{
+    font-size: 44px;
+    font-family: 'Do Hyeon', sans-serif;
+    line-height: 8px;
+}
+
+.Cont-cont2{
+    font-size: 18px;
+    line-height: 2px;
+    font-weight: bold;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #484848;
+}
+
+#Circle1{
+    position: absolute;
+    left: 2%;
+    top: 5%;
+    width: 10px;
+    height: 10px;
+    background: #fac60e;
+    border-radius: 50%;
+}
+
+#Circle2{
+    position: absolute;
+    left: 8%;
+    top: 5%;
+    width: 10px;
+    height: 10px;
+    background: #fac60e;
+    border-radius: 50%;
+}
+
+#chat{
+    color: #fac60e;
+}
+
+#IMG1{
+    position: absolute;
+    width: 20%;
+    top: 15%;
+    right: 35%;
+}
+
+#IMG2{
+    position: absolute;
+    width: 20%;
+    top: 32%;
+    right: 14%;
+}

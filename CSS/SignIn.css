@@ -1,0 +1,101 @@
+#Logo{
+    position: absolute;
+    width: 8%;
+    z-index: 0;
+    top: 5%;
+    margin-left:12%;
+}
+
+
+.Sign{
+    position: absolute;
+    width: 12%;
+    right: 16.5%;
+    top: 5%;
+}
+
+.Sign-In{
+    width: 44%;
+    margin-right: 5px;
+}
+
+.Sign-Up{
+    width: 44%;
+}
+
+.Menu{
+    position: absolute;
+    top: 4%;
+    right: 22%;
+    width: 30%;
+    font-size: 14px;
+}
+
+.Menu-item{
+    float: left;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-right: 5%;
+}
+
+#IMG1{
+    position: absolute;
+    width: 16%;
+    left: 12%;
+    top: 18%;
+}
+
+#IMG2{
+    position: absolute;
+    width: 16%;
+    left: 30%;
+    top: 28%;
+}
+
+#IMG3{
+    position: absolute;
+    width: 16%;
+    left: 52%;
+    top: 22%;
+
+}
+
+#Login{
+    position: absolute;
+    z-index: 1;
+    left: 59%;
+    top: 28%;  
+    font-size: 30px; 
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+}
+
+.Login{
+    position: absolute;
+    left: 58%;
+    top: 44%;
+}
+
+.Login-id{
+    color: #707070;
+    font-weight: bold;
+    line-height: 2px;
+}
+
+.Login-id-input{
+    border: 0px;
+    width: 200%;
+    border-bottom: 2px solid #fac60e;
+}
+
+.Login-pw{
+    color: #707070;
+    font-weight: bold;
+    margin-top: 25%;
+    line-height: 2px;
+}
+
+.Login-pw-input{
+    border: 0px;
+    width: 200%;
+    border-bottom: 2px solid #fac60e;
+}
