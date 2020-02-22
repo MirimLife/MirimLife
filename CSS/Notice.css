@@ -1,0 +1,51 @@
+.Notice-up #Notice-word {
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    font-size: 26px; 
+    font-family: 'Noto Sans KR', sans-serif;
+    width:300px;
+    top:110px;
+    left:40.5%;
+}
+.Notice-up #Notice-back {
+    position: absolute;
+    width:4%;
+    top:120px;
+    left:48%;
+}
+.Notice-up #Notice-line {
+    background-color: blanchedalmond;
+    height:1px;
+    border: 0px;
+    margin-top:193px;
+    width:50px;
+}
+.Notice-up #Notice-plus {
+    top:15px;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:13px;
+}
+
+.Notice-down select {
+    margin-top:15px;
+    margin-left:67%;
+    height:31px;
+    width:80px;
+    border:1.9px solid #fac60e;
+    border-radius: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.Notice-down input {
+    width:130px;
+    height:25px;
+    border:1.9px solid #fac60e;
+    border-radius: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.Notice-down img {
+    position: absolute;
+    top:259px;
+    margin-left:-30px;
+}

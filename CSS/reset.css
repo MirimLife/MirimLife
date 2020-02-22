@@ -14,6 +14,11 @@ ol,ul
     width: 100%;
 }
 
+a{
+    text-decoration: none;
+    color:black;
+}
+
 #BG{  
     z-index: 1;
     width: 100%;
