@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" type="text/css" href="./CSS/SignIn.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css">
     <link rel="stylesheet" type="text/css" href="./CSS/reset.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/Notice.css">
 
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Noto+Sans+KR:900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-
-    <title>Document</title>
+    <title>MirimLife</title>
 </head>
 <body>
     <div id="wrapper">
@@ -27,28 +25,29 @@
 
         <div class="Sign">
             <a href="SignIn.html"><img class="Sign-In" src="IMG/Main/로그인.png"></a>
-            <img class="Sign-Up" src="IMG/Main/회원가입.png">
+            <a href="SignUp.html"><img class="Sign-Up" src="IMG/Main/회원가입.png"></a>
         </div>
 
-        <img id="IMG1" src="IMG/SignIn/그림2.png">
-        <img id="IMG2" src="IMG/SignIn/그림1.png">
+        <div class="Notice-up">
+            <p id="Notice-word">공지사항</p>
+            <img id="Notice-back" src="IMG/Notice/배경1.png">
+            <hr id = "Notice-line">
+            <p id="Notice-plus">미림 라이프의 공지사항을 알려드립니다.</p>
+        </div>
 
-        <div class="Login">
-            <p class="Login-id">아이디</p>
-            <input type="text" class="Login-id-input">
-            
-            <p class="Login-pw">비밀번호</p>
-            <input type="password" class="Login-pw-input">
+        <div class="Notice-down">
+            <select name="job">
+                <option value="회사원">No</option>
+                <option value="">제목</option>
+                <option value="학생">등록일</option>
+            </select>
+            <input type="text" name="id" value="">
+            <a href="#"><img src = "IMG/Notice/돋보기.png"></a>
+        </div>
+
         
-            <!-- <li>아이디찾기</li>
-            <li>비밀번호 찾기</li> -->
-        </div>
-
-        <p id="Login">로그인</p>
-        <img id="IMG3" src="IMG/SignIn/그림3.png">
-
         <a href="index.html"><img id="Logo" src="IMG/Main/logo.png"></a>
-        <a href="SignUp.html"><img class="Sign-Up" src="IMG/Main/회원가입.png"></a>
+        <img id="BG" src="IMG/Notice/배경2.png">
     </div>
 </body>
 </html>
