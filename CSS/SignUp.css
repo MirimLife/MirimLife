@@ -1,0 +1,65 @@
+body{
+    position:fixed;
+}
+
+#Logo{
+    position: absolute;
+    width: 8%;
+    z-index: 0;
+    top: 5%;
+    margin-left:12%;
+}
+
+.Sign{
+    position: absolute;
+    width: 12%;
+    right: 16.5%;
+    top: 5%;
+}
+
+.Sign-In{
+    width: 44%;
+    margin-right: 5px;
+}
+
+.Sign-Up{
+    width: 44%;
+}
+
+.Menu{
+    position: absolute;
+    top: 4%;
+    right: 22%;
+    width: 30%;
+    font-size: 14px;
+}
+
+.Menu-item{
+    float: left;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-right: 5%;
+}
+
+.title-p{
+    position: absolute;
+    left: 48%; 
+    top: 20%;
+    font-size: 25px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;   
+}
+
+.title-img{
+    position: absolute;
+    left: 48%; 
+    top: 20%;
+}
+
+.input{
+    position: absolute;
+    display: block;
+    width: 45%;
+    height: 40px;
+    left: 28%;
+    top: 32%;  
+}

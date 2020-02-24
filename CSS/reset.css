@@ -1,6 +1,5 @@
 body
 {
-    position: fixed;
     margin: 0 auto;
 }
 
@@ -12,6 +11,11 @@ ol,ul
 #wrapper{
     margin: 0;
     width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color:black;
 }
 
 #BG{  

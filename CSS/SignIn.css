@@ -1,3 +1,7 @@
+body{
+    position:fixed;
+}
+
 #Logo{
     position: absolute;
     width: 8%;
