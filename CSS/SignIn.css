@@ -103,3 +103,18 @@ body{
     width: 200%;
     border-bottom: 2px solid #fac60e;
 } 
+
+.Sign-Button{
+    position: absolute;
+    width: 25.2%;
+    right: 16.5%;
+    top: 70%;
+}
+
+.Sign-In-Button{
+    width: 22%;
+}
+
+.Sign-Up-Button{
+    width: 22%;
+}
