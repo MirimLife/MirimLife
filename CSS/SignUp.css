@@ -57,9 +57,65 @@ body{
 
 .input{
     position: absolute;
-    display: block;
-    width: 45%;
-    height: 40px;
-    left: 28%;
-    top: 32%;  
+    display: inline-block;
+    width: 20%;
+    left: 46%;
+    top: 35%; 
+   
+}
+
+.input-id{
+    width: 60%;
+    height: 22px; 
+    margin-bottom: 8%;
+    border-radius: 4px;
+    border:1px solid orange;
+    background-color: #fff6f2;
+    padding: 4px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #ac8b5f;
+}
+.input-pw{
+    width: 60%;
+    height: 22px; 
+    margin-bottom: 8%;
+    border-radius: 4px;
+    border:1px solid orange;
+    background-color: #fff6f2;
+    padding: 4px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #ac8b5f;
+}
+.input-pwo{
+    width: 60%;
+    height: 22px; 
+    margin-bottom: 8%;
+    border-radius: 4px;
+    border:1px solid orange;
+    background-color: #fff6f2;
+    padding: 4px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #ac8b5f;
+}
+.input-name{
+    width: 60%;
+    height: 22px; 
+    margin-bottom: 8%;
+    border-radius: 4px;
+    border:1px solid orange;
+    background-color: #fff6f2;
+    padding: 4px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #ac8b5f;
+}
+.input-date{
+    width: 60%;
+    height: 22px; 
+    margin-bottom: 8%;
+    border-radius: 4px;
+    border:1px solid orange;
+    background-color: #fff6f2;
+    padding: 4px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #ac8b5f;
 }
