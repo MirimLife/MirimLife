@@ -80,3 +80,19 @@
 .Notice-page img {
     vertical-align: middle;
 }
+
+.Notice-page button {
+    position: absolute;
+    right:310px;
+    background-color: #fac60e;
+    font-family: 'Noto Sans KR', sans-serif;
+    width:100px;
+    height:35px;
+    border:0;
+    outline: 0;
+    border-radius: 10px;
+}
+
+.Notice-page button:active {
+    transform: scale(0.90);
+}
