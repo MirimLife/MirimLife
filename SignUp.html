@@ -31,14 +31,14 @@
             <a href="SignUp.html"><img class="Sign-Up" src="IMG/Main/SignUp.png"></a>
         </div>
 
-        <form id="form" method="get" submit=""> 
-            <!-- method get인지 뭔지 몰라서 이렇게해둠 Submit두 죄솜 ㅠㅠ -->
+        <form method="POST" action="SignUp.php"> 
             <div class="input">
-                <input type="text" class="input-id" placeholder=" 아이디">
-                <input type="password" class="input-pw" placeholder=" 비밀번호">
-                <input type="password" class="input-pwo" placeholder=" 비밀번호 확인">
-                <input type="text" class="input-name" placeholder=" 이름">
-                <input type="date" class="input-date" placeholder=" 생일">
+                <input type="text" class="input-id" placeholder=" 아이디" name="id">
+                <input type="password" class="input-pw" placeholder=" 비밀번호" name="pw">
+                <input type="password" class="input-pwo" placeholder=" 비밀번호 확인" name="pw_again">
+                <input type="text" class="input-name" placeholder=" 이름" name="name">
+                <input type="date" class="input-date" placeholder=" 생일" name="birth">
+                <input type = "submit" value = "확인"> 
             </div>
         </form>
 
