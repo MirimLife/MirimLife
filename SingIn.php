@@ -1,21 +1,20 @@
 <?php
     $id = $_POST["id"];
     $pw = $_POST['pw'];
-    echo $id;
-    echo $pw;
+
     $con = mysqli_connect("localhost","mirimlife","itshow1!","mirimlife");
     if (mysqli_connect_errno()){
         echo "Failed to connect to MySQL: " . mysqli_connect_error();
     }
-    $sql = "select id, passwd from members";
+    $sql = "select passwd from members where id = '$id';";
     $result = mysqli_query($con, $sql);
 
     if(mysqli_num_rows($result) > 0) {
         while($row = mysqli_fetch_array($result)) {
-            if($row['id'] == $id && $row['passwd'] == $pw) {
+            if($row['passwd'] == $pw) {
                 session_start();
-                $_SESSION['id'] = $_POST["id"];
-                echo("<script>location.href='index_2.php'</script>");
+                $_SESSION['id'] = $id;
+                echo "<script>location.href='index.php'</script>";
             }
         }
     }

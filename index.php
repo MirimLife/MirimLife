@@ -17,7 +17,7 @@
 <body style = "position: fixed;" oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
     <div id="wrapper">
         <ul class="Menu">
-            <li class="Menu-item"><a href = "Notice.html">공지사항</a></li>
+            <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
             <li class="Menu-item"><a href = "#">일정확인</a></li>
             <li class="Menu-item"><a href = "#">미림팀</a></li>
             <li class="Menu-item"><a href = "#">대나무숲</a></li>
@@ -25,9 +25,31 @@
         </ul>
 
         <div class="Sign">
+            <?php
+                session_start();
+
+                if(isset($_SESSION['id'])) {
+                    $id = $_SESSION['id'];
+                    $con = mysqli_connect("localhost","mirimlife","itshow1!","mirimlife");
+                    if (mysqli_connect_errno()){
+                        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+                    }
+                    $sql = "select name from members where id = '$id'";
+                    $result = mysqli_query($con, $sql);
+
+                    if(mysqli_num_rows($result) > 0) {
+                        $row = mysqli_fetch_array($result);
+                        $name = $row['name'];
+                        echo "{$name}님";
+                    }
+                    echo "<a href='logout.php'>로그아웃</a>";
+                }
+                else {
+                    echo '<a href="SignIn.html"><img class="Sign-In" src="IMG/Main/Login.png"></a>';
+                    echo '<a href="SignUp.html"><img class="Sign-Up" src="IMG/Main/SignUp.png"></a>';
+                }
+            ?>
             
-            <a href="SignIn.html"><img class="Sign-In" src="IMG/Main/Login.png"></a>
-            <a href="SignUp.html"><img class="Sign-Up" src="IMG/Main/SignUp.png"></a>
         </div>
 
         <div class="Cont fade-in-top">
@@ -48,7 +70,7 @@
         <img id="IMG1" class="tilt-in-top-1" src="IMG/Main/content_01.png">
         <img id="IMG2" class="tilt-in-top-2" src="IMG/Main/content_02.png">
 
-        <a href="index.html"><img id="Logo" src="IMG/Main/logo.png"></a>
+        <a href="index.php"><img id="Logo" src="IMG/Main/logo.png"></a>
         <img id="BG" src="IMG/Main/BG_01.png">
     </div>
 </body>
