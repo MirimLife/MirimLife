@@ -19,17 +19,23 @@
 </head>
 <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
     <div id="wrapper">
-        <ul class="Menu">
-            <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
-            <li class="Menu-item"><a href = "#">일정확인</a></li>
-            <li class="Menu-item"><a href = "#">미림팀</a></li>
-            <li class="Menu-item"><a href = "#">대나무숲</a></li>
-            <li class="Menu-item"><a href = "#">급식확인</a></li>
-        </ul>
+        <div id="nav">   <!-- 네비게이션 바 -->
+            <a href="index.php" id="Logo">
+                <img id="Logo-img" src="IMG/Main/logo.png">
+            </a>
 
-        <div class="Sign">
-            <a href="SignIn.html"><img class="Sign-In" src="IMG/Main/Login.png"></a>
-            <a href="SignUp.html"><img class="Sign-Up" src="IMG/Main/SignUp.png"></a>
+            <ul class="Menu">
+                <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
+                <li class="Menu-item"><a href = "#">일정확인</a></li>
+                <li class="Menu-item"><a href = "#">미림팀</a></li>
+                <li class="Menu-item"><a href = "#">대나무숲</a></li>
+                <li class="Menu-item"><a href = "#">급식확인</a></li>
+            </ul>
+
+            <div class="Sign"> <!-- 로그인, 회원가입 버튼-->
+                <a href="SignIn.html" class="Sign-In"><img class="Sign-In-img" src="IMG/Main/Login.png"></a>
+                <a href="SignUp.html" class=Sign-Up><img class="Sign-Up-img" src="IMG/Main/SignUp.png"></a>
+            </div>
         </div>
 
         <img id="IMG1" src="IMG/SignIn/Picture2.png">
@@ -60,10 +66,6 @@
         <p id="Login">로그인</p>
         <img id="IMG3" src="IMG/SignIn/Picture3.png">
 
-        
-        
-
-        <a href="index.php"><img id="Logo" src="IMG/Main/logo.png"></a>
         <img src="IMG/SignIn/BG.png" id="BG">
     </div>
 </body>

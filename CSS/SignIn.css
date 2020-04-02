@@ -1,45 +1,3 @@
-body{
-    position:fixed;
-}
-
-#Logo{
-    position: absolute;
-    width: 8%;
-    z-index: 0;
-    top: 5%;
-    margin-left:12%;
-}
-
-
-.Sign{
-    position: absolute;
-    width: 12%;
-    right: 16.5%;
-    top: 5%;
-}
-
-.Sign-In{
-    width: 44%;
-    margin-right: 5px;
-}
-
-.Sign-Up{
-    width: 44%;
-}
-
-.Menu{
-    position: absolute;
-    top: 4%;
-    right: 22%;
-    width: 30%;
-    font-size: 14px;
-}
-
-.Menu-item{
-    float: left;
-    font-family: 'Noto Sans KR', sans-serif;
-    margin-right: 5%;
-}
 
 #IMG1{
     position: absolute;
@@ -104,13 +62,13 @@ body{
     border-bottom: 2px solid #fac60e;
 } 
 
-ul li {
+.Login ul li {
     float:left;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 13px;
 }
 
-ul {
+.Login ul {
     margin-left:190px;
 }
 

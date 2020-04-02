@@ -3,6 +3,7 @@ body
     margin: 0 auto;
     width: 100%;
     height:100vh;
+    position:fixed;
 }
 
 ol,ul
@@ -31,3 +32,71 @@ a{
 }
 
 input:focus {outline:none;} 
+
+/* nav css */
+#nav{
+    position: relative;
+    width: 100%;
+    height: 39px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    z-index: 1;
+}
+
+#Logo{
+    position: absolute;
+    width: 106px;
+    height: 27px;
+    margin-top: 5px;
+}
+
+#Logo-img{
+    width: 100%;
+    height: 100%;
+}
+
+.Menu{
+    height: 53px;
+    position: absolute;
+    display: inline-block;
+    right: 16%;
+    width: 30%;
+    font-size: 14px;
+    margin: 0;
+}
+
+.Menu-item{
+    float: left;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-right: 6%;
+    padding-top: 8px;
+}
+
+.Sign{
+    position: absolute;
+    display: inline-block;
+    right: 0;
+}
+
+.Sign-In{
+    width: 97px;
+    height: 39px;
+    margin-right: 10px;
+    float: left;
+}
+
+.Sign-Up{
+    width: 97px;
+    height: 39px;
+    float: left;
+}
+
+.Sign-In-img {
+    width: 100%;
+    height: 100%;
+}
+
+.Sign-Up-img {
+    width: 100%;
+    height: 100%;
+}
