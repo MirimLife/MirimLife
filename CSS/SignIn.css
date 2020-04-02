@@ -1,107 +1,120 @@
 
+.container {
+    position: relative;
+    width: 100%;
+    height: 961px; /* 몇으로 해야할까 1080-961 */
+    z-index: 1;
+}
+
+.contents-l, .contents-r {
+    position: absolute;
+    width: 600px;
+    height: 961px;
+    display: inline-block;
+}
+
 #IMG1{
     position: absolute;
-    width: 16%;
-    left: 12%;
-    top: 18%;
+    width: 600px;
 }
 
-#IMG2{
-    position: absolute;
-    width: 16%;
-    left: 30%;
-    top: 28%;
+/* 오른쪽 컨텐츠 */
+
+.contents-r {
+    right: 0;
+    padding-left: 60px;
+    padding-top: 65px;
+    box-sizing: border-box; /* padding을 포함한 width 사용 */
 }
 
-#IMG3{
-    position: absolute;
-    width: 16%;
-    left: 52%;
-    top: 18%;
-
+/* 로그인 글씨 */
+.title {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 4px; /* 회원가입 글자와 창 간격 조절 */
 }
 
-#Login{
-    position: absolute;
-    z-index: 1;
-    left: 59%;
-    top: 25%;  
-    font-size: 30px; 
+.title-p{
+    text-align: left;
+    font-size: 32px;
     font-family: 'Noto Sans KR', sans-serif;
-    font-weight: bold;
+    padding-left: 42px;
+    margin: 0;  /* p태그 이 속성 reset.css로 옮겨도 이상없으면 옮기기 */
 }
 
-.Login{
+.bar {
     position: absolute;
-    left: 55%;
-    top: 40%;
+    border: 1.1px solid #ffd100;
+    width: 100px;
+    margin-left: 35px;
+
 }
 
-.Login-id{
-    color: #707070;
-    font-weight: bold;
-    line-height: 2px;
+.window {
+    position: relative;
+    text-align: left;
 }
 
-.Login-id-input{
-    border: 0px;
-    width: 400px;
-    border-bottom: 2px solid #fac60e;
+.input {
+    position: absolute;
+    width: 425px;
+    height: 295px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-right: 15px;
+    margin-top: 10px;
 }
 
-.Login-pw{
-    color: #707070;
-    font-weight: bold;
-    margin-top: 10%;
-    line-height: 2px;
+.Login-input{
+    border-radius: 10px;
+    border:1px solid #fac60e;
+    width: 408px;
+    height: 50px;
+    margin-bottom: 10px;
+    padding-left: 15px; 
 }
 
-.Login-pw-input{
-    border: 0px;
-    width: 400px;
-    border-bottom: 2px solid #fac60e;
-} 
-
-.Login ul li {
-    float:left;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 13px;
-}
-
-.Login ul {
-    margin-left:190px;
-}
+.Login-input::placeholder {color: rgb(227, 162, 93); font-size: 14px; }
+.Login-input:last-child { margin-bottom: 20px; }
 
 .Find-mid{
     margin-left:10px;
     margin-right:10px;
 }
 
+/* 로그인 버튼, 회원가입 버튼 */
 .Sign-Button{
-    position: absolute;
-    width: 25.2%;
-    right: 20%;
-    top: 70%;
-    border: 0;
-}
-
-.Sign-In-Button{
-    width:110px;
-    height:35px;
+    width: 425px;
+    height: 50px;
     border: 0;
     border-radius: 25px;
     background-color: #fac60e;
     color:white;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 10px;
 }
 
-.Sign-Up-Button{
-    width:110px;
-    height:35px;
+/* 회원가입 버튼 */
+.Sign-Button:last-child {
     background-color: white;
-    border: 2px solid #fac60e;
-    border-radius: 25px;
-    font-size: 14px;
+    color: #fac60e;
+    border: 1px solid #fac60e;
+}
+
+/* 아이디, 비밀번호 찾기 */
+.find ul li {
+    float:left;
     font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+}
+
+.find ul {
+    position: absolute;
+    height: 20px;
+    padding: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 0;
 }

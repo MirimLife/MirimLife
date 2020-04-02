@@ -18,8 +18,14 @@
     <title>SignIn</title>
 </head>
 <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
+    <!-- 배경 이미지 -->
+    <div id="BG">
+        <img src="IMG/SignIn/bg-signin.png" id="BG-img">
+    </div>
+
     <div id="wrapper">
-        <div id="nav">   <!-- 네비게이션 바 -->
+        <!-- 네비게이션 바 -->
+        <div id="nav">   
             <a href="index.php" id="Logo">
                 <img id="Logo-img" src="IMG/Main/logo.png">
             </a>
@@ -38,35 +44,47 @@
             </div>
         </div>
 
-        <img id="IMG1" src="IMG/SignIn/Picture2.png">
-        <img id="IMG2" src="IMG/SignIn/Picture1.png">
-
-        <form method="POST" action="SingIn.php">
-            <div class="Login">
-                <p class="Login-id">아이디</p>
-                <input type="text" class="Login-id-input" name="id" required>
-
-                <p class="Login-pw">비밀번호</p>
-                <input type="password" class="Login-pw-input" name="pw" required>
-                
-                <ul>
-                    <li><a href="#">아이디 찾기</a></li>
-                    <li class="Find-mid">|</li>
-                    <li><a href="#">비밀번호 찾기</a></li>
-                </ul>
-                
+        <div class="container">
+            <!-- 왼쪽 컨텐츠 -->
+            <div class="contents-l">
+                <img id="IMG1" src="IMG/SignIn/pic.png">
             </div>
-            <div class="Sign-Button">
-                <!--그래서 이부분 링크 말구 폼 태그 안에 submit으로 해서 바꿔야 할 듯 해여-->
-                <input type="submit" value="로그인" id="sub" class="Sign-In-Button" />
-                <a href="SignUp.html"><input type="button" value="회원가입" class="Sign-Up-Button"/></a>
-            </div>
-        </form>
-        <!--링크로 버튼 하니까 php파일로 정보(id, pw)가 전송이 안 되는 것 같아 그래서 임시로 버튼 추가했음-->
-        <p id="Login">로그인</p>
-        <img id="IMG3" src="IMG/SignIn/Picture3.png">
 
-        <img src="IMG/SignIn/BG.png" id="BG">
+            <!-- 오른쪽 컨텐츠 -->
+            <div class="contents-r">
+                <div class="title">
+                    <p class="title-p">로그인</p>
+                    <div class="bar"></div>
+                </div>
+
+                <div class="window">
+                    <img src="IMG/SignIn/window.png" id="window-img">
+
+                    <form method="POST" action="SingIn.php">
+                        <div class="input">
+                            <div class="Login">
+                                <input type="text" class="Login-input" placeholder="아이디" name="id" required>
+                                <input type="password" class="Login-input" placeholder="비밀번호" name="pw" required>
+                            </div>
+            
+                            <div>
+                                <input type="submit" value="로그인" id="sub" class="Sign-Button" />
+                                <a href="SignUp.html"><input type="button" value="회원가입" class="Sign-Button"/></a>
+                            </div>
+
+                            <div class="find">
+                                <ul>
+                                    <li><a href="#">아이디 찾기</a></li>
+                                    <li class="Find-mid">|</li>
+                                    <li><a href="#">비밀번호 찾기</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>                
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
