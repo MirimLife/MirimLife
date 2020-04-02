@@ -1,6 +1,8 @@
 body
 {
     margin: 0 auto;
+    width: 100%;
+    height:100vh;
 }
 
 ol,ul
@@ -9,8 +11,8 @@ ol,ul
 }
 
 #wrapper{
-    margin: 0;
-    width: 100%;
+    margin: 0 auto;
+    width: 1200px;
 }
 
 a{
@@ -18,10 +20,14 @@ a{
     color:black;
 }
 
-#BG{  
-    z-index: 1;
+#BG{ 
+    position: absolute;
+    z-index: -1;
+}
+
+#BG-img {
     width: 100%;
-    height: 760px;
+    height:100vh;
 }
 
 input:focus {outline:none;} 
