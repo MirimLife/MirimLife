@@ -61,7 +61,6 @@ body{
     width: 20%;
     left: 46%;
     top: 35%; 
-   
 }
 
 .input-id{
@@ -118,4 +117,15 @@ body{
     padding: 4px;
     font-family: 'Noto Sans KR', sans-serif;
     color: #ac8b5f;
+}
+
+.input input#sub {
+    width:110px;
+    height:35px;
+    border: 0;
+    border-radius: 25px;
+    background-color: #fac60e;
+    color:white;
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
