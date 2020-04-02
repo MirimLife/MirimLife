@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="./CSS/index.css">
-    <link rel="stylesheet" type="text/css" href="./CSS/reset.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css?ver=0.4">
+    <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1">
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
     <link rel="icon" href="IMG/Icon/favicon___.png">
 
@@ -40,7 +40,7 @@
                     if(mysqli_num_rows($result) > 0) {
                         $row = mysqli_fetch_array($result);
                         $name = $row['name'];
-                        echo "{$name}님";
+                        echo "{$name}님&nbsp;";
                     }
                     echo "<a href='logout.php'>로그아웃</a>";
                 }
@@ -49,7 +49,6 @@
                     echo '<a href="SignUp.html"><img class="Sign-Up" src="IMG/Main/SignUp.png"></a>';
                 }
             ?>
-            
         </div>
 
         <div class="Cont fade-in-top">
