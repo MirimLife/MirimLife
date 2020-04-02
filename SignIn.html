@@ -20,7 +20,7 @@
 <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
     <div id="wrapper">
         <ul class="Menu">
-            <li class="Menu-item"><a href = "Notice.html">공지사항</a></li>
+            <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
             <li class="Menu-item"><a href = "#">일정확인</a></li>
             <li class="Menu-item"><a href = "#">미림팀</a></li>
             <li class="Menu-item"><a href = "#">대나무숲</a></li>
@@ -35,29 +35,31 @@
         <img id="IMG1" src="IMG/SignIn/Picture2.png">
         <img id="IMG2" src="IMG/SignIn/Picture1.png">
 
-        <form id="form" method="get" submit="/login">
+        <form method="POST" action="SingIn.php">
             <div class="Login">
                 <p class="Login-id">아이디</p>
-                <input type="text" class="Login-id-input">
+                <input type="text" class="Login-id-input" name="id" required>
 
                 <p class="Login-pw">비밀번호</p>
-                <input type="password" class="Login-pw-input">
-
+                <input type="password" class="Login-pw-input" name="pw" required>
+                <input type="submit" value="확인">
                 <!-- <li>아이디찾기</li>
                 <li>비밀번호 찾기</li> -->
             </div>
         </form>
 
+        <!--링크로 버튼 하니까 php파일로 정보(id, pw)가 전송이 안 되는 것 같아 그래서 임시로 버튼 추가했음-->
         <p id="Login">로그인</p>
         <img id="IMG3" src="IMG/SignIn/Picture3.png">
 
         
         <div class="Sign-Button">
-            <a href="SignIn.html"><img class="Sign-In-Button" src="IMG/SignIn/Login.png"></a>
+            <!--그래서 이부분 링크 말구 폼 태그 안에 submit으로 해서 바꿔야 할 듯 해여-->
+            <a href="SignIn.php"><img class="Sign-In-Button" src="IMG/SignIn/Login.png"></a> 
             <a href="SignUp.html"><img class="Sign-Up-Button" src="IMG/SignIn/Signup.png"></a>
         </div>
 
-        <a href="index.html"><img id="Logo" src="IMG/Main/logo.png"></a>
+        <a href="index.php"><img id="Logo" src="IMG/Main/logo.png"></a>
         <img src="IMG/SignIn/BG.png" id="BG">
     </div>
 </body>
