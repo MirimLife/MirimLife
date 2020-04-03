@@ -70,7 +70,7 @@ input:focus {outline:none;}
 .Cont{
     position: absolute;
     top: 32%;
-    left: 12%;
+    left: 15%;
 }
 
 .Cont-cont1{
@@ -85,6 +85,11 @@ input:focus {outline:none;}
     font-weight: bold;
     font-family: 'Nanum Gothic', sans-serif;
     color: #484848;
+}
+
+#seeMore{
+    width: 20%;
+    margin-top: 3%;
 }
 
 #Circle1{
@@ -111,17 +116,55 @@ input:focus {outline:none;}
     color: #fac60e;
 }
 
+/*left content*/
+.title-in-top-1{
+    position: absolute;
+    width: 8%;
+    top: 15%;
+    right: 42%;
+}
+
+.title-in-top-1-2{
+    position: absolute;
+    width: 5%;
+    top: 18%;
+    right: 30%;
+}
+
 #IMG1{
     position: absolute;
     width: 20%;
-    top: 15%;
-    right: 35%;
+    top: 17%;
+    right: 30%;
+} 
+
+
+/* right content*/
+.title-in-top-2-1{
+    position: absolute;
+    width: 3.5%;
+    top: 46%;
+    right: 17%;
+}
+
+.title-in-top-2-2{
+    position: absolute;
+    width: 10%;
+    top: 51%;
+    right: 10%;
+}
+
+.title-in-top-2-3{
+    position: absolute;
+    width: 5%;
+    top: 35%;
+    right: 11%;
 }
 
 #IMG2{
     position: absolute;
     width: 20%;
     top: 32%;
-    right: 14%;
+    right: 12.5%;
 }
 
