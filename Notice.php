@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./CSS/index.css?ver=1">
-    <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1">
+    <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.2">
     <link rel="stylesheet" type="text/css" href="./CSS/Notice.css?ver=1">
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
     <link rel="icon" href="IMG/Icon/favicon___.png">
