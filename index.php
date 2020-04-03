@@ -70,7 +70,7 @@
         <img id="IMG2" class="tilt-in-top-2" src="IMG/Main/content_02.png">
 
         <a href="index.php"><img id="Logo" src="IMG/Main/logo.png"></a>
-        <img id="BG" src="IMG/Main/BG_01.png">
+        <img id="BG" src="IMG/Main/BG.png">
     </div>
 </body>
 </html>
