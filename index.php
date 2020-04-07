@@ -7,7 +7,7 @@
 
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.1">
-    <link rel="stylesheet" type="text/css" href="./CSS/index.css?ver=1.4">
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css?ver=1.5">
     <link rel="stylesheet" type="text/css" href="./CSS/index-ani.css?ver=1.1">
 
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
@@ -21,10 +21,9 @@
     <title>MirimLife</title>
 </head>
 <body style = "position: fixed;" oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
-   
-    <div id="BG">
+    <!-- <div id="BG">
         <img src="IMG/Main/BG.png" id="BG-img">
-    </div>
+    </div> -->
 
     <div id="wrapper">
         <!-- 메뉴 바 -->
@@ -82,7 +81,7 @@
                     <p>미림을 다녀본 선배가 미림을 다니며 필요한 것을 여기에 담았다!</p>
                     <p>함께 미림의 모든 것을 알아보자!</p>
                 </div>
-                <img id="seeMore" src="img/Main/SeeMore.png">
+                <img id="seeMore" src="IMG/Main/SeeMore.png">
             </div>
 
             <div class="content-Right">

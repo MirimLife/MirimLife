@@ -1,9 +1,11 @@
+
 body
 {
     margin: 0 auto;
     width: 100%;
-    height:100vh;
-    position:fixed;
+    /* height:100vh;
+    position: fixed;
+    공지사항, 대나무 숲 같은 사이트는 이 바디 속성을 지정하면 아래의 게시글이 보이지 않습니다 ㅠㅠ*/
 }
 
 ol,ul
@@ -34,7 +36,6 @@ a{
 input:focus {outline:none;} 
 
 /* nav css */
-
 #nav{
     position: relative;
     width: 100%;
@@ -80,15 +81,16 @@ input:focus {outline:none;}
 }
 
 .Sign-In{
-    width: 97px;
-    height: 39px;
-    margin-right: 10px;
+    width: 90px;
+    height: 35px;
+    margin-right: 7px;
     float: left;
 }
 
 .Sign-Up{
-    width: 97px;
-    height: 39px;
+    width: 90px;
+    height: 35px;
+    margin-right: 15px;
     float: left;
 }
 

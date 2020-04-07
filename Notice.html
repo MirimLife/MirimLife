@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.3">
-    <link rel="stylesheet" type="text/css" href="./CSS/Notice.css?ver=1.3">
+    <link rel="stylesheet" type="text/css" href="./CSS/Notice.css?ver=1.1">
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
     <link rel="icon" href="IMG/Icon/favicon___.png">
 
@@ -30,30 +30,8 @@
             </ul>
 
             <div class="Sign"> <!-- 로그인, 회원가입 버튼-->
-                <?php
-                    session_start();
-
-                    if(isset($_SESSION['id'])) {
-                        $id = $_SESSION['id'];
-                        $con = mysqli_connect("localhost","mirimlife","itshow1!","mirimlife");
-                        if (mysqli_connect_errno()){
-                            echo "Failed to connect to MySQL: " . mysqli_connect_error();
-                        }
-                        $sql = "select name from members where id = '$id'";
-                        $result = mysqli_query($con, $sql);
-
-                        if(mysqli_num_rows($result) > 0) {
-                            $row = mysqli_fetch_array($result);
-                            $name = $row['name'];
-                            echo "<p id='username'>{$name}님&nbsp;</p>";
-                        }
-                        echo "<a id='LogOut'  href='logout.php'>로그아웃</a>";
-                    }
-                    else {
-                        echo '<a href="SignIn.html"><img class="Sign-In" src="IMG/Main/Login.png"></a>';
-                        echo '<a href="SignUp.html"><img class="Sign-Up" src="IMG/Main/SignUp.png"></a>';
-                    }
-                ?>
+                <a href="SignIn.html" class="Sign-In"><img class="Sign-In-img" src="IMG/Main/Login.png"></a>
+                <a href="SignUp.html" class="Sign-Up"><img class="Sign-Up-img" src="IMG/Main/SignUp.png"></a>
             </div>
         </div>
 
@@ -129,9 +107,9 @@
         </div>
 
         <div class="Notice-page">
-            <a href="#"><img src="IMG/Notice/Left.png"></a>
+            <a href="#"><img src="IMG/Notice/왼쪽 화살표.png"></a>
             <span>1</span>
-            <a href="#"><img src="IMG/Notice/Right.png"></a>
+            <a href="#"><img src="IMG/Notice/오른쪽 화살표.png"></a>
             <a href="Write.php"><button>글쓰기</button></a>
         </div>
         

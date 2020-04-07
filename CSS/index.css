@@ -1,6 +1,13 @@
 @import "./index-ani.css";
 
-
+html {
+    background: url(../IMG/Main/BG.png) no-repeat 50% 50%; 
+    background-attachment: fixed ;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+}
 #username{
     font-size: 14px;
     font-family: 'Noto Sans KR', sans-serif;
