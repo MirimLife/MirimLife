@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.3">
-    <link rel="stylesheet" type="text/css" href="./CSS/Notice.css?ver=1.3">
+    <link rel="stylesheet" type="text/css" href="./CSS/Notice.css?ver=1.1">
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
     <link rel="icon" href="IMG/Icon/favicon___.png">
 
@@ -71,71 +71,74 @@
             </select>
             <input type="text" name="id" value="" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;검색어를 입력하세요">
             <div class="Search-btn"><button type="submit">검색하기</button></div>
+            <div class="Write-btn"><a href="Write.php"><button>글쓰기</button></a></div>
         </div>
 
         <div class="Notice-bottom">
             <table>
                 <tr>
-                    <td style = "width:100px;">No</td>
-                    <td style = "width:700px;">제목</td>
+                    <td>No</td>
+                    <td>제목</td>
                     <td>등록일</td>
                 </tr>
                 <tr>
                     <td style = "width:100px;">1</td>
-                    <td style = "width:700px;">가나다라</td>
+                    <td style = "width:720px;">가나다라</td>
                     <td>2020.02.24</td>
                 </tr>
                 <tr>
                     <td style = "width:100px;">1</td>
-                    <td style = "width:700px;">가나다라</td>
+                    <td style = "width:720px;">가나다라</td>
                     <td>2020.02.24</td>
                 </tr>
                 <tr>
                     <td style = "width:100px;">1</td>
-                    <td style = "width:700px;">가나다라</td>
+                    <td style = "width:720px;">가나다라</td>
                     <td>2020.02.24</td>
                 </tr>
                 <tr>
                     <td style = "width:100px;">1</td>
-                    <td style = "width:700px;">가나다라</td>
+                    <td style = "width:720px;">가나다라</td>
                     <td>2020.02.24</td>
                 </tr>
                 <tr>
                     <td style = "width:100px;">1</td>
-                    <td style = "width:700px;">가나다라</td>
+                    <td style = "width:770px;">가나다라</td>
                     <td>2020.02.24</td>
                 </tr>
                 <tr>
                     <td style = "width:100px;">1</td>
-                    <td style = "width:700px;">가나다라</td>
+                    <td style = "width:720px;">가나다라</td>
                     <td>2020.02.24</td>
                 </tr>
                 <tr>
                     <td style = "width:100px;">1</td>
-                    <td style = "width:700px;">가나다라</td>
+                    <td style = "width:720px;">가나다라</td>
                     <td>2020.02.24</td>
                 </tr>
                 <tr>
                     <td style = "width:100px;">1</td>
-                    <td style = "width:700px;">가나다라</td>
+                    <td style = "width:720px;">가나다라</td>
                     <td>2020.02.24</td>
                 </tr>
                 <tr>
                     <td style = "width:100px;">1</td>
-                    <td style = "width:700px;">가나다라</td>
+                    <td style = "width:720px;">가나다라</td>
+                    <td>2020.02.24</td>
+                </tr>
+                <tr>
+                    <td style = "width:100px;">1</td>
+                    <td style = "width:720px;">가나다라</td>
                     <td>2020.02.24</td>
                 </tr>
             </table>
         </div>
 
         <div class="Notice-page">
-            <a href="#"><img src="IMG/Notice/Left.png"></a>
-            <span>1</span>
-            <a href="#"><img src="IMG/Notice/Right.png"></a>
-            <a href="Write.php"><button>글쓰기</button></a>
+            <a href="#"><img class="Left-img" src="IMG/Notice/Left.png"></a>
+            <div class="Page-num">1</div>
+            <a href="#"><img class="Right-img" src="IMG/Notice/Right.png"></a>
         </div>
-        
-        
     </div>
 </body>
 </html>

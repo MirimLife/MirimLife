@@ -49,42 +49,65 @@ html {
     position: absolute;
     /* transform: translateX(-50%); */
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 16px;
+    font-size:15px;
     color: #505050;
     border:1.9px solid #d2d2d2;
     border-radius: 10px;
-    width:130px;
+    width:110px;
     height:45px;
+    margin-left: 50px;
 }
 .Notice-down input {
     position: absolute;
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 16px;
+    font-size:15px;
     color: #505050;
     border:1.9px solid #d2d2d2;
     border-radius: 10px;
-    width:400px;
+    width:370px;
     height:40px;
-    margin-left: 140px;
+    margin-left: 165px;
 }
 .Notice-down .Search-btn {
     position: absolute;
-    margin-left: 550px;
+    margin-left: 545px;
+}
+.Notice-down .Search-btn button:active {
+    transform: scale(0.90);
 }
 .Notice-down .Search-btn button {
     border:0;
     color:white;
     background: #fac60e;
-    font-size: 16px;
-    width:130px;
+    font-size:15px;
+    width:110px;
     height:43px;
     border-radius: 10px;
     font-family: 'Noto Sans KR', sans-serif;
 }
+.Notice-down .Write-btn {
+    position: absolute;
+    margin-left: 745px;
+}
+.Notice-down .Write-btn button {
+    border:0;
+    color:#fac60e;
+    background: white;
+    font-size:15px;
+    width:110px;
+    height:43px;
+    border-radius: 30px;
+    border: 1.2px solid #fac60e;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.Notice-down .Write-btn button:active {
+    transform: scale(0.90);
+}
 
 .Notice-bottom table {
+    /* position: absolute; 주면 가운데 정렬이 안됨 */
     font-family: 'Noto Sans KR', sans-serif;
-    width:60%;
+    width:85%;
     margin:auto;
     margin-top:8px;
     text-align: center;
@@ -92,6 +115,7 @@ html {
 .Notice-bottom tr:nth-child(1){
     background-color: #fac60e;
     height:50px;
+    color: white;
 }
 .Notice-bottom td:nth-child(n+1){
     height:45px;
@@ -99,32 +123,35 @@ html {
 }
 
 .Notice-page {
-    margin-top:50px;
+    position: relative;
+    width: 200px;
+    height: 70px;
+    margin: 0 auto;
     text-align: center;
-    font-family: 'Noto Sans KR', sans-serif;
-    margin-bottom: 60px;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
-.Notice-page span{
-    vertical-align: middle;
-    margin-left: 20px;
-    margin-right: 20px;
+.Notice-page .Page-num {
+    position: absolute;
+    display: inline-block;
+    width:40px;
+    height:40px;
+    background-color: #fac60e;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color:white;
+    transform: translateX(-50%);
 }
 .Notice-page img {
-    vertical-align: middle;
-}
-
-.Notice-page button {
     position: absolute;
-    right:310px;
-    background-color: #fac60e;
-    font-family: 'Noto Sans KR', sans-serif;
-    width:100px;
-    height:35px;
-    border:0;
-    outline: 0;
-    border-radius: 10px;
+    text-align: center;
 }
-
-.Notice-page button:active {
-    transform: scale(0.90);
+.Notice-page .Left-img {
+    margin-left: -80px;
+    margin-top: 10px;   
+}
+.Notice-page .Right-img {
+    margin-left: 70px;
+    margin-top: 10px;   
 }
