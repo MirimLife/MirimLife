@@ -47,9 +47,9 @@ input:focus {outline:none;}
 
 #Logo{
     position: absolute;
-    width: 106px;
-    height: 27px;
-    margin-top: 5px;
+    width: 153px;
+    height: 39px;
+    margin-left: 15px;
 }
 
 #Logo-img{
@@ -58,11 +58,11 @@ input:focus {outline:none;}
 }
 
 .Menu{
-    height: 53px;
+    height: 39px;
     position: absolute;
     display: inline-block;
     right: 16%;
-    width: 30%;
+    width: 410px;
     font-size: 14px;
     margin: 0;
 }
@@ -70,7 +70,7 @@ input:focus {outline:none;}
 .Menu-item{
     float: left;
     font-family: 'Noto Sans KR', sans-serif;
-    margin-right: 6%;
+    margin-right: 4%;
     padding-top: 8px;
 }
 
@@ -78,6 +78,7 @@ input:focus {outline:none;}
     position: absolute;
     display: inline-block;
     right: 0;
+    margin-top: 2px;
 }
 
 .Sign-In{

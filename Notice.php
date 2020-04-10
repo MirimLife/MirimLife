@@ -27,6 +27,7 @@
                 <li class="Menu-item"><a href = "#">미림팀</a></li>
                 <li class="Menu-item"><a href = "#">대나무숲</a></li>
                 <li class="Menu-item"><a href = "#">급식확인</a></li>
+                <li class="Menu-item"><a href="https://bit.ly/mirimmusic">음악신청</a></li>
             </ul>
 
             <div class="Sign"> <!-- 로그인, 회원가입 버튼-->
