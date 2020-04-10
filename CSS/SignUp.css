@@ -1,121 +1,113 @@
-body{
-    position:fixed;
+html {
+    background: url(../IMG/SignUp/BG2.png) no-repeat 50% 50% fixed; 
+    background-attachment: fixed ;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+}
+/* container css */
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 961px; /* 몇으로 해야할까 1080-961 */
+    z-index: 1;
 }
 
-#Logo{
+.contents {
     position: absolute;
-    width: 8%;
-    z-index: 0;
-    top: 5%;
-    margin-left:12%;
+    margin-top: 15px; /* nav와 회원가입 글자사이 간격 */
+    width: 509px; /* 맞나..? */
+    height: 646px; /* 맞나... */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.Sign{
-    position: absolute;
-    width: 12%;
-    right: 16.5%;
-    top: 5%;
-}
-
-.Sign-In{
-    width: 44%;
-    margin-right: 5px;
-}
-
-.Sign-Up{
-    width: 44%;
-}
-
-.Menu{
-    position: absolute;
-    top: 4%;
-    right: 22%;
-    width: 30%;
-    font-size: 14px;
-}
-
-.Menu-item{
-    float: left;
-    font-family: 'Noto Sans KR', sans-serif;
-    margin-right: 5%;
+/* 회원가입 글씨 */
+.title {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 7px; /* 회원가입 글자와 창 간격 조절 */
 }
 
 .title-p{
-    position: absolute;
-    left: 48%; 
-    top: 20%;
-    font-size: 25px;
+    text-align: center;
+    font-size: 32px;
     font-family: 'Noto Sans KR', sans-serif;
-    font-weight: bold;   
+    margin: 0;  /* p태그 이 속성 reset.css로 옮겨도 이상없으면 옮기기 */
 }
 
-.title-img{
+.bar {
     position: absolute;
-    left: 48%; 
-    top: 20%;
+    border: 1.1px solid #ffd100;
+    width: 130px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* 창 이미지 */
+
+.window-img {
+    position: absolute;
+    text-align: center;
+}
+
+.window {
+    bottom: 0;
 }
 
 .input{
     position: absolute;
-    display: inline-block;
-    width: 20%;
-    left: 46%;
-    top: 35%; 
-   
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 397px;
+    height: 405px;
+    text-align: center;
 }
 
-.input-id{
-    width: 60%;
-    height: 22px; 
-    margin-bottom: 8%;
-    border-radius: 4px;
-    border:1px solid orange;
-    background-color: #fff6f2;
-    padding: 4px;
-    font-family: 'Noto Sans KR', sans-serif;
-    color: #ac8b5f;
+.input-box {
+    position: relative;
+    width: 350px;
+    height: 40px; 
+    margin-bottom: 25px;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
-.input-pw{
-    width: 60%;
-    height: 22px; 
-    margin-bottom: 8%;
-    border-radius: 4px;
-    border:1px solid orange;
-    background-color: #fff6f2;
-    padding: 4px;
-    font-family: 'Noto Sans KR', sans-serif;
-    color: #ac8b5f;
+
+.input-img {
+    position: absolute;
+    text-align: left;
 }
-.input-pwo{
-    width: 60%;
-    height: 22px; 
-    margin-bottom: 8%;
-    border-radius: 4px;
-    border:1px solid orange;
-    background-color: #fff6f2;
-    padding: 4px;
+
+.input-info {
+    width: 291.5px;
+    height: 40px; 
+    margin-left: 45px;
+    border-radius: 0 10px 10px 0;
+    border:1px solid #fac60e;
+    padding: 1.5px;
+    padding-left: 15px; 
     font-family: 'Noto Sans KR', sans-serif;
-    color: #ac8b5f;
 }
-.input-name{
-    width: 60%;
-    height: 22px; 
-    margin-bottom: 8%;
-    border-radius: 4px;
-    border:1px solid orange;
-    background-color: #fff6f2;
-    padding: 4px;
-    font-family: 'Noto Sans KR', sans-serif;
-    color: #ac8b5f;
+
+/* 생년월일만 속성 추가 */
+.input-info:last-child {
+    color: rgb(227, 162, 93);
+    font-size: 13px;
 }
-.input-date{
-    width: 60%;
-    height: 22px; 
-    margin-bottom: 8%;
-    border-radius: 4px;
-    border:1px solid orange;
-    background-color: #fff6f2;
-    padding: 4px;
+
+/* placeholder 색 변경 */
+.input-info::placeholder { color: rgb(227, 162, 93); font-size: 13px; }
+
+.input input#sub {
+    width:160px;
+    height:60px;
+    border: 0;
+    border-radius: 50px;
+    background-color: #fac60e;
+    color:white;
+    font-size: 16px;
     font-family: 'Noto Sans KR', sans-serif;
-    color: #ac8b5f;
 }

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="./CSS/SignIn.css">
-    <link rel="stylesheet" type="text/css" href="./CSS/reset.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/SignIn.css?ver=1.3">
+    <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.2">
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
     <link rel="icon" href="IMG/Icon/favicon___.png">
 
@@ -18,49 +18,74 @@
     <title>SignIn</title>
 </head>
 <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
+    <!-- 배경 이미지 -->
+    <!-- <div id="BG">
+        <img src="IMG/SignIn/bg-signin.png" id="BG-img">
+    </div> -->
+
     <div id="wrapper">
-        <ul class="Menu">
-            <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
-            <li class="Menu-item"><a href = "#">일정확인</a></li>
-            <li class="Menu-item"><a href = "#">미림팀</a></li>
-            <li class="Menu-item"><a href = "#">대나무숲</a></li>
-            <li class="Menu-item"><a href = "#">급식확인</a></li>
-        </ul>
+        <!-- 네비게이션 바 -->
+        <div id="nav">   
+            <a href="index.php" id="Logo">
+                <img id="Logo-img" src="IMG/Main/logo.png">
+            </a>
 
-        <div class="Sign">
-            <a href="SignIn.html"><img class="Sign-In" src="IMG/Main/Login.png"></a>
-            <a href="SignUp.html"><img class="Sign-Up" src="IMG/Main/SignUp.png"></a>
-        </div>
+            <ul class="Menu">
+                <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
+                <li class="Menu-item"><a href = "#">일정확인</a></li>
+                <li class="Menu-item"><a href = "#">미림팀</a></li>
+                <li class="Menu-item"><a href = "#">대나무숲</a></li>
+                <li class="Menu-item"><a href = "#">급식확인</a></li>
+                <li class="Menu-item"><a href="https://bit.ly/mirimmusic">음악신청</a></li>
+            </ul>
 
-        <img id="IMG1" src="IMG/SignIn/Picture2.png">
-        <img id="IMG2" src="IMG/SignIn/Picture1.png">
-
-        <form method="POST" action="SingIn.php">
-            <div class="Login">
-                <p class="Login-id">아이디</p>
-                <input type="text" class="Login-id-input" name="id">
-
-                <p class="Login-pw">비밀번호</p>
-                <input type="password" class="Login-pw-input" name="pw">
-                <input type="submit" value="확인">
-                <!-- <li>아이디찾기</li>
-                <li>비밀번호 찾기</li> -->
+            <div class="Sign"> <!-- 로그인, 회원가입 버튼-->
+                <a href="SignIn.html" class="Sign-In"><img class="Sign-In-img" src="IMG/Main/Login.png"></a>
+                <a href="SignUp.html" class=Sign-Up><img class="Sign-Up-img" src="IMG/Main/SignUp.png"></a>
             </div>
-        </form>
-
-        <!--링크로 버튼 하니까 php파일로 정보(id, pw)가 전송이 안 되는 것 같아 그래서 임시로 버튼 추가했음-->
-        <p id="Login">로그인</p>
-        <img id="IMG3" src="IMG/SignIn/Picture3.png">
-
-        
-        <div class="Sign-Button">
-            <!--그래서 이부분 링크 말구 폼 태그 안에 submit으로 해서 바꿔야 할 듯 해여-->
-            <a href="SignIn.php"><img class="Sign-In-Button" src="IMG/SignIn/Login.png"></a> 
-            <a href="SignUp.html"><img class="Sign-Up-Button" src="IMG/SignIn/Signup.png"></a>
         </div>
 
-        <a href="index.php"><img id="Logo" src="IMG/Main/logo.png"></a>
-        <img src="IMG/SignIn/BG.png" id="BG">
+        <div class="container">
+            <!-- 왼쪽 컨텐츠 -->
+            <div class="contents-l">
+                <img id="IMG1" src="IMG/SignIn/pic.png">
+            </div>
+
+            <!-- 오른쪽 컨텐츠 -->
+            <div class="contents-r">
+                <div class="title">
+                    <p class="title-p">로그인</p>
+                    <div class="bar"></div>
+                </div>
+
+                <div class="window">
+                    <img src="IMG/SignIn/window.png" id="window-img">
+
+                    <form method="POST" action="SingIn.php">
+                        <div class="input">
+                            <div class="Login">
+                                <input type="text" class="Login-input" placeholder="아이디" name="id" required>
+                                <input type="password" class="Login-input" placeholder="비밀번호" name="pw" required>
+                            </div>
+            
+                            <div>
+                                <input type="submit" value="로그인" id="sub" class="Sign-Button" />
+                                <a href="SignUp.html"><input type="button" value="회원가입" class="Sign-Button"/></a>
+                            </div>
+
+                            <div class="find">
+                                <ul>
+                                    <li><a href="#">아이디 찾기</a></li>
+                                    <li class="Find-mid">|</li>
+                                    <li><a href="#">비밀번호 찾기</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>                
+            </div>
+        </div>
+
     </div>
 </body>
 </html>

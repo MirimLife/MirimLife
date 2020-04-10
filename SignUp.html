@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./CSS/SignUp.css">
-    <link rel="stylesheet" type="text/css" href="./CSS/reset.css">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./CSS/SignUp.css?ver=1.2">
+    <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.2">
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
     <link rel="icon" href="IMG/Icon/favicon___.png">
 
@@ -17,36 +18,71 @@
     <title>SignUp</title>
 </head>
 <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
-    <div id="wrapper">
-        <ul class="Menu">
-            <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
-            <li class="Menu-item"><a href = "#">일정확인</a></li>
-            <li class="Menu-item"><a href = "#">미림팀</a></li>
-            <li class="Menu-item"><a href = "#">대나무숲</a></li>
-            <li class="Menu-item"><a href = "#">급식확인</a></li>
-        </ul>
+    <!-- <div id="BG">
+        <img src="IMG/SignUp/BG2.png" id="BG-img">
+    </div> -->
 
-        <div class="Sign">
-            <a href="SignIn.html"><img class="Sign-In" src="IMG/Main/Login.png"></a>
-            <a href="SignUp.html"><img class="Sign-Up" src="IMG/Main/SignUp.png"></a>
+    <div id="wrapper">
+        <div id="nav">   <!-- 네비게이션 바 -->
+            <a href="index.php" id="Logo">
+                <img id="Logo-img" src="IMG/Main/logo.png">
+            </a>
+
+            <ul class="Menu">
+                <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
+                <li class="Menu-item"><a href = "#">일정확인</a></li>
+                <li class="Menu-item"><a href = "#">미림팀</a></li>
+                <li class="Menu-item"><a href = "#">대나무숲</a></li>
+                <li class="Menu-item"><a href = "#">급식확인</a></li>
+                <li class="Menu-item"><a href="https://bit.ly/mirimmusic">음악신청</a></li>
+            </ul>
+
+            <div class="Sign"> <!-- 로그인, 회원가입 버튼-->
+                <a href="SignIn.html" class="Sign-In"><img class="Sign-In-img" src="IMG/Main/Login.png"></a>
+                <a href="SignUp.html" class=Sign-Up><img class="Sign-Up-img" src="IMG/Main/SignUp.png"></a>
+            </div>
         </div>
 
-        <form method="POST" action="SignUp.php"> 
-            <div class="input">
-                <input type="text" class="input-id" placeholder=" 아이디" name="id">
-                <input type="password" class="input-pw" placeholder=" 비밀번호" name="pw">
-                <input type="password" class="input-pwo" placeholder=" 비밀번호 확인" name="pw_again">
-                <input type="text" class="input-name" placeholder=" 이름" name="name">
-                <input type="date" class="input-date" placeholder=" 생일" name="birth">
-                <input type = "submit" value = "확인"> 
+        <div class="container">
+            <div class="contents">
+
+                <div class="title">
+                    <p class="title-p">회원가입</p>
+                    <div class="bar"></div>
+                </div>
+
+                <div class="window">
+                    <img src="IMG/SignUp/window.png" id="window-img">
+
+                    <form method="POST" action="SignUp.php"> 
+                        <div class="input">
+                            <div class="input-box">
+                                <img src="IMG/SignUp/ID.png" class="input-img">
+                                <input type="text" class="input-info" placeholder=" 아이디" name="id" required>
+                            </div>
+                            <div class="input-box">
+                                <img src="IMG/SignUp/pw.png" class="input-img">
+                                <input type="password" class="input-info" placeholder=" 비밀번호" name="pw" required>
+                            </div>
+                            <div class="input-box">
+                                <img src="IMG/SignUp/pwc.png" class="input-img">
+                                <input type="password" class="input-info" placeholder=" 비밀번호 확인" name="pw_again" required>
+                            </div>
+                            <div class="input-box">
+                                <img src="IMG/SignUp/name.png" class="input-img">
+                                <input type="text" class="input-info" placeholder=" 이름" name="name" required>
+                            </div>
+                            <div class="input-box">
+                                <img src="IMG/SignUp/birth.png" class="input-img">
+                                <input type="date" class="input-info" name="birth" required>
+                            </div>
+                            <br>
+                            <input type = "submit" value = "가입하기" id="sub"> 
+                        </div>
+                    </form>
+                </div>    
             </div>
-        </form>
-
-            <img class="title-img" src="IMG/SignUp/BG1.png">
-            <p class="title-p">회원가입</p>
-
-        <a href="index.php"><img id="Logo" src="IMG/Main/logo.png"></a>
-        <img src="IMG/SignUp/BG.png" id="BG">
+        </div>
     </div>
 </body>
 </html>

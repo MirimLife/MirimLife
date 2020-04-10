@@ -19,5 +19,5 @@
         }
     }
     echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
-    echo "<script type='text/javascript' src='script.js' charset='utf-8'> alert('아이디 혹은 비밀번호가 일치하지 않습니다.'); location.replace('SignIn.html'); </script>";
+    echo "<script> alert('아이디 혹은 비밀번호가 일치하지 않습니다.'); location.replace('SignIn.html'); </script>";
 ?>
