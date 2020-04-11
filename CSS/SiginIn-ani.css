@@ -1,0 +1,195 @@
+/* 말풍선 바운스 */
+.slide-tl {
+	-webkit-animation: slide-tl 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-tl 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-tl {
+    0% {
+        -webkit-transform: translateY(0) translateX(0);
+                transform: translateY(0) translateX(0);
+    }
+
+    50%{
+        -webkit-transform: translateY(-40px) translateX(-40px);
+                transform: translateY(-40px) translateX(-40px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0) translateX(0);
+                transform: translateY(0) translateX(0);
+    }
+}
+@keyframes slide-tl {
+0% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+}
+
+50%{
+    -webkit-transform: translateY(-40px) translateX(-40px);
+            transform: translateY(-40px) translateX(-40px);
+}
+
+100% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+}
+}
+
+/* 물컵 바운스  */
+.bounce-out-top {
+	-webkit-animation: bounce-out-top 1.5s both;
+	        animation: bounce-out-top 1.5s both;
+}
+
+@-webkit-keyframes bounce-out-top {
+0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+}
+5% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+}
+15% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+}
+/* 25% {
+    -webkit-transform: translateY(-38px);
+            transform: translateY(-38px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+} */
+/* 38% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+} */
+52% {
+    -webkit-transform: translateY(-75px);
+            transform: translateY(-75px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+}
+100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+}
+}
+@keyframes bounce-out-top {
+0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+}
+5% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+}
+15% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+}
+/* 25% {
+    -webkit-transform: translateY(-38px);
+            transform: translateY(-38px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+} */
+/* 38% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+} */
+52% {
+    -webkit-transform: translateY(-75px);
+            transform: translateY(-75px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+}
+100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+}
+}
+
+/* 왼쪽 이미지 비스듬히 나타나는 애니메이션 */
+.tilt-in-top-1 {
+    -webkit-animation: tilt-in-top-1 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: tilt-in-top-1 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes tilt-in-top-1 {
+0% {
+-webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+opacity: 0;
+}
+100% {
+-webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
+opacity: 1;
+}
+}
+@keyframes tilt-in-top-1 {
+0% {
+-webkit-transform: rotateY(30deg) translateY(-70px) skewY(-30deg);
+    transform: rotateY(30deg) translateY(-70px) skewY(-30deg);
+opacity: 0;
+}
+100% {
+-webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
+opacity: 1;
+}
+}
+
+/* 오른쪽 이미지 비스듬히 나타나는 애니메이션 */
+.tilt-in-top-2 {
+    -webkit-animation: tilt-in-top-2 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: tilt-in-top-2 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes tilt-in-top-2 {
+0% {
+-webkit-transform: rotateY(-30deg) translateY(-70px) skewY(30deg);
+    transform: rotateY(-30deg) translateY(-70px) skewY(30deg);
+opacity: 0;
+}
+100% {
+-webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
+opacity: 1;
+}
+}
+@keyframes tilt-in-top-2 {
+0% {
+-webkit-transform: rotateY(-30deg) translateY(-50px) skewY(30deg);
+    transform: rotateY(-30deg) translateY(-50px) skewY(30deg);
+opacity: 0;
+}
+100% {
+-webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
+opacity: 1;
+}
+}
