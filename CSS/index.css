@@ -1,13 +1,6 @@
 @import "./index-ani.css";
 
-html {
-    background: url(../IMG/Main/BG.png) no-repeat 50% 50%; 
-    background-attachment: fixed ;
-    -webkit-background-size: cover; 
-    -moz-background-size: cover; 
-    -o-background-size: cover; 
-    background-size: cover;
-}
+
 #username{
     font-size: 14px;
     font-family: 'Noto Sans KR', sans-serif;
@@ -21,15 +14,30 @@ html {
 
 .container {
     position: relative;
-    width: 100%;
+    width: 150%;
+    height: 600px;
     z-index: 1;
 }
 
+.content-Left, .content-Right{
+    position: absolute;
+    display: inline-block;
+} 
+
 /* 왼쪽 content */
 .content-Left{
-    position: absolute;
+    width: 600px;
+    height: 300px;
+
     margin-top: 80px;
-    margin-left: 70px;
+    margin-left: 100px;
+}
+
+.content-Right{
+    width: 820px;
+    height: 550px;
+    
+    right: 420px;
 }
 
 .cont1{
@@ -75,17 +83,12 @@ html {
     border-radius: 50%;
 }
 
-
-.content-Right{
-    position: absolute;
-    margin-left: 550px;
-}
-
 .left-content{
     position: relative;
     display: inline-block;
     width: 360px;
     height: 500px;
+    margin-right: 0;
     z-index: 1;
 }
 
@@ -112,10 +115,11 @@ html {
 /* 오른쪽 content */
 .right-content{
     position: relative;
-    display: inline;
-    left: -58px;
-    width: 450px;
-    height: 817px;
+    display: inline-block;
+    width: 440px;
+    height: 550px;
+
+    left: -50px;
     z-index: 0;
 }
 
