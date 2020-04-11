@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- css -->
-    <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.2">
-    <link rel="stylesheet" type="text/css" href="./CSS/index.css?ver=1.5">
+    <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.3">
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css?ver=1.6">
     <link rel="stylesheet" type="text/css" href="./CSS/index-ani.css?ver=1.1">
 
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
@@ -66,7 +66,7 @@
                         echo '<a href="SignIn.html"><img class="Sign-In" src="IMG/Main/Login.png"></a>';
                         echo '<a href="SignUp.html"><img class="Sign-Up" src="IMG/Main/SignUp.png"></a>';
                     }
-                ?>
+                ?> 
             </div>
         </div>
         <!-- nav 태그 닫기 -->
@@ -83,7 +83,7 @@
                     <p>미림을 다녀본 선배가 미림을 다니며 필요한 것을 여기에 담았다!</p>
                     <p>함께 미림의 모든 것을 알아보자!</p>
                 </div>
-                <img id="seeMore" src="img/Main/SeeMore.png">
+                <a href="https://app.closer.ai/webchat/B159mk"><img id="seeMore" src="img/Main/SeeMore.png"></a>
             </div>
 
             <div class="content-Right">
@@ -103,5 +103,7 @@
 
         </div>
     </div>
+
+    <script id="embeddedChatbot" data-botId="B159mk" src="https://www.closer.ai/js/webchat.min.js"> </script>
 </body>
 </html>
