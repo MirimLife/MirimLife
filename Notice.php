@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.3">
-    <link rel="stylesheet" type="text/css" href="./CSS/Notice.css?ver=1.1">
+    <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.2">
+    <link rel="stylesheet" type="text/css" href="./CSS/Notice.css?ver=1.5">
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
     <link rel="icon" href="IMG/Icon/favicon___.png">
 
@@ -83,53 +83,43 @@
                     <td>등록일</td>
                 </tr>
                 <tr>
-                    <td style = "width:100px;">1</td>
-                    <td style = "width:720px;">가나다라</td>
+                    <td style = "width:170px;">1</td>
+                    <td style = "width:550px;"><a href="#">가나다라</a></td>
                     <td>2020.02.24</td>
                 </tr>
                 <tr>
-                    <td style = "width:100px;">1</td>
-                    <td style = "width:720px;">가나다라</td>
+                    <td style = "width:170px;">1</td>
+                    <td style = "width:550px;"><a href="#">가나다라</a></td>
                     <td>2020.02.24</td>
                 </tr>
                 <tr>
-                    <td style = "width:100px;">1</td>
-                    <td style = "width:720px;">가나다라</td>
+                    <td style = "width:170px;">1</td>
+                    <td style = "width:550px;"><a href="#">가나다라</a></td>
                     <td>2020.02.24</td>
                 </tr>
                 <tr>
-                    <td style = "width:100px;">1</td>
-                    <td style = "width:720px;">가나다라</td>
+                    <td style = "width:170px;">1</td>
+                    <td style = "width:550px;"><a href="#">가나다라</a></td>
                     <td>2020.02.24</td>
                 </tr>
                 <tr>
-                    <td style = "width:100px;">1</td>
-                    <td style = "width:770px;">가나다라</td>
+                    <td style = "width:170px;">1</td>
+                    <td style = "width:550px;"><a href="#">가나다라</a></td>
                     <td>2020.02.24</td>
                 </tr>
                 <tr>
-                    <td style = "width:100px;">1</td>
-                    <td style = "width:720px;">가나다라</td>
+                    <td style = "width:170px;">1</td>
+                    <td style = "width:550px;"><a href="#">가나다라</a></td>
                     <td>2020.02.24</td>
                 </tr>
                 <tr>
-                    <td style = "width:100px;">1</td>
-                    <td style = "width:720px;">가나다라</td>
+                    <td style = "width:170px;">1</td>
+                    <td style = "width:550px;"><a href="#">가나다라</a></td>
                     <td>2020.02.24</td>
                 </tr>
                 <tr>
-                    <td style = "width:100px;">1</td>
-                    <td style = "width:720px;">가나다라</td>
-                    <td>2020.02.24</td>
-                </tr>
-                <tr>
-                    <td style = "width:100px;">1</td>
-                    <td style = "width:720px;">가나다라</td>
-                    <td>2020.02.24</td>
-                </tr>
-                <tr>
-                    <td style = "width:100px;">1</td>
-                    <td style = "width:720px;">가나다라</td>
+                    <td style = "width:170px;">1</td>
+                    <td style = "width:550px;"><a href="#">가나다라</a></td>
                     <td>2020.02.24</td>
                 </tr>
             </table>
