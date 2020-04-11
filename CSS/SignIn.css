@@ -15,23 +15,78 @@ html {
 
 .contents-l, .contents-r {
     position: absolute;
-    width: 600px;
+    height: 961px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+/* 왼쪽 컨텐츠 */
+.contents-l {
+    padding-left: 30px;
+    width: 640px;
+}
+
+.contents-l-l, .contents-l-r {
+    position: absolute;
     height: 961px;
     display: inline-block;
 }
 
-#IMG1{
+.contents-l-l {
+    width: 290px
+}
+
+.contents-l-r {
+    right: 0;
+    width: 350px
+}
+
+/* 왼쪽 컨텐츠의 왼쪽, 오른쪽 이미지 */
+.chat, .deco1, .person1, .deco2, .person2 {
     position: absolute;
-    width: 600px;
+}
+
+.chat, .deco1, .deco2 {
+    z-index: 1;
+}
+
+/* 왼쪽 컨텐츠의 왼쪽 이미지 */
+.chat {
+    width: 114px;
+}
+
+.deco1 {
+    width: 87px;
+    margin-top: 129.5px;
+}
+
+.person1 {
+    width: 253.5px;
+    margin-left: 38px;
+    margin-top: 20px;
+}
+
+/* 왼쪽 컨텐츠의 오른족 이미지 */
+.deco2 {
+    width: 130px;
+    margin-left: 33px;
+    margin-top: 95px;
+}
+
+.person2 {
+    margin-top: 96px;
+    width: 355px;
+    box-sizing: border-box;
+    left: -15px;
 }
 
 /* 오른쪽 컨텐츠 */
-
 .contents-r {
+    width: 560px;
     right: 0;
-    padding-left: 60px;
+    padding-left: 20px;
     padding-top: 65px;
-    box-sizing: border-box; /* padding을 포함한 width 사용 */
+    box-sizing: border-box;
 }
 
 /* 로그인 글씨 */
