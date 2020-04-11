@@ -67,19 +67,11 @@
         <div class="window">
             <img src="IMG/Notice/Write/window.png" id="window-img">
 
-<<<<<<< HEAD
             <form method="POST" action="Write_php.php" enctype = "multipart/form-data"> 
                 <div class="input">
                     <div class="input-box">
                         <h4 class="h4-title">제목</h4>
                         <input type="text" class="input-info" name="title" required>
-=======
-            <form method="POST" action=""> 
-                <div class="input">
-                    <div class="input-box">
-                        <h4 class="h4-title">제목</h4>
-                        <input type="text" class="input-info" name="title">
->>>>>>> eea66d03cdad92a79321aec487e0ae9de1ecfbda
                     </div>
                     <div class="input-box">
                         <h4 class="h4-file">파일첨부</h4>
@@ -93,11 +85,7 @@
                     </div>
                     <div class="input-box">
                         <h4 class="h4-text">내용</h4>
-<<<<<<< HEAD
                         <textarea name = contents required></textarea>
-=======
-                        <textarea></textarea>
->>>>>>> eea66d03cdad92a79321aec487e0ae9de1ecfbda
                     </div>
                     <br>
                     <div class="button">

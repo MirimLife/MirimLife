@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- css -->
-    <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.1">
+    <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.2">
     <link rel="stylesheet" type="text/css" href="./CSS/index.css?ver=1.5">
     <link rel="stylesheet" type="text/css" href="./CSS/index-ani.css?ver=1.1">
 
