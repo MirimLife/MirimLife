@@ -11,12 +11,11 @@
 #LogOut{
     font-size: 14px;
     font-family: 'Noto Sans KR', sans-serif;
-    padding-top: 15px;
 }
 
 .container {
     position: relative;
-    width: 150%;
+    width: 120%;
     height: 600px;
     z-index: 1;
 }
@@ -39,7 +38,7 @@
     width: 820px;
     height: 550px;
     
-    right: 420px;
+    right: 50px;
 }
 
 .cont1{

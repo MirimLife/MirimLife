@@ -1,0 +1,139 @@
+Button{
+    background-color: rgba( 255, 255, 255, 0 );
+    border: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    z-index: 1;
+}
+
+.Cafeterial-up , .Cafeterial-mid, .Cafeterial-bottom{
+    position: absolute;
+}
+
+/* 제목부분입니당 */
+.Cafeterial-up{
+    width: 500px;
+    height:100px;
+    text-align: center;
+    margin-right: 350px;
+    margin-left: 350px;
+}
+
+.Cafeterial-up #Cafeterial-word{
+    font-size: 30px; 
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+}
+
+.Cafeterial-up #Cafeterial-plus{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:15px;
+    font-weight: lighter;
+    color:#858585;
+    margin-top: 20px;
+}
+
+#Cafeterial-line {
+    border: #ffe154 1.3px solid;
+    margin-top: -55px;
+}
+
+/* 날짜 나오는 부분입니당 */
+.Cafeterial-mid{
+    width: 500px;
+    height:120px;
+    text-align: center;
+    bottom: 64%;
+    margin-right: 350px;
+    margin-left: 350px;
+}
+
+.Left-img{     
+    width: 25px;
+    display: inline-block;
+}
+
+.Right-img{
+    width: 25px;
+    display: inline-block;
+}
+
+.Calendar-img{
+    width: 24px;
+    display: inline-block;
+    padding-top: 30px;
+    margin-right: 40px;
+}
+
+#Cafeterial-ymd{
+    display: inline-block;
+    font-size: 26px; 
+    font-family: 'Noto Sans KR', sans-serif;
+
+    margin-left: 40px;
+}
+
+/* 아래쪽입니당 */
+.Cafeterial-bottom{
+    height: 400px;
+    text-align: center;
+    bottom: 0;
+    z-index: 0;
+    transform: translateX(12%);
+}
+
+.window-1, .window-2, .window-3{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+#Breakfast, #Lunch, #Dinner{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.Breakfast, .Lunch, .Dinner{
+    position: absolute;
+    display: inline-block;
+    z-index : 1;
+
+    left: 50%;
+    transform: translateX(-80%);
+    font-size: 20px; 
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+.Breakfest-word, .Lunch-word, .Dinner-word{
+    position: absolute;
+    display: inline-block;
+    width: 90%;
+
+    font-size: 16px; 
+    font-family: 'Noto Sans KR', sans-serif;
+    color: black;
+
+    top: 30%;
+    left: 50%;
+    transform: translateX(-52%);
+    
+    z-index : 1;
+}
+
+
+
+
+
+

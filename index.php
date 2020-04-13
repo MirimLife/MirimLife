@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- css -->
-    <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.3">
-    <link rel="stylesheet" type="text/css" href="./CSS/index.css?ver=1.6">
+    <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.4">
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css?ver=1.7">
     <link rel="stylesheet" type="text/css" href="./CSS/index-ani.css?ver=1.1">
 
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
@@ -38,7 +38,7 @@
                 <li class="Menu-item"><a href = "#">일정확인</a></li>
                 <li class="Menu-item"><a href = "#">미림팀</a></li>
                 <li class="Menu-item"><a href = "#">대나무숲</a></li>
-                <li class="Menu-item"><a href = "#">급식확인</a></li>
+                <li class="Menu-item"><a href = "cafeteria.php">급식확인</a></li>
                 <li class="Menu-item"><a href="https://bit.ly/mirimmusic">음악신청</a></li>
             </ul>
 
