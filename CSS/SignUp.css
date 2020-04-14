@@ -59,21 +59,25 @@ html {
 
 .input{
     position: absolute;
-    top: 25%;
+    top: 21%;
     left: 50%;
     transform: translate(-50%, 0);
     width: 397px;
-    height: 405px;
+    height: 470px;
     text-align: center;
 }
 
 .input-box {
     position: relative;
-    width: 350px;
-    height: 40px; 
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     left: 50%;
     transform: translate(-50%, 0);
+}
+
+.half-box {
+    position: relative;
+    margin-bottom: 10px;
+    display: inline-block;
 }
 
 .input-img {
@@ -81,25 +85,57 @@ html {
     text-align: left;
 }
 
-.input-info {
+.input-info, .input-id, .input-pwcheck {
     width: 291.5px;
-    height: 40px; 
-    margin-left: 45px;
+    height: 47px; 
+    margin-left: 47px;
     border-radius: 0 10px 10px 0;
-    border:1px solid #fac60e;
+    border:1px solid #3648ec;
     padding: 1.5px;
     padding-left: 15px; 
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+/* 더 간단히 줄일 수 있으면 그렇게.. */
+.input-half, .input-id {
+    height: 47px; 
+    margin-left: 47px;
+    border-radius: 0 10px 10px 0;
+    border:1px solid #3648ec;
+    padding: 1.5px;
+    padding-left: 15px; 
+    font-family: 'Noto Sans KR', sans-serif;
+    display: inline-block;    
+}
+
+.input-half {
+    width: 110px;
+}
+
+.input-id {
+    width: 127px;
+}
+
+/* e-mirim 박스 */
+.box {
+    margin-left: 0; 
+    border-radius: 10px 10px 10px 10px;
+    height: 47px; 
+    border:1px solid #3648ec;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    width: 137.5px;
+    font-size: 14px;
+}
+
 /* 생년월일만 속성 추가 */
-.input-info:last-child {
-    color: rgb(227, 162, 93);
+.input-info:nth-child(2) {
+    color: #949191;
     font-size: 13px;
 }
 
 /* placeholder 색 변경 */
-.input-info::placeholder { color: rgb(227, 162, 93); font-size: 13px; }
+.input-info::placeholder, .input-id::placeholder, .input-pwcheck::placeholder, .input-half::placeholder { color: #a1a1a1; font-size: 13px; }
 
 .input input#sub {
     width:160px;
@@ -110,4 +146,5 @@ html {
     color:white;
     font-size: 16px;
     font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 25px;
 }

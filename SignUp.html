@@ -56,27 +56,45 @@
 
                     <form method="POST" action="SignUp.php"> 
                         <div class="input">
+                            <!-- 이름 -->
                             <div class="input-box">
-                                <img src="IMG/SignUp/ID.png" class="input-img">
-                                <input type="text" class="input-info" placeholder=" 아이디" name="id" required>
-                            </div>
-                            <div class="input-box">
-                                <img src="IMG/SignUp/pw.png" class="input-img">
-                                <input type="password" class="input-info" placeholder=" 비밀번호" name="pw" required>
-                            </div>
-                            <div class="input-box">
-                                <img src="IMG/SignUp/pwc.png" class="input-img">
-                                <input type="password" class="input-info" placeholder=" 비밀번호 확인" name="pw_again" required>
-                            </div>
-                            <div class="input-box">
-                                <img src="IMG/SignUp/name.png" class="input-img">
+                                <img src="IMG/SignUp/icon/name.png" class="input-img">
                                 <input type="text" class="input-info" placeholder=" 이름" name="name" required>
                             </div>
+                            <!-- 생년월일 -->
                             <div class="input-box">
-                                <img src="IMG/SignUp/birth.png" class="input-img">
+                                <img src="IMG/SignUp/icon/birth.png" class="input-img">
                                 <input type="date" class="input-info" name="birth" required>
                             </div>
-                            <br>
+                            <!-- 학년 -->
+                            <div class="half-box">
+                                <img src="IMG/SignUp/icon/grade.png" class="input-img">
+                                <input type="text" class="input-half" placeholder=" 학년" name="grade" required>
+                            </div>
+                            <!-- 반 -->
+                            <div class="half-box">
+                                <img src="IMG/SignUp/icon/grade.png" class="input-img">
+                                <input type="text" class="input-half" placeholder=" 반" name="class" required>
+                            </div>
+                            <!-- 아이디 -->
+                            <div class="half-box">
+                                <img src="IMG/SignUp/icon/id.png" class="input-img">
+                                <input type="text" class="input-id" placeholder=" 아이디" name="id" required>
+                            </div>
+                            <div class="half-box">
+                                @
+                                <input type="text" class="box" placeholder=" e-mirim.hs.kr" name="class" disabled>
+                            </div>
+                            <!-- 비밀번호 -->
+                            <div class="input-box">
+                                <img src="IMG/SignUp/icon/pw.png" class="input-img">
+                                <input type="password" class="input-info" placeholder=" 비밀번호" name="pw" required>
+                            </div>
+                            <!-- 비밀번호 확인-->
+                            <div class="input-box">
+                                <img src="IMG/SignUp/icon/pwcheck.png" class="input-img">
+                                <input type="password" class="input-pwcheck" placeholder=" 비밀번호 확인" name="pwcheck" required>
+                            </div>
                             <input type = "submit" value = "가입하기" id="sub"> 
                         </div>
                     </form>
