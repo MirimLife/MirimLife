@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.2">
-    <link rel="stylesheet" type="text/css" href="./CSS/Notice.css?ver=1.5">
+    <link rel="stylesheet" type="text/css" href="./CSS/Notice.css?ver=1.6">
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
     <link rel="icon" href="IMG/Icon/favicon___.png">
 
@@ -70,7 +70,7 @@
                 <option value="" selected>&nbsp;&nbsp;제목</option>
                 <option value="">&nbsp;&nbsp;등록일</option>
             </select>
-            <input type="text" name="id" value="" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;검색어를 입력하세요">
+            <input type="text" name="id" value="" placeholder="검색어를 입력하세요">
             <div class="Search-btn"><button type="submit">검색하기</button></div>
             <?php
                 session_start();
@@ -92,42 +92,47 @@
                 </tr>
                 <tr>
                     <td style = "width:170px;">1</td>
-                    <td style = "width:550px;"><a href="#">가나다라</a></td>
+                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
                     <td>2020.02.24</td>
                 </tr>
                 <tr>
                     <td style = "width:170px;">1</td>
-                    <td style = "width:550px;"><a href="#">가나다라</a></td>
+                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
                     <td>2020.02.24</td>
                 </tr>
                 <tr>
                     <td style = "width:170px;">1</td>
-                    <td style = "width:550px;"><a href="#">가나다라</a></td>
+                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
                     <td>2020.02.24</td>
                 </tr>
                 <tr>
                     <td style = "width:170px;">1</td>
-                    <td style = "width:550px;"><a href="#">가나다라</a></td>
+                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
                     <td>2020.02.24</td>
                 </tr>
                 <tr>
                     <td style = "width:170px;">1</td>
-                    <td style = "width:550px;"><a href="#">가나다라</a></td>
+                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
                     <td>2020.02.24</td>
                 </tr>
                 <tr>
                     <td style = "width:170px;">1</td>
-                    <td style = "width:550px;"><a href="#">가나다라</a></td>
+                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
                     <td>2020.02.24</td>
                 </tr>
                 <tr>
                     <td style = "width:170px;">1</td>
-                    <td style = "width:550px;"><a href="#">가나다라</a></td>
+                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
                     <td>2020.02.24</td>
                 </tr>
                 <tr>
                     <td style = "width:170px;">1</td>
-                    <td style = "width:550px;"><a href="#">가나다라</a></td>
+                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
+                    <td>2020.02.24</td>
+                </tr>
+                <tr>
+                    <td style = "width:170px;">1</td>
+                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
                     <td>2020.02.24</td>
                 </tr>
             </table>
