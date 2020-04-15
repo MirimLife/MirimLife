@@ -88,19 +88,32 @@
                             <!-- 비밀번호 -->
                             <div class="input-box">
                                 <img src="IMG/SignUp/icon/pw.png" class="input-img">
-                                <input type="password" class="input-info" placeholder=" 비밀번호" name="pw" required>
+                                <input type="password" class="input-pwcheck" placeholder=" 비밀번호" name="pw" required>
                             </div>
                             <!-- 비밀번호 확인-->
                             <div class="input-box">
                                 <img src="IMG/SignUp/icon/pwcheck.png" class="input-img">
                                 <input type="password" class="input-pwcheck" placeholder=" 비밀번호 확인" name="pwcheck" required>
                             </div>
-                            <input type = "submit" value = "가입하기" id="sub"> 
+                            <input type = "submit" value = "가입하기" id="sub" onclick="pwCheck()"> 
                         </div>
                     </form>
                 </div>    
             </div>
         </div>
     </div>
+    <script>
+        function pwCheck() {
+            var pw = document.getElementsByClassName('input-pwcheck')[0];
+            var pwCheck = document.getElementsByClassName('input-pwcheck')[1];
+
+            if(pw.value != pwCheck.value) {
+                //alert('비밀번호가 일치하지않습니다.');
+                pwCheck.value = '';
+                pwCheck.placeholder = '비밀번호가 일치하지않습니다.';
+            }
+
+        }
+    </script>
 </body>
 </html>
