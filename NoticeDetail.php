@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.2">
-    <link rel="stylesheet" type="text/css" href="./CSS/NoticeDetail.css?ver=1.2">
+    <link rel="stylesheet" type="text/css" href="./CSS/BoardDetail.css?ver=1.2">
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
     <link rel="icon" href="IMG/Icon/favicon___.png">
 
@@ -26,7 +26,7 @@
                 <li class="Menu-item"><a href = "#">일정확인</a></li>
                 <li class="Menu-item"><a href = "#">미림팀</a></li>
                 <li class="Menu-item"><a href = "#">대나무숲</a></li>
-                <li class="Menu-item"><a href = "#">급식확인</a></li>
+                <li class="Menu-item"><a href = "Forest.php">급식확인</a></li>
                 <li class="Menu-item"><a href="https://bit.ly/mirimmusic">음악신청</a></li>
             </ul>
 

@@ -1,0 +1,97 @@
+html {
+    background: url(../IMG/Notice/BG.png) no-repeat 50% 50% fixed; 
+    background-attachment: fixed ;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+}
+
+/* 제목 */
+.Notice-up {
+    position: relative;
+    width: 1000px;
+    height:85px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top:15px;
+}
+.Notice-up #Notice-word {
+    position: absolute;
+    display: inline-block;
+    transform: translateX(-50%);
+    font-size: 15px; 
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.Notice-up #Notice-plus {
+    position: absolute;
+    display: inline-block;
+    transform: translateX(-50%);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:30px;
+    margin-top:40px;
+    width: 1000px;
+    /* font-weight: 500; */
+}
+#Notice-line {
+    /* hr 태그는 position 넣으면 가운데 맞춤이 안됨... */
+    border: #FFE154 1.3px solid;
+    margin-top:-60px;
+    margin-bottom: 50px;
+}
+
+/* 조회수, 올린 시간 */
+.Title-info {
+    position: relative;
+    width: 1000px;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto;
+}
+.Title-info span {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.Title-info #time {
+    margin-right:10px;
+}
+.Title-info img {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateY(-10%);
+}
+
+/* 게시글 */
+.Text {
+    position: relative;
+    width: 900px;
+    margin: 0 auto;
+    margin-top:20px;
+    border-top: #FFE154 2px solid;
+    border-bottom: #FFE154 2px solid;
+}
+.Text .InnerText {
+    margin:20px 50px 20px 50px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+}
+
+/* 목록으로 가기 */
+.Back {
+    position: relative;
+    width: 150px;
+    margin: 0 auto;
+    margin-top:35px;
+    margin-bottom:50px;
+}
+.Back button {
+    padding:5px;
+    width:100%;
+    height:40px;
+    font-size: 14px;
+    background-color:#fac60e;
+    border:0;
+    border-radius: 20px;
+    color:white;
+    font-family: 'Noto Sans KR', sans-serif;
+}

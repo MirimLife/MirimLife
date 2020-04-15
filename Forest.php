@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.2">
-    <link rel="stylesheet" type="text/css" href="./CSS/Board.css?ver=1.6">
+    <link rel="stylesheet" type="text/css" href="./CSS/Board.css?ver=1.8">
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
     <link rel="icon" href="IMG/Icon/favicon___.png">
 
@@ -59,8 +59,8 @@
         </div>
 
         <div class="Notice-up">
-            <div id="Notice-word">공지사항</div>
-            <div id="Notice-plus">미림 라이프의 공지사항을 알려드립니다.</div>
+            <div id="Notice-word">대나무숲</div>
+            <div id="Notice-plus">말 못한 고민을 나눌 수 있는 공간입니다.</div>
         </div>
         <hr id="Notice-line" style="width:120px;">
 
@@ -141,6 +141,8 @@
         <div class="Notice-page">
             <a href="#"><img class="Left-img" src="IMG/Notice/Left.png"></a>
             <div class="Page-num">1</div>
+            <!-- <div class="Page-num-no-click">2</div>
+            <div class="Page-num-no-click">3</div> -->
             <a href="#"><img class="Right-img" src="IMG/Notice/Right.png"></a>
         </div>
     </div>
