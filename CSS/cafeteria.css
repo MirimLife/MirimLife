@@ -48,7 +48,7 @@ Button{
 /* 날짜 나오는 부분입니당 */
 .Cafeterial-mid{
     width: 500px;
-    height:120px;
+    height:115px;
     text-align: center;
     bottom: 64%;
     margin-right: 350px;
@@ -82,11 +82,11 @@ Button{
 
 /* 아래쪽입니당 */
 .Cafeterial-bottom{
+    width: 100%;
     height: 400px;
     text-align: center;
     bottom: 0;
     z-index: 0;
-    transform: translateX(12%);
 }
 
 .window-1, .window-2, .window-3{
@@ -97,10 +97,10 @@ Button{
 }
 
 #Breakfast, #Lunch, #Dinner{
+    width: 300px;
     position: relative;
     display: inline-block;
     text-align: center;
-    
 }
 
 .Breakfast, .Lunch, .Dinner{
@@ -108,8 +108,9 @@ Button{
     display: inline-block;
     z-index : 1;
 
+    top: 0;
     left: 50%;
-    transform: translateX(-80%);
+    transform: translateX(-50%);
     font-size: 20px; 
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 500;
@@ -125,9 +126,10 @@ Button{
     font-family: 'Noto Sans KR', sans-serif;
     color: black;
 
+    margin: 0 auto;
     top: 30%;
     left: 50%;
-    transform: translateX(-52%);
+    transform: translateX(-50%);
     
     z-index : 1;
 }

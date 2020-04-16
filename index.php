@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- css -->
-    <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.4">
+    <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.5">
     <link rel="stylesheet" type="text/css" href="./CSS/index.css?ver=1.7">
     <link rel="stylesheet" type="text/css" href="./CSS/index-ani.css?ver=1.1">
 
@@ -67,6 +67,8 @@
                         echo '<a href="SignUp.html"><img class="Sign-Up" src="IMG/Main/SignUp.png"></a>';
                     }
                 ?> 
+                <!-- <p id='username'>이예슬님&nbsp;</p>
+                <a id='LogOut'  href='logout.php'>로그아웃</a> -->
             </div>
         </div>
         <!-- nav 태그 닫기 -->
@@ -83,7 +85,6 @@
                     <p>미림을 다녀본 선배가 미림을 다니며 필요한 것을 여기에 담았다!</p>
                     <p>함께 미림의 모든 것을 알아보자!</p>
                 </div>
-                <a href="https://app.closer.ai/webchat/B159mk"><img id="seeMore" src="IMG/Main/SeeMore.png"></a>
             </div>
 
             <div class="content-Right">

@@ -78,7 +78,20 @@ input:focus {outline:none;}
     position: absolute;
     display: inline-block;
     right: 0;
-    margin-top: 2px;
+    margin-top: 5px;
+}
+
+#username{
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: inline;
+    padding-top: 15px;
+}
+
+#LogOut{
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-left: 5px;
 }
 
 .Sign-In{

@@ -1,18 +1,5 @@
 @import "./index-ani.css";
 
-
-#username{
-    font-size: 14px;
-    font-family: 'Noto Sans KR', sans-serif;
-    display: inline;
-    padding-top: 15px;
-}
-
-#LogOut{
-    font-size: 14px;
-    font-family: 'Noto Sans KR', sans-serif;
-}
-
 .container {
     position: relative;
     width: 120%;
@@ -53,12 +40,6 @@
     font-weight: bold;
     font-family: 'Nanum Gothic', sans-serif;
     color: #9c9c9c;
-}
-
-#seeMore{
-    width: 156px;
-    height: 64px;
-    margin-top: 3%;
 }
 
 #chat{
