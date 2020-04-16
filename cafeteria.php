@@ -107,6 +107,6 @@
     <!-- wrapper 닫기  -->
 
     <!-- js -->
-    <script src="./JS/cafeteria.js?ver=1.0"></script>
+    <script src="./JS/cafeteria.js?ver=1.1"></script>
 </body>
 </html>
