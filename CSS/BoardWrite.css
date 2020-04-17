@@ -83,6 +83,7 @@ html {
     margin-top: -8px;
     font-family: 'Noto Sans KR', sans-serif;
     box-shadow: 4px 1px 3px #FEF8E1, 5px 2px 10px #FEF8E1;
+    padding-left:10px;
 }
 .input .input-box .h4-file {
     position: absolute;
@@ -140,6 +141,7 @@ html {
     border: 1.5px solid #fac60e;
     font-family: 'Noto Sans KR', sans-serif;
     border-radius: 5px;
+    padding-left:10px;
 }
 .input .input-box .h4-text {
     position: absolute;
@@ -162,6 +164,7 @@ html {
     margin-left: -220px;
     margin-top: 120px;
     box-shadow: 4px 1px 3px #FEF8E1, 5px 2px 10px #FEF8E1;
+    padding: 10px;
 }
 
 /* 등록 취소 버튼들 */
