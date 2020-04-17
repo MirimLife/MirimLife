@@ -1,0 +1,137 @@
+html {
+    background: url(../IMG/Notice/BG.png) no-repeat 50% 50% fixed; 
+    /* background-attachment: fixed ; */
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+}
+
+/* 제목 */
+.Notice-up {
+    position: relative;
+    width: 500px;
+    height:100px;
+    text-align: center;
+    margin: 0 auto;
+}
+.Notice-up #Notice-word {
+    position: absolute;
+    display: inline-block;
+    transform: translateX(-50%);
+    font-size: 30px; 
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.Notice-up #Notice-plus {
+    position: absolute;
+    display: inline-block;
+    transform: translateX(-50%);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:15px;
+    margin-top:60px;
+    font-weight: lighter;
+    color:#858585;
+    width:400px;
+}
+#Notice-line {
+    /* hr 태그는 position 넣으면 가운데 맞춤이 안됨... */
+    border: #ffe154 1.3px solid;
+    margin-top:-55px;
+    margin-bottom: 60px;
+}
+
+/* 글쓰기 및 검색 */
+.Notice-down {
+    position: relative;
+    width: 700px;
+    height:60px;
+    margin: 0 auto;
+}
+.Notice-down select {
+    position: absolute;
+    /* transform: translateX(-50%); */
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:15px;
+    color: #505050;
+    border:1.9px solid #d2d2d2;
+    border-radius: 10px;
+    width:110px;
+    height:40px;
+    margin-left: 60px;
+}
+.Notice-down input {
+    position: absolute;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:15px;
+    color: #505050;
+    border:1.9px solid #d2d2d2;
+    border-radius: 10px;
+    width:350px;
+    height:35px;
+    margin-left: 174px;
+    padding-left:10px;
+}
+.Notice-down .Search-btn {
+    position: absolute;
+    margin-left: 543px;
+}
+.Notice-down .Search-btn button:active {
+    transform: scale(0.90);
+}
+.Notice-down .Search-btn button {
+    border:0;
+    color:white;
+    background: #fac60e;
+    font-size:15px;
+    width:110px;
+    height:40px;
+    border-radius: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 책 정보창 */
+.Book-list {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+    /* height: 600px; */
+}
+.Book-list ul li {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border : 0;
+    float: left;
+}
+.Book-list ul li .Book {
+    /* position: absolute; */
+    width:240px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 2px 18px 3px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow:    0px 2px 18px 3px rgba(0, 0, 0, 0.08);
+    box-shadow:         0px 2px 18px 3px rgba(0, 0, 0, 0.08);
+    margin-right: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    /* display: inline-block; */
+    font-family: 'Noto Sans KR', sans-serif;
+    /* right:0; */
+    /* 왜 저는 position absolute가 안되나요? 진심 궁금.. */
+}   
+.Book-list ul li .Book #Book-img {
+    padding-top:25px;
+    width:130px;
+}
+.Book-list ul li .Book h4 {
+    font-size: 15px;
+    margin-top:5px;
+    margin-bottom:3px;
+}
+.Book-list ul li .Book p {
+    font-size: 13px;
+    color: #CCCCCC;
+    margin-top:0px;
+}
+.Book-list ul li .Book #Rental-img {
+    padding-bottom: 25px;
+    width:100px;
+}
