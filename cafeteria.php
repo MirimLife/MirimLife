@@ -36,6 +36,7 @@
             <li class="Menu-item"><a href = "#">미림팀</a></li>
             <li class="Menu-item"><a href = "Forest.php">대나무숲</a></li>
             <li class="Menu-item"><a href = "cafeteria.php">급식확인</a></li>
+            <li class="Menu-item"><a href = "Library.html">도서관</a></li>
             <li class="Menu-item"><a href="https://bit.ly/mirimmusic">음악신청</a></li>
         </ul>
 
