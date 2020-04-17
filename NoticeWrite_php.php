@@ -5,7 +5,9 @@
     $contents = $_POST["contents"];
     $DBFile = 0;
 
-    if(isset($_FILES[$fileName])){
+    echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
+
+    if(is_uploaded_file($_FILES[$fileName]['tmp'])){
 
         if(!is_dir($uploads_dir)){
             if(!mkdir($uploads_dir, 0777))
@@ -22,9 +24,6 @@
 			        break;
                 case UPLOAD_ERR_PARTIAL:
                     echo "<script> alert('파일이 부분적으로 첨부되었습니다.'); location.replace('Write.php'); </script>";
-                    break;
-                case UPLOAD_ERR_NO_FILE:
-                    echo "<script> alert('파일이 첨부되지 않았습니다.'); location.replace('Write.php'); </script>";
                     break;
                 case UPLOAD_ERR_NO_TMP_DIR:
                     echo "<script> alert('임시파일을 저장할 디렉토리가 없습니다.'); location.replace('Write.php'); </script>";
@@ -62,17 +61,19 @@
         }
     }
 
-    echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
+    $today = date('Y-m-d');
+
     $con = mysqli_connect("localhost","mirimlife","itshow1!","mirimlife");
     if (mysqli_connect_errno()){
         echo "Failed to connect to MySQL: " . mysqli_connect_error();
     }
-    $sql = "insert into notice (title, file, contents) values ('$title', '$DBFile', '$contents');";
+    $sql = "insert into notice (title, file, contents, date, views) values ('$title', '$DBFile', '$contents', '$today', 0);";
     if (!mysqli_query ($con, $sql)){
         echo("쿼리오류 발생: " . mysqli_error($con));
     }
 
     mysqli_close($con);
 
+   
     echo "<script> alert('등록되었습니다.'); location.replace('Notice.php'); </script>";
 ?>

@@ -58,6 +58,7 @@
                             echo "<p id='username'>{$name}님&nbsp;</p>";
                         }
                         echo "<a id='LogOut'  href='logout.php'>로그아웃</a>";
+                        mysqli_close($con);
                     }
                     else {
                         echo '<a href="SignIn.html"><img class="Sign-In" src="IMG/Main/Login.png"></a>';

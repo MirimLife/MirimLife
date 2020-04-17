@@ -49,6 +49,7 @@
                             echo "<p id='username'>{$name}님&nbsp;</p>";
                         }
                         echo "<a id='LogOut'  href='logout.php'>로그아웃</a>";
+                        mysqli_close($con);
                     }
                     else {
                         echo '<a href="SignIn.html"><img class="Sign-In" src="IMG/Main/Login.png"></a>';
@@ -67,7 +68,7 @@
         <div class="window">
             <img src="IMG/Notice/Write/window.png" id="window-img">
 
-            <form method="POST" action="Write_php.php" enctype = "multipart/form-data"> 
+            <form method="POST" action="NoticeWrite_php.php" enctype = "multipart/form-data"> 
                 <div class="input">
                     <div class="input-box">
                         <h4 class="h4-title">제목</h4>

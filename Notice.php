@@ -49,6 +49,7 @@
                             echo "<p id='username'>{$name}님&nbsp;</p>";
                         }
                         echo "<a id='LogOut'  href='logout.php'>로그아웃</a>";
+                        mysqli_close($con);
                     }
                     else {
                         echo '<a href="SignIn.html"><img class="Sign-In" src="IMG/Main/Login.png"></a>';
@@ -90,51 +91,30 @@
                     <td>제목</td>
                     <td style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;">등록일</td>
                 </tr>
-                <tr>
-                    <td style = "width:170px;">1</td>
-                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
-                    <td>2020.02.24</td>
-                </tr>
-                <tr>
-                    <td style = "width:170px;">1</td>
-                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
-                    <td>2020.02.24</td>
-                </tr>
-                <tr>
-                    <td style = "width:170px;">1</td>
-                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
-                    <td>2020.02.24</td>
-                </tr>
-                <tr>
-                    <td style = "width:170px;">1</td>
-                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
-                    <td>2020.02.24</td>
-                </tr>
-                <tr>
-                    <td style = "width:170px;">1</td>
-                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
-                    <td>2020.02.24</td>
-                </tr>
-                <tr>
-                    <td style = "width:170px;">1</td>
-                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
-                    <td>2020.02.24</td>
-                </tr>
-                <tr>
-                    <td style = "width:170px;">1</td>
-                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
-                    <td>2020.02.24</td>
-                </tr>
-                <tr>
-                    <td style = "width:170px;">1</td>
-                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
-                    <td>2020.02.24</td>
-                </tr>
-                <tr>
-                    <td style = "width:170px;">1</td>
-                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
-                    <td>2020.02.24</td>
-                </tr>
+
+                <?php
+                    $con = mysqli_connect("localhost","mirimlife","itshow1!","mirimlife");
+                    if (mysqli_connect_errno()){
+                        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+                    }
+                    $sql = "select num, title, date from notice order by num desc;";
+                    $result = mysqli_query($con, $sql);
+                    
+                    if(mysqli_num_rows($result) > 0) {
+                        while($row = mysqli_fetch_array($result)) {
+                            $num = $row['num'];
+                            $title = $row['title'];
+                            $date = $row['date'];
+
+                            echo "<tr>";
+                            echo "<td style = 'width:170px;'> $num </td>";
+                            echo "<td style = 'width:550px;'><a href='NoticeDetail.php?num=$num '> $title </a></td>";
+                            echo "<td> $date </td>";
+                            echo "</tr>";
+                        }
+                    }
+                ?>
+
             </table>
         </div>
 
