@@ -39,8 +39,9 @@
             <li class="Menu-item"><a href="https://bit.ly/mirimmusic">음악신청</a></li>
         </ul>
 
-        <div class="Sign"> <!-- 로그인, 회원가입 버튼-->
-                <?php
+        <div class="Sign"> 
+            <!-- 로그인, 회원가입 버튼-->
+                <!-- <?php
                     session_start();
 
                     if(isset($_SESSION['id'])) {
@@ -58,13 +59,12 @@
                             echo "<p id='username'>{$name}님&nbsp;</p>";
                         }
                         echo "<a id='LogOut'  href='logout.php'>로그아웃</a>";
-                        mysqli_close($con);
                     }
                     else {
                         echo '<a href="SignIn.html"><img class="Sign-In" src="IMG/Main/Login.png"></a>';
                         echo '<a href="SignUp.html"><img class="Sign-Up" src="IMG/Main/SignUp.png"></a>';
                     }
-                ?> 
+                ?>  -->
             </div>
         </div>
         <!-- nav 태그 닫기 -->
@@ -108,6 +108,6 @@
     <!-- wrapper 닫기  -->
 
     <!-- js -->
-    <script src="./JS/cafeteria.js?ver=1.1"></script>
+    <script src="./JS/cafeteria.js?ver=1.2"></script>
 </body>
 </html>
