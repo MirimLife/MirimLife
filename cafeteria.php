@@ -41,7 +41,7 @@
 
         <div class="Sign"> 
             <!-- 로그인, 회원가입 버튼-->
-                <!-- <?php
+                <?php
                     session_start();
 
                     if(isset($_SESSION['id'])) {
@@ -64,7 +64,7 @@
                         echo '<a href="SignIn.html"><img class="Sign-In" src="IMG/Main/Login.png"></a>';
                         echo '<a href="SignUp.html"><img class="Sign-Up" src="IMG/Main/SignUp.png"></a>';
                     }
-                ?>  -->
+                ?> 
             </div>
         </div>
         <!-- nav 태그 닫기 -->
