@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./CSS/FindId.css.css?ver=1.3">
+    <link rel="stylesheet" type="text/css" href="./CSS/FindId.css?ver=1.3">
     <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.5">
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
     <link rel="icon" href="IMG/Icon/favicon___.png">
@@ -18,24 +18,32 @@
     <title>SignUp</title>
 </head>
 <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
-    <div id="nav">   <!-- 네비게이션 바 -->
-        <a href="index.php" id="Logo">
-            <img id="Logo-img" src="IMG/Main/logo.png">
-        </a>
+    <div id="wrapper">
+        <div id="nav">   <!-- 네비게이션 바 -->
+            <a href="index.php" id="Logo">
+                <img id="Logo-img" src="IMG/Main/logo.png">
+            </a>
+    
+            <ul class="Menu">
+                <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
+                <li class="Menu-item"><a href = "#">일정확인</a></li>
+                <li class="Menu-item"><a href = "#">미림팀</a></li>
+                <li class="Menu-item"><a href = "Forest.php">대나무숲</a></li>
+                <li class="Menu-item"><a href = "cafeteria.php">급식확인</a></li>
+                <li class="Menu-item"><a href = "Library.php">도서관</a></li>
+                <li class="Menu-item"><a href="https://bit.ly/mirimmusic">음악신청</a></li>
+            </ul>
+    
+            <div class="Sign"> <!-- 로그인, 회원가입 버튼-->
+                <a href="SignIn.html" class="Sign-In"><img class="Sign-In-img" src="IMG/Main/Login.png"></a>
+                <a href="SignUp.html" class=Sign-Up><img class="Sign-Up-img" src="IMG/Main/SignUp.png"></a>
+            </div>
+        </div>
 
-        <ul class="Menu">
-            <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
-            <li class="Menu-item"><a href = "#">일정확인</a></li>
-            <li class="Menu-item"><a href = "#">미림팀</a></li>
-            <li class="Menu-item"><a href = "Forest.php">대나무숲</a></li>
-            <li class="Menu-item"><a href = "cafeteria.php">급식확인</a></li>
-            <li class="Menu-item"><a href = "Library.php">도서관</a></li>
-            <li class="Menu-item"><a href="https://bit.ly/mirimmusic">음악신청</a></li>
-        </ul>
+        <div class="container">
+            <div class="contents">
 
-        <div class="Sign"> <!-- 로그인, 회원가입 버튼-->
-            <a href="SignIn.html" class="Sign-In"><img class="Sign-In-img" src="IMG/Main/Login.png"></a>
-            <a href="SignUp.html" class=Sign-Up><img class="Sign-Up-img" src="IMG/Main/SignUp.png"></a>
+            </div>
         </div>
     </div>
 </body>

@@ -1,0 +1,8 @@
+html {
+    background: url(../IMG/SignUp/BG2.png) no-repeat 50% 50% fixed; 
+    background-attachment: fixed ;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+}
