@@ -4,11 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta property="og:title" content="미림라이프">  
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="IMG/Chat.png">
-
-    <meta property="og:description" content="재학생이 알려주는 미림 꿀팁 웹사이트">
 
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.5">
@@ -54,7 +49,7 @@
 
                     if(isset($_SESSION['id'])) {
                         $id = $_SESSION['id'];
-                        $con = mysqli_connect("localhost","mirimlife","itshow1!","mirimlife");
+                        $con = mysqli_connect("localhost","mirimlife","33glxoL1B2N2IXjO","mirimlife");
                         if (mysqli_connect_errno()){
                             echo "Failed to connect to MySQL: " . mysqli_connect_error();
                         }

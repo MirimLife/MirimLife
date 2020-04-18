@@ -37,7 +37,7 @@
 
                     if(isset($_SESSION['id'])) {
                         $id = $_SESSION['id'];
-                        $con = mysqli_connect("localhost","mirimlife","itshow1!","mirimlife");
+                        $con = mysqli_connect("localhost","mirimlife","33glxoL1B2N2IXjO","mirimlife");
                         if (mysqli_connect_errno()){
                             echo "Failed to connect to MySQL: " . mysqli_connect_error();
                         }
@@ -94,7 +94,7 @@
                 </tr>
 
                 <?php
-                    $con = mysqli_connect("localhost","mirimlife","itshow1!","mirimlife");
+                    $con = mysqli_connect("localhost","mirimlife","33glxoL1B2N2IXjO","mirimlife");
                     if (mysqli_connect_errno()){
                         echo "Failed to connect to MySQL: " . mysqli_connect_error();
                     }

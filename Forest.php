@@ -37,7 +37,7 @@
 
                     if(isset($_SESSION['id'])) {
                         $id = $_SESSION['id'];
-                        $con = mysqli_connect("localhost","mirimlife","itshow1!","mirimlife");
+                        $con = mysqli_connect("localhost","mirimlife","33glxoL1B2N2IXjO","mirimlife");
                         if (mysqli_connect_errno()){
                             echo "Failed to connect to MySQL: " . mysqli_connect_error();
                         }
@@ -132,19 +132,14 @@
                     <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
                     <td>2020.02.24</td>
                 </tr>
-                <tr>
-                    <td style = "width:170px;">1</td>
-                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
-                    <td>2020.02.24</td>
-                </tr>
             </table>
         </div>
 
         <div class="Notice-page">
             <a href="#"><img class="Left-img" src="IMG/Notice/Left.png"></a>
-            <div class="Page-num">1</div>
-            <!-- <div class="Page-num-no-click">2</div>
-            <div class="Page-num-no-click">3</div> -->
+            <a href="#"><div class="Page-num">1</div></a>
+            <a href="#"><div class="Page-num-no-click">2</div></a>
+            <a href="#"><div class="Page-num-no-click">3</div></a>
             <a href="#"><img class="Right-img" src="IMG/Notice/Right.png"></a>
         </div>
     </div>

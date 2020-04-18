@@ -129,46 +129,49 @@ html {
 /* 페이지 조절 */
 .Notice-page {
     position: relative;
-    width: 200px;
-    height: 70px;
+    width: 400px;
+    height: 50px;
     margin: 0 auto;
     text-align: center;
     margin-top: 30px;
 }
 .Notice-page .Page-num {
-    position: absolute;
+    /* position: absolute; */
     display: inline-block;
-    width:40px;
-    height:40px;
+    width:30px;
+    height:30px;
     background-color: #fac60e;
     border-radius: 50%;
     text-align: center;
-    line-height: 40px;
+    line-height: 30px;
+    font-size:13px;
     color:white;
     transform: translateX(-50%);
 }
 .Notice-page .Page-num-no-click {
-    position: absolute;
+    /* position: absolute; */
     display: inline-block;
-    margin-left:50px;
-    width:40px;
-    height:40px;
-    border-radius: 50%;
+    /* margin-left:50px; */
+    width:30px;
+    height:30px;
+    border-radius: 50%; 
     text-align: center;
-    line-height: 40px;
+    line-height: 30px;
+    font-size:13px;
     color:#DADADA;
     border: 1px solid #DADADA;
     transform: translateX(-50%);
 }
 .Notice-page img {
-    position: absolute;
+    /* position: absolute; */
+    display: inline-block;
     text-align: center;
 }
 .Notice-page .Left-img {
-    margin-left: -80px;
-    margin-top: 10px;   
+    margin-right: 30px;
+    /* margin-top: 10px;    */
 }
 .Notice-page .Right-img {
-    margin-left: 70px;
-    margin-top: 10px;   
+    /* margin-left: 70px; */
+    /* margin-top: 1px;    */
 }
