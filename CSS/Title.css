@@ -10,13 +10,11 @@
     display: inline-block;
     transform: translateX(-50%);
     font-size: 30px; 
-    font-family: 'Noto Sans KR', sans-serif;
 }
 .Notice-up #Notice-plus {
     position: absolute;
     display: inline-block;
     transform: translateX(-50%);
-    font-family: 'Noto Sans KR', sans-serif;
     font-size:15px;
     margin-top:60px;
     font-weight: lighter;

@@ -14,7 +14,6 @@ html {
 
 .Notice-bottom table {
     /* position: absolute; 주면 가운데 정렬이 안됨 */
-    font-family: 'Noto Sans KR', sans-serif;
     width:75%;
     margin:auto;
     margin-top:8px;

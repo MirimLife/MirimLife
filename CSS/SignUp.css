@@ -34,7 +34,6 @@ html {
 .title-p{
     text-align: center;
     font-size: 32px;
-    font-family: 'Noto Sans KR', sans-serif;
     margin: 0;  /* p태그 이 속성 reset.css로 옮겨도 이상없으면 옮기기 */
 }
 
@@ -93,7 +92,6 @@ html {
     border:1px solid #3648ec;
     padding: 1.5px;
     padding-left: 15px; 
-    font-family: 'Noto Sans KR', sans-serif;
 }
 
 /* 더 간단히 줄일 수 있으면 그렇게.. */
@@ -104,7 +102,6 @@ html {
     border:1px solid #3648ec;
     padding: 1.5px;
     padding-left: 15px; 
-    font-family: 'Noto Sans KR', sans-serif;
     display: inline-block;    
 }
 
@@ -122,7 +119,6 @@ html {
     border-radius: 10px 10px 10px 10px;
     height: 47px; 
     border:1px solid #3648ec;
-    font-family: 'Noto Sans KR', sans-serif;
     text-align: center;
     width: 137.5px;
     font-size: 14px;
@@ -147,6 +143,5 @@ html {
     background-color: #fac60e;
     color:white;
     font-size: 16px;
-    font-family: 'Noto Sans KR', sans-serif;
     margin-top: 25px;
 }

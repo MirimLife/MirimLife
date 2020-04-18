@@ -28,12 +28,10 @@ Button{
 
 .Cafeterial-up #Cafeterial-word{
     font-size: 30px; 
-    font-family: 'Noto Sans KR', sans-serif;
     margin: 0;
 }
 
 .Cafeterial-up #Cafeterial-plus{
-    font-family: 'Noto Sans KR', sans-serif;
     font-size:15px;
     font-weight: lighter;
     color:#858585;
@@ -75,8 +73,6 @@ Button{
 #Cafeterial-ymd{
     display: inline-block;
     font-size: 26px; 
-    font-family: 'Noto Sans KR', sans-serif;
-
     margin-left: 40px;
 }
 
@@ -112,7 +108,6 @@ Button{
     left: 50%;
     transform: translateX(-50%);
     font-size: 20px; 
-    font-family: 'Noto Sans KR', sans-serif;
     font-weight: 500;
     color: white;
 }
@@ -123,7 +118,6 @@ Button{
     width: 90%;
 
     font-size: 16px; 
-    font-family: 'Noto Sans KR', sans-serif;
     color: black;
 
     margin: 0 auto;

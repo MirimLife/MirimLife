@@ -36,7 +36,6 @@ html {
 .title-p{
     text-align: center;
     font-size: 32px;
-    font-family: 'Noto Sans KR', sans-serif;
     margin: 0; 
 }
 
@@ -78,7 +77,6 @@ html {
     border-radius: 28px 0 0 0;
     background-color: #3648ec;
     color: white;
-    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .button-r {
@@ -113,7 +111,6 @@ html {
     text-align: left;
     margin-left: 20px;
     font-size: 15px;
-    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .input-info {
@@ -154,7 +151,6 @@ html {
     color: white;
     font-size: 16px;
     border-radius: 50px;
-    font-family: 'Noto Sans KR', sans-serif;
     transform: translate(50%);
     right: 50%;
     bottom: 0;

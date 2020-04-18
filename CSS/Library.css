@@ -36,7 +36,6 @@ html {
     margin-bottom: 15px;
     text-align: center;
     /* display: inline-block; */
-    font-family: 'Noto Sans KR', sans-serif;
     /* right:0; */
     /* 왜 저는 position absolute가 안되나요? 진심 궁금.. */
 }   

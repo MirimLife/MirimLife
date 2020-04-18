@@ -100,7 +100,6 @@ html {
 .title-p{
     text-align: left;
     font-size: 32px;
-    font-family: 'Noto Sans KR', sans-serif;
     padding-left: 42px;
     margin: 0;  /* p태그 이 속성 reset.css로 옮겨도 이상없으면 옮기기 */
 }
@@ -155,7 +154,6 @@ html {
     background-color: #fac60e;
     color:white;
     font-size: 16px;
-    font-family: 'Noto Sans KR', sans-serif;
     margin-bottom: 10px;
 }
 
@@ -169,7 +167,6 @@ html {
 /* 아이디, 비밀번호 찾기 */
 .find ul li {
     float:left;
-    font-family: 'Noto Sans KR', sans-serif;
     font-size: 13px;
 }
 
