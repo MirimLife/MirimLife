@@ -42,7 +42,38 @@
 
         <div class="container">
             <div class="contents">
+                <div class="title">
+                    <p class="title-p">아이디/비밀번호 찾기</p>
+                    <div class="bar"></div>
+                </div>
 
+                <img src="IMG/FindIdPw/window.png" id="window-img">
+                
+                <div class="buttons">
+                    <div class="button-l">
+                        아이디 찾기
+                    </div>
+                    <div class="button-r">
+                        비밀번호 찾기
+                    </div>
+                </div>
+
+                <form method="POST" action="SignUp.php"> 
+                    <div class="input">
+                        <div class="form">
+                            <p class="name-p">이름</p>
+                            <input type="text" class="input-info" placeholder="이름" required>
+                        </div>
+                        <div class="form">
+                            <p class="name-p">이메일</p>
+                            <input type="text" class="input-half" placeholder="이메일" required>
+                            @
+                            <input type="text" class="input-half" placeholder="e-mirim.hs.kr" disabled>
+                        </div>
+                        <input type="button" id="submit" value="아이디 찾기">
+                    </div>
+                    
+                </form>
             </div>
         </div>
     </div>
