@@ -1,3 +1,6 @@
+/* 제목 */
+@import url(Title.css);
+
 html {
     background: url(../IMG/Notice/BG.png) no-repeat 50% 50% fixed; 
     background-attachment: fixed ;
@@ -5,39 +8,6 @@ html {
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
-}
-
-/* 제목 */
-.Notice-up {
-    position: relative;
-    width: 1000px;
-    height:85px;
-    text-align: center;
-    margin: 0 auto;
-    margin-top:15px;
-}
-.Notice-up #Notice-word {
-    position: absolute;
-    display: inline-block;
-    transform: translateX(-50%);
-    font-size: 15px; 
-    font-family: 'Noto Sans KR', sans-serif;
-}
-.Notice-up #Notice-plus {
-    position: absolute;
-    display: inline-block;
-    transform: translateX(-50%);
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size:30px;
-    margin-top:40px;
-    width: 1000px;
-    /* font-weight: 500; */
-}
-#Notice-line {
-    /* hr 태그는 position 넣으면 가운데 맞춤이 안됨... */
-    border: #FFE154 1.3px solid;
-    margin-top:-60px;
-    margin-bottom: 50px;
 }
 
 /* 조회수, 올린 시간 */

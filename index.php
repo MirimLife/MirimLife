@@ -45,11 +45,12 @@
 
             <div class="Sign"> <!-- 로그인, 회원가입 버튼-->
                 <?php
+                    include ('db_conn.php');
                     session_start();
 
                     if(isset($_SESSION['id'])) {
                         $id = $_SESSION['id'];
-                        $con = mysqli_connect("localhost","mirimlife","33glxoL1B2N2IXjO","mirimlife");
+                        // $con = mysqli_connect("localhost","mirimlife","33glxoL1B2N2IXjO","mirimlife");
                         if (mysqli_connect_errno()){
                             echo "Failed to connect to MySQL: " . mysqli_connect_error();
                         }
@@ -69,8 +70,6 @@
                         echo '<a href="SignUp.html"><img class="Sign-Up" src="IMG/Main/SignUp.png"></a>';
                     }
                 ?> 
-                <!-- <p id='username'>이예슬님&nbsp;</p>
-                <a id='LogOut'  href='logout.php'>로그아웃</a> -->
             </div>
         </div>
         <!-- nav 태그 닫기 -->

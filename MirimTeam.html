@@ -6,8 +6,8 @@
 
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.5">
-    <link rel="stylesheet" type="text/css" href="./CSS/cafeteria.css?ver=1.3">
-    
+    <link rel="stylesheet" type="text/css" href="./CSS/MirimTeam.css?ver=1.0">
+
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
     <link rel="icon" href="IMG/Icon/favicon___.png">
 
@@ -16,13 +16,10 @@
     <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Noto+Sans+KR:900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap" rel="stylesheet">
 
-    <title>MirimLife</title>
+    <title>미림팀</title>
 </head>
 
-<body style="position: fixed;" oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
-    <div id="BG">
-        <img src="IMG/cafeteria/BG.png" id="BG-img">
-    </div>
+<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
     
     <div id="wrapper">
     <div id="nav">   
@@ -34,16 +31,15 @@
             <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
             <li class="Menu-item"><a href = "#">일정확인</a></li>
             <li class="Menu-item"><a href = "#">미림팀</a></li>
-            <li class="Menu-item"><a href = "Forest.php">대나무숲</a></li>
+            <li class="Menu-item"><a href = "#">대나무숲</a></li>
             <li class="Menu-item"><a href = "cafeteria.php">급식확인</a></li>
             <li class="Menu-item"><a href = "Library.php">도서관</a></li>
             <li class="Menu-item"><a href="https://bit.ly/mirimmusic">음악신청</a></li>
         </ul>
 
-        <div class="Sign"> 
-            <!-- 로그인, 회원가입 버튼-->
-                <?php
-                    include ('db_conn.php');
+        <div class="Sign"> <!-- 로그인, 회원가입 버튼-->
+                <!-- <?php
+                        include ('db_conn.php');
                     session_start();
 
                     if(isset($_SESSION['id'])) {
@@ -66,50 +62,45 @@
                         echo '<a href="SignIn.html"><img class="Sign-In" src="IMG/Main/Login.png"></a>';
                         echo '<a href="SignUp.html"><img class="Sign-Up" src="IMG/Main/SignUp.png"></a>';
                     }
-                ?> 
+                ?>  -->
             </div>
         </div>
         <!-- nav 태그 닫기 -->
         
         <div class="container">
-            <div class="Cafeterial-up">
-                    <p id="Cafeterial-word">학교급식</p>
-                    <p id="Cafeterial-plus">학교 급식을 확인할 수 있는 공간입니다.</p>
-                    <hr id="Cafeterial-line" style="width:120px;">
-                </div>
+            <div class="Notice-up">
+                <div id="Notice-word">미림팀</div>
+                <div id="Notice-plus">함께 스터디할 팀원을 구할 수 있는 공간입니다.</div>
+            </div>
+            <hr id="Notice-line" style="width:120px;">
 
-
-            <div class="Cafeterial-mid">
-                    <button><img class="Left-img" src="IMG/cafeteria/Button/left.png"></button>
-                    <P id="Cafeterial-ymd">4월 12일</p>
-                    <img class="Calendar-img" src="IMG/cafeteria/Button/calendar.png">   
-                    <button><img class="Right-img" src="IMG/cafeteria/Button/right.png"></button>
+            <div class="Notice-down">
+                <select name="job">
+                    <option value="">&nbsp;&nbsp;No</option>
+                    <option value="" selected>&nbsp;&nbsp;제목</option>
+                    <option value="">&nbsp;&nbsp;등록일</option>
+                </select>
+                <input type="text" name="id" value="" placeholder="검색어를 입력하세요">
+                <div class="Search-btn"><button type="submit">검색하기</button></div>
+                <div class='Write-btn'><a href='NoticeWrite.php'><button>글쓰기</button></a></div>
             </div>
 
-            <div class="Cafeterial-bottom">
-                <div id="Breakfast">
-                    <img class="window-1" src="IMG/cafeteria/window.png">
-                    <p class="Breakfast">조식</p>
-                    <div class="Breakfest-word">
-                    </div>              
-                </div>
-                <div id="Lunch">
-                    <img class="window-2" src="IMG/cafeteria/window.png">    
-                    <p class="Lunch">중식</p>             
-                    <div class="Lunch-word">                  
-                    </div>  
-                </div>
-                <div id="Dinner">
-                    <img class="window-3" src="IMG/cafeteria/window.png">
-                    <p class="Dinner">석식</p>  
-                    <div class="Dinner-word">                 
-                    </div>  
-                </div>
+            <div class="Book-list">
+                <ul>
+                    <li>
+                        <!-- <div class="Book">
+                            <img id="Book-img" src="IMG/Library/Book1.jpg">
+                            <h4>내일 아침에는 눈을 뜰 수 없겠지만</h4>
+                            <p>캐스린 매닉스 지음</p>
+                            <img id="Rental-img" src="IMG/Library/RentalOk.png">
+                        </div> -->
+                    </li>
+                    
+                </ul>
             </div>
+        </div>
     </div>
     <!-- wrapper 닫기  -->
 
-    <!-- js -->
-    <script src="./JS/cafeteria.js?ver=1.2"></script>
 </body>
 </html>

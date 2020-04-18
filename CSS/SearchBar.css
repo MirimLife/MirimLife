@@ -1,0 +1,67 @@
+/* 글쓰기 및 검색 */
+.Notice-down {
+    position: relative;
+    width: 850px;
+    height:60px;
+    margin: 0 auto;
+    padding-left:140px;
+}
+.Notice-down select {
+    position: absolute;
+    /* transform: translateX(-50%); */
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:15px;
+    color: #505050;
+    border:1.9px solid #d2d2d2;
+    border-radius: 10px;
+    width:110px;
+    height:40px;
+    margin-left: 60px;
+}
+.Notice-down input {
+    position: absolute;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:15px;
+    color: #505050;
+    border:1.9px solid #d2d2d2;
+    border-radius: 10px;
+    width:350px;
+    height:35px;
+    margin-left: 174px;
+    padding-left:10px;
+}
+.Notice-down .Search-btn {
+    position: absolute;
+    margin-left: 543px;
+}
+.Notice-down .Search-btn button:active {
+    transform: scale(0.90);
+}
+.Notice-down .Search-btn button {
+    border:0;
+    color:white;
+    background: #fac60e;
+    font-size:15px;
+    width:110px;
+    height:40px;
+    border-radius: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.Notice-down .Write-btn {
+    position: absolute;
+    right:0;
+}
+.Notice-down .Write-btn button {
+    border:0;
+    color:#fac60e;
+    background: white;
+    font-size:15px;
+    width:110px;
+    height:40px;
+    border-radius: 30px;
+    border: 1.2px solid #fac60e;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.Notice-down .Write-btn button:active {
+    transform: scale(0.90);
+}

@@ -1,0 +1,30 @@
+.Notice-up {
+    position: relative;
+    width: 700px;
+    height:100px;
+    text-align: center;
+    margin: 0 auto;
+}
+.Notice-up #Notice-word {
+    position: absolute;
+    display: inline-block;
+    transform: translateX(-50%);
+    font-size: 30px; 
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.Notice-up #Notice-plus {
+    position: absolute;
+    display: inline-block;
+    transform: translateX(-50%);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:15px;
+    margin-top:60px;
+    font-weight: lighter;
+    color:#858585;
+}
+#Notice-line {
+    /* hr 태그는 position 넣으면 가운데 맞춤이 안됨... */
+    border: #ffe154 1.3px solid;
+    margin-top:-55px;
+    margin-bottom: 60px;
+}

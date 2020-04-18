@@ -1,4 +1,5 @@
 <?php
+    include ('db_conn.php');
     $uploads_dir = './notice_file';
     $title = $_POST["title"];
     $fileName = "file";
@@ -63,7 +64,7 @@
 
     $today = date('Y-m-d');
 
-    $con = mysqli_connect("localhost","mirimlife","33glxoL1B2N2IXjO","mirimlife");
+
     if (mysqli_connect_errno()){
         echo "Failed to connect to MySQL: " . mysqli_connect_error();
     }

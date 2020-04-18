@@ -1,3 +1,8 @@
+/* 제목 */
+@import url(Title.css);
+/* 글쓰기 및 검색 */
+@import url(SearchBar.css);
+
 html {
     background: url(../IMG/Notice/BG.png) no-repeat 50% 50% fixed; 
     background-attachment: fixed ;
@@ -5,105 +10,6 @@ html {
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
-}
-
-/* 제목 */
-.Notice-up {
-    position: relative;
-    width: 500px;
-    height:100px;
-    text-align: center;
-    margin: 0 auto;
-}
-.Notice-up #Notice-word {
-    position: absolute;
-    display: inline-block;
-    transform: translateX(-50%);
-    font-size: 30px; 
-    font-family: 'Noto Sans KR', sans-serif;
-}
-.Notice-up #Notice-plus {
-    position: absolute;
-    display: inline-block;
-    transform: translateX(-50%);
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size:15px;
-    margin-top:60px;
-    font-weight: lighter;
-    color:#858585;
-}
-#Notice-line {
-    /* hr 태그는 position 넣으면 가운데 맞춤이 안됨... */
-    border: #ffe154 1.3px solid;
-    margin-top:-55px;
-    margin-bottom: 60px;
-}
-
-/* 글쓰기 및 검색 */
-.Notice-down {
-    position: relative;
-    width: 700px;
-    height:60px;
-    margin: 0 auto;
-}
-.Notice-down select {
-    position: absolute;
-    /* transform: translateX(-50%); */
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size:15px;
-    color: #505050;
-    border:1.9px solid #d2d2d2;
-    border-radius: 10px;
-    width:110px;
-    height:40px;
-    margin-left: 60px;
-}
-.Notice-down input {
-    position: absolute;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size:15px;
-    color: #505050;
-    border:1.9px solid #d2d2d2;
-    border-radius: 10px;
-    width:350px;
-    height:35px;
-    margin-left: 174px;
-    padding-left:10px;
-}
-.Notice-down .Search-btn {
-    position: absolute;
-    margin-left: 543px;
-}
-.Notice-down .Search-btn button:active {
-    transform: scale(0.90);
-}
-.Notice-down .Search-btn button {
-    border:0;
-    color:white;
-    background: #fac60e;
-    font-size:15px;
-    width:110px;
-    height:40px;
-    border-radius: 10px;
-    font-family: 'Noto Sans KR', sans-serif;
-}
-.Notice-down .Write-btn {
-    position: absolute;
-    margin-left: 690px;
-}
-.Notice-down .Write-btn button {
-    border:0;
-    color:#fac60e;
-    background: white;
-    font-size:15px;
-    width:110px;
-    height:40px;
-    border-radius: 30px;
-    border: 1.2px solid #fac60e;
-    font-family: 'Noto Sans KR', sans-serif;
-}
-.Notice-down .Write-btn button:active {
-    transform: scale(0.90);
 }
 
 /* 게시글 목록 */
@@ -170,8 +76,4 @@ html {
 .Notice-page .Left-img {
     margin-right: 30px;
     /* margin-top: 10px;    */
-}
-.Notice-page .Right-img {
-    /* margin-left: 70px; */
-    /* margin-top: 1px;    */
 }
