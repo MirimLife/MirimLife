@@ -6,7 +6,7 @@
 
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.5">
-    <link rel="stylesheet" type="text/css" href="./CSS/MirimTeamWrite.css?ver=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS/MirimTeamWrite.css?ver=1.1">
 
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
     <link rel="icon" href="IMG/Icon/favicon___.png">
@@ -45,7 +45,7 @@
 
                     if(isset($_SESSION['id'])) {
                         $id = $_SESSION['id'];
-                        $con = mysqli_connect("localhost","mirimlife","33glxoL1B2N2IXjO","mirimlife");
+                        $con = mysqli_connect("localhost","mirimlife","itshow1!","mirimlife");
                         if (mysqli_connect_errno()){
                             echo "Failed to connect to MySQL: " . mysqli_connect_error();
                         }
@@ -107,7 +107,7 @@
                                 </select>
 
                                 <select name="People">
-                                    <option value="1명"  selected="selected">1명(본인)</option>
+                                    <option value="1명"  selected="selected">1명</option>
                                     <option value="2명">2명</option>
                                     <option value="3명">3명</option>
                                     <option value="4명">4명 이상</option>
@@ -117,12 +117,10 @@
                         <!-- 모집기간 -->
                         <div class="input-box">
                             <h4 class="h4-title">모집 기간</h4>
-                            <div class="input-box">
                                 <div class="date-box">
                                     <img src="IMG/MirimTeam/calendar.png" class="input-img">
                                     <input type="date" class="input-info-date" name="Recruit" required>
                                 </div>
-                            </div>
                         </div>
                         <!-- 모집분야 -->
                         <div class="input-box">
