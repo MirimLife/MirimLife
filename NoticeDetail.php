@@ -50,12 +50,12 @@
                             echo "<p id='username'>{$name}님&nbsp;</p>";
                         }
                         echo "<a id='LogOut'  href='logout.php'>로그아웃</a>";
+                        mysqli_close($con);
                     }
                     else {
                         echo '<a href="SignIn.html"><img class="Sign-In" src="IMG/Main/Login.png"></a>';
                         echo '<a href="SignUp.html"><img class="Sign-Up" src="IMG/Main/SignUp.png"></a>';
                     }
-                    mysqli_close($con);
                 ?>
             </div>
         </div>
@@ -78,6 +78,7 @@
                 $title = $row['title'];
                 $file = $row['file'];
                 $contents = $row['contents'];
+                $contents = nl2br($contents);
                 $date = $row['date'];
                 $views = $row['views'];
         

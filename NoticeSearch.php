@@ -68,7 +68,6 @@
         <hr id="Notice-line" style="width:120px;">
 
         <div class="Notice-down">
-
             <form method="POST" action="NoticeSearch.php">
                 <select name="search_select">
                     <option value="num">&nbsp;&nbsp;No</option>
@@ -78,7 +77,6 @@
                 <input type="text" name="search" placeholder="검색어를 입력하세요">
                 <div class="Search-btn"><button type="submit">검색하기</button></div>
             </form>
-
             <?php
                 session_start();
                 if(isset($_SESSION['id'])) {
@@ -101,10 +99,13 @@
                 <?php
                     include ('db_conn.php');
                     
+                    $search = $_POST["search"];
+                    $search_select = $_POST["search_select"];
+
                     if (mysqli_connect_errno()){
                         echo "Failed to connect to MySQL: " . mysqli_connect_error();
                     }
-                    $sql = "select num, title, date from notice order by num desc;";
+                    $sql = "select num, title, date from notice where $search_select like '%{$search}%' order by num desc;";
                     $result = mysqli_query($con, $sql);
                     
                     if(mysqli_num_rows($result) > 0) {

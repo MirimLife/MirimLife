@@ -8,7 +8,7 @@
 
     echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
 
-    if(is_uploaded_file($_FILES[$fileName]['tmp'])){
+    if(is_uploaded_file($_FILES[$fileName]['tmp_name'])){
 
         if(!is_dir($uploads_dir)){
             if(!mkdir($uploads_dir, 0777))
@@ -47,7 +47,6 @@
         $fileinfo = pathinfo($uploadFile); // 첨부파일의 정보를 가져옴
         $i = 1;
         
-        // 왜 while문이 무조건 1번실행되지??? 몰겠다 오늘은 그냥 자야지....
         while(is_file($uploadFile)){
             $name = $fileNameWithoutExt."-{$i}.".$file_ext;
             $uploadFile = $uploads_dir.'/'.$name;

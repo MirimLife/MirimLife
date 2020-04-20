@@ -58,6 +58,3 @@
     border-radius: 30px;
     border: 1.2px solid #fac60e;
 }
-.Notice-down .Write-btn button:active {
-    transform: scale(0.90);
-}
