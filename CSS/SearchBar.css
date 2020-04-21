@@ -1,60 +1,59 @@
 /* 글쓰기 및 검색 */
 .Notice-down {
     position: relative;
-    width: 850px;
-    height:60px;
+    width: 750px;
+    height:43px;
     margin: 0 auto;
-    padding-left:140px;
-}
-.Notice-down select {
-    position: absolute;
-    /* transform: translateX(-50%); */
+    font-family: 'Noto Sans KR', sans-serif;
     font-size:15px;
+    padding-left:150px;
+    margin-bottom:40px;
+}
+/* 제목, No, 작성자 검색 */
+.Notice-down select{
+    position: absolute;
+    width:120px;
+    height:100%;
+
     color: #505050;
     border:1.9px solid #d2d2d2;
     border-radius: 10px;
-    width:110px;
-    height:40px;
-    margin-left: 60px;
 }
+/* 검색창 */
 .Notice-down input {
     position: absolute;
-    font-size:15px;
+    width:340px;
+    height:88%;
+    margin-left:125px;
+
     color: #505050;
     border:1.9px solid #d2d2d2;
     border-radius: 10px;
-    width:350px;
-    height:35px;
-    margin-left: 174px;
     padding-left:10px;
 }
-.Notice-down .Search-btn {
+/* 버튼 */
+.Notice-down button {
     position: absolute;
-    margin-left: 543px;
+    width:110px;
+    height: 100%;
+    border:0;
 }
-.Notice-down .Search-btn button:active {
+.Notice-down button:active {
     transform: scale(0.90);
 }
+/* 검색하기 버튼 */
 .Notice-down .Search-btn button {
-    border:0;
+    margin-left:485px;
+    
+    border-radius: 10px;
     color:white;
     background: #fac60e;
-    font-size:15px;
-    width:110px;
-    height:40px;
-    border-radius: 10px;
-}
-.Notice-down .Write-btn {
-    position: absolute;
-    right:0;
 }
 .Notice-down .Write-btn button {
-    border:0;
+    right: 5px;
+
     color:#fac60e;
     background: white;
-    font-size:15px;
-    width:110px;
-    height:40px;
     border-radius: 30px;
     border: 1.2px solid #fac60e;
 }
