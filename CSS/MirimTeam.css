@@ -11,3 +11,113 @@ html {
     -o-background-size: cover; 
     background-size: cover;
 }
+
+* 책 정보창 */
+.Team-list {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+    /* height: 600px; */
+}
+.Team-list ul li {
+    margin: 0;
+    padding: 0;
+    border : 0;
+    display: inline-block;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:13px;
+}
+.Team-list ul li .Team {
+    width:270px;
+    border-radius: 15px;
+    box-shadow:         0px 2px 18px 3px rgba(0, 0, 0, 0.08);
+    margin-right: 15px;
+    margin-bottom: 25px;
+    /* text-align: center */
+}
+.Team-list ul li .Team #Team-img {
+    width:270px;
+    height:110px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.Team-list ul li .Team .Team-word {
+    padding-left:20px;
+    padding-right:20px;
+}
+.Team-list ul li .Team h1 {
+    font-size:17px;
+    margin-bottom:0;
+}
+.Team-list ul li .Team h3 {
+    font-weight: lighter;    
+    margin-top:0;
+    font-size:13px;
+    color:#999999;
+}
+.Team-list ul li .Team h2 {
+    font-size:17px;
+    color:#FFB51F;
+    font-weight: lighter;
+    margin-bottom:0;
+}
+.Team-list ul li .Team h4 {
+    margin-top:0;
+    font-weight: lighter;
+    color:#999999;
+}
+.Team-list ul li .Team .Team-under {
+    position: relative;
+    width:270px;
+    height:35px;
+}
+.Team-list ul li .Team .Team-under p {
+    position: absolute;
+    color:#999999;
+    margin:0px;
+}
+.Team-list ul li .Team .Team-under #Chat-img {
+    position: absolute;
+    right:50px;
+    top:3px;
+}
+.Team-list ul li .Team .Team-under #Chat-num {
+    position: absolute;
+    right:40px;
+    color:#FFB51F;
+}
+
+
+/* 페이지바 */
+.Notice-page {
+    position: relative;
+    width: 200px;
+    height: 70px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+.Notice-page .Page-num {
+    position: absolute;
+    display: inline-block;
+    width:40px;
+    height:40px;
+    background-color: #fac60e;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color:white;
+    transform: translateX(-50%);
+}
+.Notice-page img {
+    position: absolute;
+    text-align: center;
+}
+.Notice-page .Left-img {
+    margin-left: -80px;
+    margin-top: 10px;   
+}
+.Notice-page .Right-img {
+    margin-left: 70px;
+    margin-top: 10px;   
+}
