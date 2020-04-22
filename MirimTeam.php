@@ -82,7 +82,7 @@
                 </select>
                 <input type="text" name="id" value="" placeholder="검색어를 입력하세요">
                 <div class="Search-btn"><button type="submit">검색하기</button></div>
-                <div class='Write-btn'><button href='MirimTeam.php'>팀만들기</button></div>
+                <div class='Write-btn'><button href='MirimTeamWrite.php'>팀만들기</button></div>
             </div>
 
             <div class="Team-list">

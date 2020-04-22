@@ -21,7 +21,6 @@
     <title>MirimLife</title>
 </head>
 <body style = "position: fixed;" oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
-   
     <div id="BG">
         <img src="IMG/Main/BG.png" id="BG-img">
     </div>
