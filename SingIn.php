@@ -1,20 +1,24 @@
 <?php
     $id = $_POST["id"];
     $pw = $_POST['pw'];
+    $email = substr($id, 8);
+    $id = substr($id, 0, 8);
 
-    include ('db_conn.php');
-    if (mysqli_connect_errno()){
-        echo "Failed to connect to MySQL: " . mysqli_connect_error();
-    }
-    $sql = "select passwd from members where id = '$id';";
-    $result = mysqli_query($con, $sql);
+    if($email == "@e-mirim.hs.kr") {
+        include ('db_conn.php');
+        if (mysqli_connect_errno()){
+            echo "Failed to connect to MySQL: " . mysqli_connect_error();
+        }
+        $sql = "select passwd from members where id = '$id';";
+        $result = mysqli_query($con, $sql);
 
-    if(mysqli_num_rows($result) > 0) {
-        while($row = mysqli_fetch_array($result)) {
-            if($row['passwd'] == $pw) {
-                session_start();
-                $_SESSION['id'] = $id;
-                echo "<script>location.href='index.php'</script>";
+        if(mysqli_num_rows($result) > 0) {
+            while($row = mysqli_fetch_array($result)) {
+                if($row['passwd'] == $pw) {
+                    session_start();
+                    $_SESSION['id'] = $id;
+                    echo "<script>location.href='index.php'</script>";
+                }
             }
         }
     }
