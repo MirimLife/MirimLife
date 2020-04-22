@@ -76,7 +76,9 @@ html {
     height: 100%;
     border-radius: 28px 0 0 0;
     background-color: #3648ec;
-    color: white;
+}
+.button-l a {
+    color:white;
 }
 
 .button-r {

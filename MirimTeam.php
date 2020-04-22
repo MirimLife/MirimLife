@@ -30,8 +30,8 @@
         <ul class="Menu">
             <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
             <li class="Menu-item"><a href = "#">일정확인</a></li>
-            <li class="Menu-item"><a href = "#">미림팀</a></li>
-            <li class="Menu-item"><a href = "#">대나무숲</a></li>
+            <li class="Menu-item"><a href = "MirimTeam.php">미림팀</a></li>
+            <li class="Menu-item"><a href = "Forest.php">대나무숲</a></li>
             <li class="Menu-item"><a href = "cafeteria.php">급식확인</a></li>
             <li class="Menu-item"><a href = "Library.php">도서관</a></li>
             <li class="Menu-item"><a href="https://bit.ly/mirimmusic">음악신청</a></li>
@@ -82,14 +82,14 @@
                 </select>
                 <input type="text" name="id" value="" placeholder="검색어를 입력하세요">
                 <div class="Search-btn"><button type="submit">검색하기</button></div>
-                <div class='Write-btn'><button href='NoticeWrite.php'>팀만들기</button></div>
+                <div class='Write-btn'><button href='MirimTeam.php'>팀만들기</button></div>
             </div>
 
             <div class="Team-list">
                 <ul>
-                    <li>
+                <li>
                         <div class="Team">
-                            <img id="Team-img" src="IMG/Team/library.PNG">
+                            <img id="Team-img" src="IMG/MirimTeam/library.PNG">
                             <div class="Team-word">
                                 <h1>같이 공모전 할 사람 구해요!</h1>
                                 <h3>by.김모모</h3>
@@ -97,124 +97,12 @@
                                 <h4>아이디어 구상/웹디자인/2020.06.06까지</h4>
                                 <div class="Team-under">
                                     <p>1일전</p>
-                                    <img id="Chat-img" src="IMG/Team/chat.png">
-                                    <p id="Chat-num">2</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li><li>
-                        <div class="Team">
-                            <img id="Team-img" src="IMG/Team/library.PNG">
-                            <div class="Team-word">
-                                <h1>같이 공모전 할 사람 구해요!</h1>
-                                <h3>by.김모모</h3>
-                                <h2>2학년 디자인</h2>
-                                <h4>아이디어 구상/웹디자인/2020.06.06까지</h4>
-                                <div class="Team-under">
-                                    <p>1일전</p>
-                                    <img id="Chat-img" src="IMG/Team/chat.png">
+                                    <img id="Chat-img" src="IMG/MirimTeam/Chat.png">
                                     <p id="Chat-num">2</p>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="Team">
-                            <img id="Team-img" src="IMG/Team/library.PNG">
-                            <div class="Team-word">
-                                <h1>같이 공모전 할 사람 구해요!</h1>
-                                <h3>by.김모모</h3>
-                                <h2>2학년 디자인</h2>
-                                <h4>아이디어 구상/웹디자인/2020.06.06까지</h4>
-                                <div class="Team-under">
-                                    <p>1일전</p>
-                                    <img id="Chat-img" src="IMG/Team/chat.png">
-                                    <p id="Chat-num">2</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="Team">
-                            <img id="Team-img" src="IMG/Team/library.PNG">
-                            <div class="Team-word">
-                                <h1>같이 공모전 할 사람 구해요!</h1>
-                                <h3>by.김모모</h3>
-                                <h2>2학년 디자인</h2>
-                                <h4>아이디어 구상/웹디자인/2020.06.06까지</h4>
-                                <div class="Team-under">
-                                    <p>1일전</p>
-                                    <img id="Chat-img" src="IMG/Team/chat.png">
-                                    <p id="Chat-num">2</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="Team">
-                            <img id="Team-img" src="IMG/Team/library.PNG">
-                            <div class="Team-word">
-                                <h1>같이 공모전 할 사람 구해요!</h1>
-                                <h3>by.김모모</h3>
-                                <h2>2학년 디자인</h2>
-                                <h4>아이디어 구상/웹디자인/2020.06.06까지</h4>
-                                <div class="Team-under">
-                                    <p>1일전</p>
-                                    <img id="Chat-img" src="IMG/Team/chat.png">
-                                    <p id="Chat-num">2</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="Team">
-                            <img id="Team-img" src="IMG/Team/library.PNG">
-                            <div class="Team-word">
-                                <h1>같이 공모전 할 사람 구해요!</h1>
-                                <h3>by.김모모</h3>
-                                <h2>2학년 디자인</h2>
-                                <h4>아이디어 구상/웹디자인/2020.06.06까지</h4>
-                                <div class="Team-under">
-                                    <p>1일전</p>
-                                    <img id="Chat-img" src="IMG/Team/chat.png">
-                                    <p id="Chat-num">2</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="Team">
-                            <img id="Team-img" src="IMG/Team/library.PNG">
-                            <div class="Team-word">
-                                <h1>같이 공모전 할 사람 구해요!</h1>
-                                <h3>by.김모모</h3>
-                                <h2>2학년 디자인</h2>
-                                <h4>아이디어 구상/웹디자인/2020.06.06까지</h4>
-                                <div class="Team-under">
-                                    <p>1일전</p>
-                                    <img id="Chat-img" src="IMG/Team/chat.png">
-                                    <p id="Chat-num">2</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="Team">
-                            <img id="Team-img" src="IMG/Team/library.PNG">
-                            <div class="Team-word">
-                                <h1>같이 공모전 할 사람 구해요!</h1>
-                                <h3>by.김모모</h3>
-                                <h2>2학년 디자인</h2>
-                                <h4>아이디어 구상/웹디자인/2020.06.06까지</h4>
-                                <div class="Team-under">
-                                    <p>1일전</p>
-                                    <img id="Chat-img" src="IMG/Team/chat.png">
-                                    <p id="Chat-num">2</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li> 
-
                 </ul>
             </div>
 

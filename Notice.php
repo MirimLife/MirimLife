@@ -24,7 +24,7 @@
             <ul class="Menu">
                 <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
                 <li class="Menu-item"><a href = "#">일정확인</a></li>
-                <li class="Menu-item"><a href = "#">미림팀</a></li>
+                <li class="Menu-item"><a href = "MirimTeam.php">미림팀</a></li>
                 <li class="Menu-item"><a href = "Forest.php">대나무숲</a></li>
                 <li class="Menu-item"><a href = "cafeteria.php">급식확인</a></li>
                 <li class="Menu-item"><a href = "Library.php">도서관</a></li>
@@ -77,17 +77,17 @@
                 </select>
                 <input type="text" name="search" placeholder="검색어를 입력하세요">
                 <div class="Search-btn"><button type="submit">검색하기</button></div>
-            </form>
-
-            <?php
+                <?php
                 session_start();
                 if(isset($_SESSION['id'])) {
                     if($_SESSION['id'] == 'test') {
                         echo "<div class='Write-btn'><a href='NoticeWrite.php'><button>글쓰기</button></a></div>";
                     }
                 }
-                
-            ?>
+                ?>
+            </form>
+
+            
         </div>
 
         <div class="Notice-bottom">

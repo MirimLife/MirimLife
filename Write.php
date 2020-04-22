@@ -24,8 +24,8 @@
             <ul class="Menu">
                 <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
                 <li class="Menu-item"><a href = "#">일정확인</a></li>
-                <li class="Menu-item"><a href = "#">미림팀</a></li>
-                <li class="Menu-item"><a href = "#">대나무숲</a></li>
+                <li class="Menu-item"><a href = "MirimTeam.php">미림팀</a></li>
+                <li class="Menu-item"><a href = "Forest.php">대나무숲</a></li>
                 <li class="Menu-item"><a href = "cafeteria.php">급식확인</a></li>
                 <li class="Menu-item"><a href = "Library.php">도서관</a></li>
                 <li class="Menu-item"><a href="https://bit.ly/mirimmusic">음악신청</a></li>

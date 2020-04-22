@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap" rel="stylesheet">
     <title>MirimLife</title>
 </head>
+
 <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
     <div id="wrapper">
         <div id="nav">   <!-- 네비게이션 바 -->
@@ -24,7 +25,7 @@
             <ul class="Menu">
                 <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
                 <li class="Menu-item"><a href = "#">일정확인</a></li>
-                <li class="Menu-item"><a href = "#">미림팀</a></li>
+                <li class="Menu-item"><a href = "MirimTeam.php">미림팀</a></li>
                 <li class="Menu-item"><a href = "Forest.php">대나무숲</a></li>
                 <li class="Menu-item"><a href = "cafeteria.php">급식확인</a></li>
                 <li class="Menu-item"><a href = "Library.php">도서관</a></li>
