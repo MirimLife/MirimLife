@@ -1,19 +1,4 @@
-Button{
-    background-color: white;
-    width: 100px;
-    height: 50px;
-    border: 0.5px solid rgb(160, 158, 158);
-    border-radius: 20px;
-    outline: none;
-    text-align: center;
-
-    color: gray;
-}
-
-Button:hover{
-    color: black;
-}
-
+/* 전체틀 */
 .container {
     position: relative;
     width: 100%;
@@ -21,6 +6,23 @@ Button:hover{
     z-index: 1;
 }
 
+/* select 초기화 */
+select{
+    position: absolute;
+    display: inline-block;
+    padding: 5px; 
+    padding-left: 10px;    
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 1px 3px 1px rgba(163, 173, 192, 0.377);
+    font-size:15px;
+    font-weight: lighter;
+    color:#858585;
+    left: 0;
+}
+
+/* 위, 아래 */
 .MirimTeam-top , .MirimTeam-bottom{
     position: absolute;
     display:table-cell;
@@ -38,18 +40,14 @@ Button:hover{
 .MirimTeam-top #MirimTeam-word{
     font-size: 30px; 
     margin: 0;
+    color: #fcaf49;
 }
 
 .MirimTeam-top #MirimTeam-plus{
     font-size:15px;
     font-weight: lighter;
     color:#858585;
-    margin-top: 20px;
-}
-
-#MirimTeam-line {
-    border: #ffe154 1.5px solid;
-    margin-top: -55px;
+    margin-top: 10px;
 }
 
 /* 내용부분입니당 */
@@ -60,6 +58,7 @@ Button:hover{
     bottom: 0;
 }   
 
+/* window 이미지 */
 .MirimTeam-bottom .img{
     position: relative;
     width: 1200px;
@@ -75,8 +74,7 @@ Button:hover{
     text-align: center;  
 }
 
-
-/* input 전체 , h4태그와  h4-title 관리 반복적인 부분*/
+/* input, input-box 클래스 관리 + h4 제목 관리*/
 .input{
     position: absolute;
     top: 10%;
@@ -90,6 +88,8 @@ Button:hover{
     position: relative;
     margin-left: 40px;
     margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
 }
 
 .input .input-box .h4-title {
@@ -99,103 +99,117 @@ Button:hover{
     font-weight: lighter;
 }
 
-/* select 태그 */
-select{
-    display: inline-block;
-    background-color: white;
-    border: 1.5px solid #fac60e;
-    border-radius: 5px;
-    padding: 5px;    
-    font-size:15px;
-    font-weight: lighter;
-    color:#858585;
-}
-
 /* 제목 input */
 .input .input-box .input-info {
+    position: absolute;
     padding: 10px;
-    border: 1.5px solid #fac60e;
-    border-radius: 5px;
+    left: 140px;
     width: 390px;
-    height: 15px;
-    box-shadow: 4px 1px 3px #FEF8E1, 5px 2px 10px #FEF8E1;
+    height: 18px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 1px 3px 1px rgba(163, 173, 192, 0.377);
 }
 
 /* 현재구성원 select*/
 .input .input-box .select-box-1{
+    position: absolute;
+    left: 140px;
     width: 100px;
     margin: 0;
-    margin-left: 325px;
+}
+.input .input-box .select-box-1 select{
+    width: 150px;
+    height: 40px; 
 }
 
-/* 모집과/인원 select */
-.input .input-box .select-box-2{
-    width: 350px;
-    margin: 0;
-    margin-left: 290px;
+/*모집분야 */
+.button-box{
+    position: absolute;
+    left: 140px;
+}
+
+.button-box Button{
+    background-color: white;
+    width: 140px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 1px 3px 1px rgba(163, 173, 192, 0.377);
+    outline: none;
+    text-align: center;
+    color: gray;
+    margin-right: 10px;
+}
+
+.button-box  Button:hover{
+    color: black;
 }
 
 /* 모집기간 */
 .date-box{
-    width: 355px;
-    margin-left: 290px;
+    position: absolute;
+    left: 140px;
 }
 
 .input-img {
     position: absolute;
-    width: 40px;
-    text-align: left;
+    padding: 10px;
+    text-align: center;
 }
 
 .input-info-date{
-    width: 291.5px;
+    width: 150px;
     height: 40px; 
-    margin-left: 47px;
-    border-radius: 0 10px 10px 0;
-    border: 1.5px solid #fac60e;
-    padding: 1.5px;
     padding-left: 15px; 
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 1px 3px 1px rgba(163, 173, 192, 0.377);
 }
 
-/* textArea */
+/* 프로젝트 설명 */
 .input .input-box textarea {
+    position: absolute;
+    left: 140px;
     resize: none;
-    width: 400px;
+    width: 800px;
     height: 100px;
-    border: 1.5px solid #fac60e;
-    border-radius: 5px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 1px 3px 1px rgba(163, 173, 192, 0.377);
     outline:0;
-    box-shadow: 4px 1px 3px #FEF8E1, 5px 2px 10px #FEF8E1;
-
     padding: 10px;
 }
 
 /* 등록 취소 버튼들 */
 .button{
-    margin-top: -30px;
+    margin-top: 52px;
 }
 
 .input .button button {
-    border: 1.2px solid #fac60e;
+    border: none;
+    box-shadow: 0px 1px 3px 1px rgba(163, 173, 192, 0.377);
     background: white;
     width:120px;
-    height: 40px;
+    height: 50px;
     border-radius: 30px;
     font-size: 15px;
-    color:#fac60e;
+    color:#fcaf49;
     margin-right:5px;
 }
 
 .input .button input {
-    background: #fac60e;
+    background: #fcaf49;
+    box-shadow: 0px 1px 3px 1px rgba(163, 173, 192, 0.377);
     border:0;
     width:120px;
-    height: 40px;
+    height: 50px;
     border-radius: 30px;
     font-size: 15px;
     color:white;
     margin-left:5px;
 }
+
 .input .button input:active {
     transform: scale(0.90);
 }
@@ -205,4 +219,4 @@ select{
 
 .input .input-box .button-box button:active {
     transform: scale(0.90);
-}
+}   
