@@ -77,16 +77,15 @@
                 </select>
                 <input type="text" name="search" placeholder="검색어를 입력하세요">
                 <div class="Search-btn"><button type="submit">검색하기</button></div>
-                <?php
+            </form>
+            <?php
                 session_start();
                 if(isset($_SESSION['id'])) {
                     if($_SESSION['id'] == 's2018s00') {
                         echo "<div class='Write-btn'><a href='NoticeWrite.php'><button>글쓰기</button></a></div>";
                     }
                 }
-                ?>
-            </form>
-
+            ?>
             
         </div>
         
