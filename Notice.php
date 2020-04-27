@@ -135,10 +135,11 @@
                             $num = $row['num'];
                             $title = $row['title'];
                             $date = $row['date'];
+                            $page = $_GET['page'];
 
                             echo "<tr>";
                             echo "<td style = 'width:170px;'> $num </td>";
-                            echo "<td style = 'width:550px;'><a href='NoticeDetail.php?num=$num '> $title </a></td>";
+                            echo "<td style = 'width:550px;'><a href='NoticeDetail.php?num=$num&page=$page '> $title </a></td>";
                             echo "<td> $date </td>";
                             echo "</tr>";
                         }

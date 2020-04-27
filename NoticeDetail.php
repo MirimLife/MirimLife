@@ -103,7 +103,10 @@
         ?>
 
         <div class="Back">
-            <a href="Notice.php"><button>목록으로 가기</button></a>
+            <?php
+                $page = $_GET['page'];
+                echo "<a href='Notice.php?page=$page'><button>목록으로 가기</button></a>";
+            ?>
         </div>
     </div>
 </body>
