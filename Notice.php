@@ -69,7 +69,7 @@
 
         <div class="Notice-down">
 
-            <form method="POST" action="NoticeSearch.php">
+            <form method="GET" action="NoticeSearch.php">
                 <select name="search_select">
                     <option value="num">&nbsp;&nbsp;No</option>
                     <option value="title" selected>&nbsp;&nbsp;제목</option>

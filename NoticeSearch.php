@@ -68,7 +68,7 @@
         <hr id="Notice-line" style="width:120px;">
 
         <div class="Notice-down">
-            <form method="POST" action="NoticeSearch.php">
+            <form method="GET" action="NoticeSearch.php">
                 <select name="search_select">
                     <option value="num">&nbsp;&nbsp;No</option>
                     <option value="title" selected>&nbsp;&nbsp;제목</option>
@@ -80,7 +80,7 @@
             <?php
                 session_start();
                 if(isset($_SESSION['id'])) {
-                    if($_SESSION['id'] == 'test') {
+                    if($_SESSION['id'] == 's2018s00') {
                         echo "<div class='Write-btn'><a href='NoticeWrite.php'><button>글쓰기</button></a></div>";
                     }
                 }
@@ -98,14 +98,37 @@
 
                 <?php
                     include ('db_conn.php');
+                    $list = 8;
+                    $block = 5;
                     
-                    $search = $_POST["search"];
-                    $search_select = $_POST["search_select"];
+                    $search = $_GET["search"];
+                    $search_select = $_GET["search_select"];
 
                     if (mysqli_connect_errno()){
                         echo "Failed to connect to MySQL: " . mysqli_connect_error();
                     }
-                    $sql = "select num, title, date from notice where $search_select like '%{$search}%' order by num desc;";
+                    $sql = "select num, title, date from notice order by num desc;";
+                    $result = mysqli_query($con, $sql);
+
+                    $num = mysqli_num_rows($result);
+                    $pageNum = ceil($num/$list); // 총 페이지
+                    $blockNum = ceil($pageNum/$block); // 총 블록
+                    $nowBlock = ceil($page/$block);
+                    $s_page = ($nowBlock * $block) - ($block - 1);
+
+                    if ($s_page <= 1) {
+                        $s_page = 1;
+                    }
+                    $e_page = $nowBlock*$block;
+                    if ($pageNum <= $e_page) {
+                        $e_page = $pageNum;
+                    }
+
+                    $page = ($_GET['page'])?$_GET['page']:1;
+
+                    $s_point = ($page-1) * $list;
+
+                    $sql = "select num, title, date from notice where $search_select like '%{$search}%' order by num desc limit $s_point, $list;";
                     $result = mysqli_query($con, $sql);
                     
                     if(mysqli_num_rows($result) > 0) {
@@ -116,21 +139,26 @@
 
                             echo "<tr>";
                             echo "<td style = 'width:170px;'> $num </td>";
-                            echo "<td style = 'width:550px;'><a href='NoticeDetail.php?num=$num '> $title </a></td>";
+                            echo "<td style = 'width:550px;'><a href='NoticeDetail.php?num=$num&page=$page '> $title </a></td>";
                             echo "<td> $date </td>";
                             echo "</tr>";
                         }
                     }
-                ?>
+                
 
-            </table>
-        </div>
+            echo "</table>";
+        echo "</div>";
 
-        <div class="Notice-page">
-            <a href="#"><img class="Left-img" src="IMG/Notice/Left.png"></a>
-            <div class="Page-num">1</div>
-            <a href="#"><img class="Right-img" src="IMG/Notice/Right.png"></a>
-        </div>
+        echo '<div class="Notice-page">';
+            $page1 = $page == 1?1:$page-1;
+            $page2 = $page == $pageNum?$pageNum:$page+1;
+            echo "<a href='$PHP_SELP?search_select=$search_select&search=$search&page=$page1'><img class='Left-img' src='IMG/Notice/Left.png'></a>";
+                for ($p=$s_page; $p<=$e_page; $p++) {
+                    echo "<a href='$PHP_SELP?page=$p'>$p</a>";
+                }
+            echo "<a href='$PHP_SELP?search_select=$search_select&search=$search&page=$page2'><img class='Right-img' src='IMG/Notice/Right.png'></a>";
+        echo '</div>';
+        ?>
     </div>
 </body>
 </html>
