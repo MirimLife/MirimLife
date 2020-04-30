@@ -17,7 +17,7 @@
 
     <title>SignIn</title>
 </head>
-<body style = "position: fixed;" oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
+<body style = "position: fixed;" onload="document.inputForm.id.focus();" oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
     <!-- 배경 이미지 -->
     <!-- <div id="BG">
         <img src="IMG/SignIn/bg-signin.png" id="BG-img">
@@ -70,7 +70,7 @@
                 <div class="window">
                     <img src="IMG/SignIn/window.png" id="window-img">
 
-                    <form method="POST" action="SingIn.php">
+                    <form method="POST" action="SingIn.php" name="inputForm">
                         <div class="input">
                             <div class="Login">
                                 <input type="text" class="Login-input" placeholder="아이디" name="id" required>

@@ -17,7 +17,7 @@
 
     <title>SignUp</title>
 </head>
-<body style = "position: fixed;" oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
+<body style = "position: fixed;" onload="document.inputForm.id.focus();" oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
     <div id="wrapper">
         <div id="nav">   <!-- 네비게이션 바 -->
             <a href="index.php" id="Logo">
@@ -58,7 +58,7 @@
                     </div>
                 </div>
 
-                <form method="POST" action="SignUp.php"> 
+                <form method="POST" action="SignUp.php" name="inputForm"> 
                     <div class="input">
                         <div class="form">
                             <p class="name-p">아이디</p>
