@@ -1,0 +1,147 @@
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 전체틀 */
+.container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    z-index: 1;
+}
+
+/* 위, 아래 */
+.MyPage-top , .MyPage-bottom{
+    position: absolute;
+    display:table-cell;
+}
+
+/* 제목부분입니당 */
+.MyPage-top{
+    width: 500px;
+    height:100px;
+    text-align: center;
+    margin-right: 350px;
+    margin-left: 350px;
+}
+
+.MyPage-top #MyPage-word{
+    font-size: 30px; 
+    font-weight: bolder;
+    margin: 0;
+    color: #fcaf49;
+}
+
+.MyPage-top #MyPage-plus{
+    font-size:15px;
+    font-weight: lighter;
+    color:#858585;
+    margin-top: 10px;
+}
+
+/* 내용부분입니당 */
+.MyPage-bottom{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    bottom: 0;
+}   
+
+.MyPage-left, .MyPage-right{
+    position: relative;
+    display: inline-block;
+    height: 520px;
+}
+
+/* 왼쪽 컨텐츠 */
+.MyPage-left{
+    background-image: URL("../IMG/MyPage/window1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 320px;
+}
+
+/* 내정보 */
+#MyInfo{
+    position: absolute;
+    color: rgb(122,150,215);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;   
+    font-size: 30px;
+    margin: 25px 25px;
+}
+
+/* 학년  */
+#grade{
+    position: absolute;
+    width: 75%;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#name{
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#class{
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: rgb(101,101,101);
+}
+
+/* 오른쪽 content */
+.MyPage-right{
+    width: 580px;   
+}
+
+.MyPage-item-1, .MyPage-item-2, .MyPage-item-3{
+    background-image: URL("../IMG/MyPage/window2.png");
+    background-size: 85%;
+    background-repeat: no-repeat;
+    width: 620px;
+    height: 180px;
+}
+
+.MyPage-item-left, .MyPage-item-right{
+    position: absolute;
+    display: inline-block;
+}
+
+.MyPage-item-left{
+    left: 30px;
+    margin-top: 20px;
+}
+
+.MyPage-item-right{
+    text-align: right;
+    right: 100px;
+    margin-top: 40px;
+}
+
+.Item{
+    font-family: 'Noto Sans KR', sans-serif;
+    left: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-bottom: 0;   
+}
+
+.Item-Info{
+    font-size: 15px;
+    color: rgb(182, 176, 176);
+    text-align: left;
+    margin-top: 10px;
+}
