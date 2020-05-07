@@ -96,7 +96,7 @@
                                 <img src="IMG/SignUp/icon/pwcheck.png" class="input-img">
                                 <input type="password" class="input-pwcheck" placeholder=" 비밀번호 확인" name="pwcheck" required>
                             </div>
-                            <input type = "submit" value = "가입하기" id="sub" onclick="pwCheck()">
+                            <input type = "submit" value = "가입하기" id="sub" onclick="Check()">
                         </div>
                     </form>
                 </div>    
@@ -104,21 +104,33 @@
         </div>
     </div>
     <script>
-        function pwCheck() {
+        function Check() {
             var pw = document.getElementsByClassName('input-pwcheck')[0];
             var pwCheck = document.getElementsByClassName('input-pwcheck')[1];
+            var id = document.getElementsByClassName('input-id')[0];
+            var idValue = document.getElementsByClassName('input-id')[0].value;
+            var Year = new Date();
+
+            console.log(idValue);
+            console.log(id);
 
             if(pw.value != pwCheck.value) {
-                //alert('비밀번호가 일치하지않습니다.');
                 pwCheck.value = '';
                 pwCheck.placeholder = '비밀번호가 일치하지않습니다.';
             }
 
-        }
-
-        function idCheck() {
-            var id = document.getElementById('input-id');
-            console.log(id);
+            if(idValue.length != 8) {
+                id.value = '';
+                id.placeholder = '잘못된 입력입니다.';
+            }
+            else if(idValue[0]!='s' || !(idValue[5]=='s' || idValue[5]=='w' || idValue[5]=='d')) {
+                id.value = '';
+                id.placeholder = '잘못된 입력입니다.';
+            }
+            else if(parseInt(idValue.slice(1,5)) > Year.getFullYear() || (parseInt(idValue.slice(6,8)) < 1 || parseInt(idValue.slice(6,8)) > 40)) {
+                id.value = '';
+                id.placeholder = '잘못된 입력입니다.';
+            }
         }
     </script>
 </body>
