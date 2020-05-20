@@ -24,7 +24,7 @@
 }
 #Notice-line {
     /* hr 태그는 position 넣으면 가운데 맞춤이 안됨... */
-    border: #ffe154 1.3px solid;
+    border: #ffe154 1px solid;
     margin-top:-55px;
     margin-bottom: 60px;
 }
