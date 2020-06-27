@@ -1,5 +1,5 @@
 // API
-const API_KEY = "걍 “”해";
+const API_KEY = "dedd158ab6324509a72d3aa98ceb28ec";
 
 // 지금 날짜 관련
 let Day = new Date();   

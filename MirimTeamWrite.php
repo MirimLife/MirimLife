@@ -79,7 +79,7 @@
             <div class="MirimTeam-bottom">
                 <img src="IMG/MirimTeam/MakeTeam/window.png" class="img">
 
-                <form class="form" method="POST" action="Write_php.php" enctype = "multipart/form-data"> 
+                <form class="form" method="POST" action="Team_Write_php.php" enctype = "multipart/form-data"> 
                     <div class="input">
                         <!-- 제목 -->
                         <div class="input-box">
@@ -90,11 +90,11 @@
                         <div class="input-box">
                             <h4 class="h4-title">현재구성원</h4>
                             <div class="select-box-1">                       
-                                <select name="People">
-                                    <option value="1명"  selected="selected">1명(본인)</option>
-                                    <option value="2명">2명</option>
-                                    <option value="3명">3명</option>
-                                    <option value="4명">4명 이상</option>
+                                <select name="member">
+                                    <option value="1"  selected="selected">1명(본인)</option>
+                                    <option value="2">2명</option>
+                                    <option value="3">3명</option>
+                                    <option value="4">4명 이상</option>
                                 </select>
                             </div>
                         </div>
@@ -102,17 +102,17 @@
                         <div class="input-box">
                             <h4 class="h4-title">모집분야</h4>
                             <div class="button-box">
-                                <button>Planner</button>
-                                <button>Front-End</button>
-                                <button>Back-End</button>
-                                <button>Design</button>
+                                <input type="checkbox" name='field[]' value="Planner">Planner
+                                <input type="checkbox" name='field[]' value="Front-End">Front-End
+                                <input type="checkbox" name='field[]' value="Back-End">Back-End
+                                <input type="checkbox" name='field[]' value="Design">Design
                             </div>
                         </div>
                         <!-- 모집기간 -->
                         <div class="input-box">
                             <h4 class="h4-title">모집 기간</h4>
                                 <div class="date-box">
-                                    <input type="date" class="input-info-date" name="Recruit" required>
+                                    <input type="date" class="input-info-date" name="date" required>
                                     <img src="IMG/MirimTeam/MakeTeam/calendar.png" class="input-img">
                                 </div>
                         </div>
