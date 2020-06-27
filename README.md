@@ -2,7 +2,7 @@
 미림여자정보과학고등학교를 알려주는 홈페이지      
 
 ### 체험해보기
-[http://mirimlife.dothome.co.kr/](http://mirimlife.dothome.co.kr/index.php)   
+[https://mirimlife.emirim.kr/](https://mirimlife.emirim.kr/)
 
 ### 팀원
 frontend                |  backend      | design
