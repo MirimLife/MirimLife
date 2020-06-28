@@ -1,10 +1,10 @@
 /* 제목 */
-@import url(Title.css);
+@import url(Title.css?ver=1.1);
 /* 글쓰기 및 검색 */
-@import url(SearchBar.css);
+@import url(SearchBar.css?ver=1.1);
 
 html {
-    background: url(../IMG/Notice/BG.png) no-repeat 50% 50% fixed; 
+    background: url(../IMG/Notice/Background.png) no-repeat 50% 50% fixed; 
     background-attachment: fixed ;
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
@@ -21,14 +21,14 @@ html {
     text-align: center;
 }
 .Notice-bottom tr:nth-child(1){
-    background-color: #fac60e;
+    background-color: #B7C6E9;
     height:35px;
     font-size: 16px;
     color: white;
 }
 .Notice-bottom td:nth-child(n+1){
     height:40px;
-    border-bottom: 1.5px solid #fac60e;
+    border-bottom: 1.5px solid #DFDFDF;
 }
 
 /* 페이지 조절 */
@@ -73,6 +73,8 @@ html {
     text-align: center;
 }
 .Notice-page .Left-img {
-    margin-right: 30px;
-    /* margin-top: 10px;    */
+    margin-right: 50px;
+}
+.Notice-page .Right-img {
+    margin-left: 20px;
 }
