@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.5">
-    <link rel="stylesheet" type="text/css" href="./CSS/Board.css?ver=1.6">
+    <link rel="stylesheet" type="text/css" href="./CSS/Board.css?ver=1.8">
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
     <link rel="icon" href="IMG/Icon/favicon___.png">
 
@@ -66,7 +66,6 @@
             <div id="Notice-word">공지사항</div>
             <div id="Notice-plus">미림 라이프의 공지사항을 알려드립니다.</div>
         </div>
-        <hr id="Notice-line" style="width:120px;">
 
         <div class="Notice-down">
 
@@ -94,9 +93,10 @@
         <div class="Notice-bottom">
             <table>
                 <tr>
-                    <td style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">No</td>
+                    <td style="border-top-left-radius: 12px; border-bottom-left-radius: 12px;">No</td>
                     <td>제목</td>
-                    <td style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;">등록일</td>
+                    <td>조회수</td>
+                    <td style="border-top-right-radius: 12px; border-bottom-right-radius: 12px;">등록일</td>
                 </tr>
 
                 <?php
@@ -135,13 +135,15 @@
                         while($row = mysqli_fetch_array($result2)) {
                             $num = $row['num'];
                             $title = $row['title'];
+                            $views = $row['views'];
                             $date = $row['date'];
                             $page = $_GET['page'];
 
                             echo "<tr>";
-                            echo "<td style = 'width:170px;'> $num </td>";
-                            echo "<td style = 'width:550px;'><a href='NoticeDetail.php?num=$num&page=$page '> $title </a></td>";
-                            echo "<td> $date </td>";
+                            echo "<td style = 'width:120px;'> $num </td>";
+                            echo "<td style = 'width:550px; text-align: left; padding-left:20px;'><a href='NoticeDetail.php?num=$num&page=$page '> $title </a></td>";
+                            echo "<td style = 'width:150px;'> $views </td>";
+                            echo "<td style = 'width:150px;'> $date </td>";
                             echo "</tr>";
                         }
                     }
@@ -153,11 +155,11 @@
         echo '<div class="Notice-page">';
             $page1 = $page == 1?1:$page-1;
             $page2 = $page == $pageNum?$pageNum:$page+1;
-            echo "<a href='$PHP_SELP?page=$page1'><img class='Left-img' src='IMG/Notice/Left.png'></a>";
+            echo "<a href='$PHP_SELP?page=$page1'><img class='Left-img' src='IMG/Notice/LeftArrow.png'></a>";
                 for ($p=$s_page; $p<=$e_page; $p++) {
-                    echo "<a href='$PHP_SELP?page=$p'>$p</a>";
+                    echo "<a href='$PHP_SELP?page=$p' class='Page-num'>$p</a>";
                 }
-            echo "<a href='$PHP_SELP?page=$page2'><img class='Right-img' src='IMG/Notice/Right.png'></a>";
+            echo "<a href='$PHP_SELP?page=$page2'><img class='Right-img' src='IMG/Notice/RightArrow.png'></a>";
         echo '</div>';
         ?>
     </div>

@@ -1,13 +1,40 @@
 /* 제목 */
-@import url(Title.css);
+/* @import url(Title.css?ver=1.1); */
 
 html {
-    background: url(../IMG/Notice/BG.png) no-repeat 50% 50% fixed; 
+    background: url(../IMG/Notice/Background.png) no-repeat 50% 50% fixed; 
     background-attachment: fixed ;
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
+}
+
+.Notice-up {
+    position: relative;
+    width: 1200px;
+    height:80px;
+    text-align: center;
+    margin: 0 auto;
+
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.Notice-up #Notice-word {
+    position: absolute;
+    display: inline-block;
+    color:#FCAF49;
+    transform: translateX(-50%);
+    font-size: 15px; 
+    font-weight: bold; 
+}
+.Notice-up #Notice-plus {
+    position: absolute;
+    display: inline-block;
+    transform: translateX(-50%);
+    font-size:30px;
+    margin-top:25px;
+    font-weight: lighter;
+    color: black;
 }
 
 /* 조회수, 올린 시간 */
@@ -42,6 +69,17 @@ html {
     margin:20px 50px 20px 50px;
     font-size: 13px;
 }
+.Text .Files {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-left: 42px;
+    height:40px;
+    font-size: 13px;
+}
+.Text .Files .word{
+    padding-left: 15px;
+    color:#415EF3;
+    font-weight: bold;
+}
 
 /* 목록으로 가기 */
 .Back {
@@ -54,10 +92,10 @@ html {
 .Back button {
     padding:5px;
     width:100%;
-    height:40px;
+    height:50px;
     font-size: 14px;
-    background-color:#fac60e;
+    background-color:#7B97D7;
     border:0;
-    border-radius: 20px;
+    border-radius: 30px;
     color:white;
 }

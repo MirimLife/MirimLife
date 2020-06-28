@@ -11,14 +11,15 @@
     display: inline-block;
     transform: translateX(-50%);
     font-size: 30px; 
-    
+    font-weight: bold;
+    color: #FCAF49;
 }
 .Notice-up #Notice-plus {
     position: absolute;
     display: inline-block;
     transform: translateX(-50%);
     font-size:15px;
-    margin-top:60px;
+    margin-top:47px;
     font-weight: lighter;
     color:#858585;
 }

@@ -51,9 +51,7 @@
 }
 .Notice-down .Write-btn button {
     right: 0;
-
-    color:#fac60e;
-    background: white;
+    color:white;
+    background: #7B97D7;
     border-radius: 30px;
-    border: 1px solid #fac60e;
 }
