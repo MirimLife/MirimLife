@@ -219,14 +219,14 @@ select
 #grade-select
 {
     background-image: url(../IMG/MyPage/UpdateClass/class2.png);
-    left:40%;
+    left:35%;
 
 }
 
 #class-select
 {
     background-image: url(../IMG/MyPage/UpdateClass/class1.png);
-    left: 55%;
+    left: 50%;
 }
 
 /* 비밀번호 변경 content */
