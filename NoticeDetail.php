@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.5">
-    <link rel="stylesheet" type="text/css" href="./CSS/BoardDetail.css?ver=1.3">
+    <link rel="stylesheet" type="text/css" href="./CSS/BoardDetail.css?ver=1.2">
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
     <link rel="icon" href="IMG/Icon/favicon___.png">
 
@@ -32,7 +32,31 @@
             </ul>
 
             <div class="Sign"> <!-- 로그인, 회원가입 버튼-->
-                
+                <?php
+                    session_start();
+
+                    if(isset($_SESSION['id'])) {
+                        $id = $_SESSION['id'];
+                        include ('db_conn.php');
+                        if (mysqli_connect_errno()){
+                            echo "Failed to connect to MySQL: " . mysqli_connect_error();
+                        }
+                        $sql = "select name from members where id = '$id'";
+                        $result = mysqli_query($con, $sql);
+
+                        if(mysqli_num_rows($result) > 0) {
+                            $row = mysqli_fetch_array($result);
+                            $name = $row['name'];
+                            echo `<a href="MyPage.php"><p id="username">{$name}님&nbsp;</p></a>`;
+                        }
+                        echo "<a id='LogOut'  href='logout.php'>로그아웃</a>";
+                        mysqli_close($con);
+                    }
+                    else {
+                        echo '<a href="SignIn.html"><img class="Sign-In" src="IMG/Main/Login.png"></a>';
+                        echo '<a href="SignUp.html"><img class="Sign-Up" src="IMG/Main/SignUp.png"></a>';
+                    }
+                ?>
             </div>
         </div>
 
@@ -72,18 +96,7 @@
                 echo "</div>";
     
                 echo '<div class="Text">';
-                    echo "<div class='InnerText'>$contents</div>"; ?>
-
-                    <div class="Files">
-                        <table>
-                            <tr>
-                                <td><img src='IMG/Notice/Detail/file.png'></td>
-                                <td>첨부파일</td>
-                                <td class="word">아무노래.hwp</td>
-                            </tr>
-                        </table>
-                    </div>
-                <?php
+                    echo "<div class='InnerText'>$contents</div>";
                 echo "</div>";
             }
             mysqli_close($con);

@@ -163,7 +163,7 @@ body{
     width:100%;
 }
 
-.item1-Btn-evnet-head-item1, .item2-Btn-evnet-head-item1, .item3-Btn-evnet-head-item1
+.item1-Btn-evnet-head-item1, .item2-Btn-evnet-head-item1
 {
     position:fixed; 
     top:30%; 
@@ -174,7 +174,7 @@ body{
     padding: 30px;
 }
 
-.item1-Btn-evnet-head-item2, .item2-Btn-evnet-head-item2, .item3-Btn-evnet-head-item2
+.item1-Btn-evnet-head-item2, .item2-Btn-evnet-head-item2
 {
     font-size: 15px;
     color: rgb(182, 176, 176);
@@ -230,16 +230,16 @@ select
 }
 
 /* 비밀번호 변경 content */
-#item3-content-item1
+#item2-content-item1
 {
     position: fixed;
     font-size: 15px;
     color: black;
     top: 45%;
-    left: 40%;
+    left: 38%;
 }
 
-#item3-content-item2
+#item2-content-item2
 {
     position: fixed;
     font-size: 15px;
@@ -250,18 +250,61 @@ select
     padding: 8px;
     background-image: url(../IMG/MyPage/UpdatePw/PasswordWindow.png);
     top: 45%;
-    left: 45%;
+    left: 42%;
 }
 
-#item3-content-item3
+#item2-content-item3
 {
     position: fixed;
     width: 145px;
     height: 65px;
     top: 55%;
-    left: 50%;
+    left: 45%;
     border:0;
-    outline:0;
     background-image: url(../IMG/MyPage/UpdatePw/SubmitBtn.png);
 }
 /* 회원탈퇴 content */
+
+.item3-Btn-evnet-head-item1
+{
+    position:fixed; 
+    top:40%; 
+    left: 45%;
+    font-family: 'Noto Sans KR', sans-serddif;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0;
+    padding: 30px;
+}
+
+.item3-Btn-evnet-head-item2
+{
+    position: fixed;
+    font-size: 15px;
+    color: rgb(182, 176, 176);
+    text-align: center;
+    top: 46%;
+    left: 43%;
+}
+
+#item3-content-item1
+{
+    position: fixed;
+    border: 0;
+    width: 148px;
+    height: 68px;
+    top: 55%;   
+    left: 40%;
+    background-image: url(../IMG/MyPage/Delete/CancleBtn.png);
+}
+
+#item3-content-item2
+{
+    position: fixed;
+    border: 0;
+    width: 148px;
+    height: 68px;
+    top: 55%;   
+    left: 50%;
+    background-image: url(../IMG/MyPage/Delete/DeleteBtn.png);
+}
