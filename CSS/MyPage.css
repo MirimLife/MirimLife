@@ -145,3 +145,123 @@ body{
     text-align: left;
     margin-top: 10px;
 }
+
+/* 팝업 */
+#item1-Btn-evnet, #item2-Btn-evnet, #item3-Btn-evnet
+{
+    display:none; 
+    position:fixed; 
+    left:30%; 
+    top:30%; 
+    width:700px; 
+    z-index:1;
+}
+
+#item1-Btn-evnet img, #item2-Btn-evnet img, #item3-Btn-evnet img
+{
+    display:block;
+    width:100%;
+}
+
+.item1-Btn-evnet-head-item1, .item2-Btn-evnet-head-item1, .item3-Btn-evnet-head-item1
+{
+    position:fixed; 
+    top:30%; 
+    font-family: 'Noto Sans KR', sans-serddif;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0;
+    padding: 30px;
+}
+
+.item1-Btn-evnet-head-item2, .item2-Btn-evnet-head-item2, .item3-Btn-evnet-head-item2
+{
+    font-size: 15px;
+    color: rgb(182, 176, 176);
+    position: fixed;
+    top: 36%;
+    padding-left: 30px;
+}
+
+#item1-Btn-evnet .close, #item2-Btn-evnet .close, #item3-Btn-evnet .close
+{
+    position:absolute;
+    right:20px;
+    top:20px;
+    padding:1px 6px;
+    color:#fff;
+}
+
+#item1-Btn-evnet .close:hover {text-decoration:underline;}
+#item2-Btn-evnet .close:hover {text-decoration:underline;}
+#item3-Btn-evnet .close:hover {text-decoration:underline;}
+
+
+/* 학년 반 수정 content */
+select
+{
+    border: 0;
+}
+
+#grade-select, #class-select 
+{
+    position: fixed;
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    top: 50%;
+    font-family: inherit;
+    font-size: 15px;
+    padding: 15px;
+    padding-left: 75px;
+}
+
+#grade-select
+{
+    background-image: url(../IMG/MyPage/UpdateClass/class2.png);
+    left:40%;
+
+}
+
+#class-select
+{
+    background-image: url(../IMG/MyPage/UpdateClass/class1.png);
+    left: 55%;
+}
+
+/* 비밀번호 변경 content */
+#item3-content-item1
+{
+    position: fixed;
+    font-size: 15px;
+    color: black;
+    top: 45%;
+    left: 40%;
+}
+
+#item3-content-item2
+{
+    position: fixed;
+    font-size: 15px;
+    color: rgb(101, 101, 101);
+    border: 0;
+    width: 350px;
+    height: 40px;
+    padding: 8px;
+    background-image: url(../IMG/MyPage/UpdatePw/PasswordWindow.png);
+    top: 45%;
+    left: 45%;
+}
+
+#item3-content-item3
+{
+    position: fixed;
+    width: 145px;
+    height: 65px;
+    top: 55%;
+    left: 50%;
+    border:0;
+    outline:0;
+    background-image: url(../IMG/MyPage/UpdatePw/SubmitBtn.png);
+}
+/* 회원탈퇴 content */

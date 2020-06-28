@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
     <title>마이페이지</title>
 </head>
 
@@ -97,7 +99,7 @@
                             <p class="Item-Info">학년/반을 수정합니다.</p>
                         </div>
                         <div class="MyPage-item-right">
-                            <a href="#"><img src="IMG/MyPage/UpdateBtn.png"></a>
+                            <a href="#" class="item1-Btn"><img src="IMG/MyPage/UpdateBtn.png"></a>
                         </div>
                     </div>
 
@@ -108,7 +110,7 @@
                             <p class="Item-Info">비밀번호를 변경합니다.</p>
                         </div>
                         <div class="MyPage-item-right">
-                            <a href="#"><img src="IMG/MyPage/ChangeBtn.png"></a>
+                            <a href="#" class="item2-Btn"><img src="IMG/MyPage/ChangeBtn.png"></a>
                         </div>
                     </div>
 
@@ -119,14 +121,96 @@
                             <p class="Item-Info">미림라이프를 탈퇴합니다.</p>
                         </div>
                         <div class="MyPage-item-right">
-                            <a href="#"><img src="IMG/MyPage/SecessionBtn.png"></a>
+                            <a href="#" class="item3-Btn"><img src="IMG/MyPage/SecessionBtn.png"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div id="item1-Btn-evnet">
+            <img src="img/MyPage/UpdateClass/Window.png" alt="학년 반 수정">
+            <a href="#" class="item1-Btn-evnet close"><img src="img/MyPage/UpdateClass/Cancle.png"></a>
+            <P class="item1-Btn-evnet-head-item1">학년/반 수정</p>
+            <p class="item1-Btn-evnet-head-item2">학년/반을 수정합니다.</p>
+            <select id="grade-select">
+                <option value="1">1학년</option>
+                <option value="2">2학년</option>
+                <option value="3">3학년</option>
+            </select>
+
+            <select id="class-select">
+                <option value="class1">1반</option>
+                <option value="class2">2반</option>
+                <option value="class3">3반</option>
+                <option value="class4">4반</option>
+                <option value="class5">5반</option>
+                <option value="class6">6반</option>
+            </select>
+    </div>
+
+    <div id="item2-Btn-evnet">
+            <img src="img/MyPage/UpdatePw/Window.png" alt="비밀번호 변경">
+            <a href="#" class="item2-Btn-evnet close"><img src="img/MyPage/UpdatePw/Cancle.png"></a>
+            <P class="item2-Btn-evnet-head-item1">비밀번호 변경</p>
+            <p class="item2-Btn-evnet-head-item2">비밀번호를 변경합니다.</p>
+
+            <p id="item3-content-item1">비밀번호</p>
+            <input type="text" id="item3-content-item2" placeholder="비밀번호"></input>
+            <button id="item3-content-item3"></button>
+
+    </div>
+
+    <div id="item3-Btn-evnet">
+            <img src="img/MyPage/Delete/Window.png" alt="회원탈퇴">
+            <a href="#" class="item3-Btn-evnet close"><img src="img/MyPage/Delete/Cancle.png"></a>
+            <P class="item3-Btn-evnet-head-item1">회원탈퇴</p>
+            <p class="item3-Btn-evnet-head-item2">미림라이프에서 탈퇴하시겠습니까?</p>
+    </div>
     <!-- wrapper 닫기  -->
 
+    <script type="text/javascript">
+            //학년 반 수정
+            $(".item1-Btn").click(function(event){
+                event.preventDefault();
+                //$("#layer").css("display","block");
+                $("#item1-Btn-evnet").slideDown();
+            })
+
+            //비밀번호 변경
+            $(".item2-Btn").click(function(event){ 
+                event.preventDefault();
+                //$("#layer").css("display","block");
+                $("#item2-Btn-evnet").slideDown();
+            })
+
+            //탈퇴
+            $(".item3-Btn").click(function(event){
+                event.preventDefault();
+                //$("#layer").css("display","block");
+                $("#item3-Btn-evnet").slideDown();
+            })
+
+            
+            $("#item1-Btn-evnet .close").click(function(event){ //아이디 layer을 내려 보인다. 
+            // $("#layer").fadeOut("slow")
+                event.preventDefault();
+                $("#item1-Btn-evnet").fadeOut("slow");
+            })
+
+            $("#item2-Btn-evnet .close").click(function(event){ //아이디 layer을 내려 보인다. 
+            // $("#layer").fadeOut("slow")
+                event.preventDefault();
+                $("#item2-Btn-evnet").fadeOut("slow");
+            })
+
+            $("#item3-Btn-evnet .close").click(function(event){ //아이디 layer을 내려 보인다. 
+            // $("#layer").fadeOut("slow")
+                event.preventDefault();
+                $("#item3-Btn-evnet").fadeOut("slow");
+            })
+
+    </script>
 </body>
 </html>

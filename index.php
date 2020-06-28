@@ -7,7 +7,7 @@
 
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.5">
-    <link rel="stylesheet" type="text/css" href="./CSS/index.css?ver=1.7">
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css?ver=1.8">
     <link rel="stylesheet" type="text/css" href="./CSS/index-ani.css?ver=1.1">
 
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
@@ -91,13 +91,13 @@
                 <div class="left-content">              
                     <img class="left-content-people tilt-in-top-1" src="IMG/Main/LP/people.png">
                     <img class="left-content-bubble slide-top" src="IMG/Main/LP/bubble.png">  
-                    <img class="left-content-deco" src="IMG/Main/LP/deco.png">
                 </div>
 
                 <div class="right-content">
                     <img class="right-content-people tilt-in-top-2" src="IMG/Main/RP/people.png">
                     <img class="right-content-buble1 slide-top" src="IMG/Main/RP/bubble1.png">
                     <img class="right-content-buble2 slide-top" src="IMG/Main/RP/bubble2.png">
+                    <img class="right-content-buble3 slide-top" src="IMG/Main/RP/bubble3.png">
                     <img class="right-content-air slide-tr" src="IMG/Main/RP/air.png">
                 </div>
             </div>
