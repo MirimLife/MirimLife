@@ -17,6 +17,9 @@
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap" rel="stylesheet">
 
     <title>미림도서관</title>
+    <!--api가져오기-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
 </head>
 
 <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
@@ -54,7 +57,7 @@
                         if(mysqli_num_rows($result) > 0) {
                             $row = mysqli_fetch_array($result);
                             $name = $row['name'];
-                            echo `<a href="MyPage.php"><p id="username">{$name}님&nbsp;</p></a>`;
+                            echo "<p id='username'>{$name}님&nbsp;</p>";
                         }
                         echo "<a id='LogOut'  href='logout.php'>로그아웃</a>";
                     }
@@ -76,80 +79,46 @@
 
             <div class="Notice-down">
                 <select name="job">
-                    <option value="">&nbsp;&nbsp;No</option>
+                    <option value="">&nbsp;&nbsp;전체</option>
                     <option value="" selected>&nbsp;&nbsp;제목</option>
-                    <option value="">&nbsp;&nbsp;등록일</option>
+                    <option value="">&nbsp;&nbsp;저자</option>
                 </select>
                 <input type="text" name="id" value="" placeholder="검색어를 입력하세요">
                 <div class="Search-btn"><button type="submit">검색하기</button></div>
             </div>
+            <script>
+                $(document).ready(function() {
+                    strUrl="./api/des2";
+                    $.ajax({
+                    url: strUrl,
+                    dataType: 'json',
+                    success: function (data) {
+                            $('#book').empty();
+                        for (var i = 0; i < data.length; i++) {
+                            d = data[i];
+                            strHtml='<li><div class="Book"><img id="Book-img" src="'+d.img+'">';
+                            strHtml+='<h4>'+d.title+'<h4>';
+                            strHtml+='<p>'+d.author+'</p>';
+                            if(d.rental=='대출가능'){
+                            strHtml+='<img id="Rental-img" src="IMG/Library/RentalOk.png"></div></li>';
+                            }
+                            else {
+                                strHtml+='<img id="Rental-img" src="IMG/Library/RentalNo.png"></div></li>';
+                            }
+                            $('#book').append($(strHtml));
+                        }
+
+                    },
+                    error: function(){
+                        console.log("QuickMenu Ajax Load failed.");
+                    }
+                    });
+                })
+
+            </script>
 
             <div class="Book-list">
-                <ul>
-                    <li>
-                        <div class="Book">
-                            <img id="Book-img" src="IMG/Library/Book1.jpg">
-                            <h4>내일 아침에는 눈을 뜰 수 없겠지만</h4>
-                            <p>캐스린 매닉스 지음</p>
-                            <img id="Rental-img" src="IMG/Library/RentalOk.png">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="Book">
-                            <img id="Book-img" src="IMG/Library/Book1.jpg">
-                            <h4>내일 아침에는 눈을 뜰 수 없겠지만</h4>
-                            <p>캐스린 매닉스 지음</p>
-                            <img id="Rental-img" src="IMG/Library/RentalNo.png">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="Book">
-                            <img id="Book-img" src="IMG/Library/Book1.jpg">
-                            <h4>내일 아침에는 눈을 뜰 수 없겠지만</h4>
-                            <p>캐스린 매닉스 지음</p>
-                            <img id="Rental-img" src="IMG/Library/RentalOk.png">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="Book">
-                            <img id="Book-img" src="IMG/Library/Book1.jpg">
-                            <h4>내일 아침에는 눈을 뜰 수 없겠지만</h4>
-                            <p>캐스린 매닉스 지음</p>
-                            <img id="Rental-img" src="IMG/Library/RentalOk.png">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="Book">
-                            <img id="Book-img" src="IMG/Library/Book1.jpg">
-                            <h4>내일 아침에는 눈을 뜰 수 없겠지만</h4>
-                            <p>캐스린 매닉스 지음</p>
-                            <img id="Rental-img" src="IMG/Library/RentalOk.png">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="Book">
-                            <img id="Book-img" src="IMG/Library/Book1.jpg">
-                            <h4>내일 아침에는 눈을 뜰 수 없겠지만</h4>
-                            <p>캐스린 매닉스 지음</p>
-                            <img id="Rental-img" src="IMG/Library/RentalOk.png">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="Book">
-                            <img id="Book-img" src="IMG/Library/Book1.jpg">
-                            <h4>내일 아침에는 눈을 뜰 수 없겠지만</h4>
-                            <p>캐스린 매닉스 지음</p>
-                            <img id="Rental-img" src="IMG/Library/RentalOk.png">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="Book">
-                            <img id="Book-img" src="IMG/Library/Book1.jpg">
-                            <h4>내일 아침에는 눈을 뜰 수 없겠지만</h4>
-                            <p>캐스린 매닉스 지음</p>
-                            <img id="Rental-img" src="IMG/Library/RentalOk.png">
-                        </div>
-                    </li>
+                <ul id="book">
                 </ul>
             </div>
         </div>
