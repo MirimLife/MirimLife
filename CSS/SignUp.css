@@ -87,11 +87,12 @@ html {
 .input-info, .input-id, .input-pwcheck {
     width: 291.5px;
     height: 47px; 
-    margin-left: 47px;
+    margin-left: 50px;
     border-radius: 0 10px 10px 0;
     border:1px solid #3648ec;
     padding: 1.5px;
     padding-left: 15px; 
+    margin-top: 4px;
 }
 
 /* 더 간단히 줄일 수 있으면 그렇게.. */
@@ -136,12 +137,13 @@ html {
 .input-info::placeholder, .input-id::placeholder, .input-pwcheck::placeholder, .input-half::placeholder { color: #a1a1a1; font-size: 13px; }
 
 .input input#sub {
-    width:160px;
-    height:60px;
+    width:355px;
+    height:50px;
     border: 0;
     border-radius: 50px;
     background-color: #fac60e;
     color:white;
     font-size: 16px;
     margin-top: 25px;
+    /* box-shadow: ; */
 }
