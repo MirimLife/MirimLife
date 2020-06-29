@@ -12,7 +12,6 @@ html {
     width: 100%;
     height: 961px; /* 몇으로 해야할까 1080-961 */
     z-index: 1;
-    padding-top: 30px;
 }
 
 .contents-l, .contents-r {
@@ -95,7 +94,7 @@ html {
 .title {
     width: 100%;
     height: 50px;
-    /* margin-bottom: 4px; 회원가입 글자와 창 간격 조절 */
+    margin-bottom: 4px; /* 회원가입 글자와 창 간격 조절 */
 }
 
 .title-p{
@@ -103,12 +102,6 @@ html {
     font-size: 32px;
     padding-left: 42px;
     margin: 0;  /* p태그 이 속성 reset.css로 옮겨도 이상없으면 옮기기 */
-    color: #FCAF49;
-    margin-right: 21px;
-}
-
-.descriptions-p {
-    color: #666;
 }
 
 .bar {
@@ -132,20 +125,19 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     padding-right: 15px;
-    /* margin-top: 10px; */
+    margin-top: 10px;
 }
 
 .Login-input{
-    border-radius: 15px;
-    border:0px solid #fac60e;
-    box-shadow: 0px 1px 5px #C2C2C2;
+    border-radius: 10px;
+    border:1px solid #fac60e;
     width: 408px;
     height: 50px;
     margin-bottom: 10px;
     padding-left: 15px; 
 }
 
-.Login-input::placeholder {color: #A0A3B5; font-size: 14px; }
+.Login-input::placeholder {color: rgb(227, 162, 93); font-size: 14px; }
 .Login-input:last-child { margin-bottom: 20px; }
 
 .Find-mid{
@@ -155,32 +147,34 @@ html {
 
 /* 로그인 버튼, 회원가입 버튼 */
 .Sign-Button{
-    width: 419px;
-    height: 60px;
+    width: 425px;
+    height: 50px;
     border: 0;
-    border-radius: 50px;
+    border-radius: 25px;
     background-color: #fac60e;
     color:white;
     font-size: 16px;
     margin-bottom: 10px;
-    box-shadow: 0px 1px 5px #C2C2C2;
 }
 
 /* 회원가입 버튼 */
 .Sign-Button:last-child {
     background-color: white;
     color: #fac60e;
-    /* border: 1px solid #fac60e; */
+    border: 1px solid #fac60e;
 }
 
-/* 비밀번호 찾기 */
-.find {
+/* 아이디, 비밀번호 찾기 */
+.find ul li {
+    float:left;
+    font-size: 13px;
+}
+
+.find ul {
     position: absolute;
     height: 20px;
     padding: 0;
-    margin-top: 10px;
-    color: #666;
-    font-size: 13px;
-    width: 419px;
-    text-align: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 0;
 }

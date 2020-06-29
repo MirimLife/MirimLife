@@ -4,7 +4,7 @@
 @import url(SearchBar.css);
 
 html {
-    background: url(../IMG/Notice/BG.png) no-repeat 50% 50% fixed; 
+    background: url(../IMG/Notice/Background.png) no-repeat 50% 50% fixed; 
     /* background-attachment: fixed ; */
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
@@ -28,30 +28,45 @@ html {
 .Book-list ul li .Book {
     /* position: absolute; */
     width:240px;
-    border-radius: 10px;
+    border-radius: 10px; 
     -webkit-box-shadow: 0px 2px 18px 3px rgba(0, 0, 0, 0.08);
     -moz-box-shadow:    0px 2px 18px 3px rgba(0, 0, 0, 0.08);
     box-shadow:         0px 2px 18px 3px rgba(0, 0, 0, 0.08);
-    margin-right: 15px;
+    margin-right: 20px;
     margin-bottom: 15px;
     text-align: center;
-    /* display: inline-block; */
-    /* right:0; */
-    /* 왜 저는 position absolute가 안되나요? 진심 궁금.. */
 }   
+.Book-list ul li #impossible{
+    background-color: #E9E9E9;
+}
 .Book-list ul li .Book #Book-img {
     padding-top:25px;
     width:130px;
 }
 .Book-list ul li .Book h4 {
-    font-size: 15px;
+    font-size: 17px;
     margin-top:5px;
     margin-bottom:3px;
+    padding-left:25px;
+    padding-right:25px;
+    font-weight: lighter;
+    text-align: center;
 }
 .Book-list ul li .Book p {
     font-size: 13px;
-    color: #CCCCCC;
+    color: #686868;
     margin-top:0px;
+}
+.Book-list ul li .Book h5 {
+    margin-top:20px;
+    font-size: 18px;
+    padding-bottom: 25px;
+}
+.Book-list ul li .Book .possible {
+    color:#7B97D7;
+}
+.Book-list ul li .Book .impossible {
+    color: #747578;
 }
 .Book-list ul li .Book #Rental-img {
     padding-bottom: 25px;

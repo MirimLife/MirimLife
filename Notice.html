@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.5">
-    <link rel="stylesheet" type="text/css" href="./CSS/Board.css?ver=1.6">
+    <link rel="stylesheet" type="text/css" href="./CSS/Board.css?ver=1.7">
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
     <link rel="icon" href="IMG/Icon/favicon___.png">
 
@@ -24,15 +24,37 @@
             <ul class="Menu">
                 <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
                 <li class="Menu-item"><a href = "#">일정확인</a></li>
-                <li class="Menu-item"><a href = "MirimTeam.php">미림팀</a></li>
+                <li class="Menu-item"><a href = "#">미림팀</a></li>
                 <li class="Menu-item"><a href = "Forest.php">대나무숲</a></li>
                 <li class="Menu-item"><a href = "cafeteria.php">급식확인</a></li>
-                <li class="Menu-item"><a href = "Library.php">도서관</a></li>
                 <li class="Menu-item"><a href="https://bit.ly/mirimmusic">음악신청</a></li>
             </ul>
 
             <div class="Sign"> <!-- 로그인, 회원가입 버튼-->
-                
+                <!-- <?php
+                    session_start();
+
+                    if(isset($_SESSION['id'])) {
+                        $id = $_SESSION['id'];
+                        $con = mysqli_connect("localhost","mirimlife","itshow1!","mirimlife");
+                        if (mysqli_connect_errno()){
+                            echo "Failed to connect to MySQL: " . mysqli_connect_error();
+                        }
+                        $sql = "select name from members where id = '$id'";
+                        $result = mysqli_query($con, $sql);
+
+                        if(mysqli_num_rows($result) > 0) {
+                            $row = mysqli_fetch_array($result);
+                            $name = $row['name'];
+                            echo "<p id='username'>{$name}님&nbsp;</p>";
+                        }
+                        echo "<a id='LogOut'  href='logout.php'>로그아웃</a>";
+                    }
+                    else {
+                        echo '<a href="SignIn.html"><img class="Sign-In" src="IMG/Main/Login.png"></a>';
+                        echo '<a href="SignUp.html"><img class="Sign-Up" src="IMG/Main/SignUp.png"></a>';
+                    }
+                ?> -->
             </div>
         </div>
 
@@ -40,45 +62,93 @@
             <div id="Notice-word">공지사항</div>
             <div id="Notice-plus">미림 라이프의 공지사항을 알려드립니다.</div>
         </div>
+        <hr id="Notice-line" style="width:120px;">
 
         <div class="Notice-down">
-
-            <form method="GET" action="NoticeSearch.php">
-                <select name="search_select">
-                    <option value="num">&nbsp;&nbsp;No</option>
-                    <option value="title" selected>&nbsp;&nbsp;제목</option>
-                    <option value="date">&nbsp;&nbsp;등록일</option>
+            <div class="Select-box">
+                <select name="job">
+                    <option value="회사원">&nbsp;&nbsp;No</option>
+                    <option value="" selected>&nbsp;&nbsp;제목</option>
+                    <option value="">&nbsp;&nbsp;등록일</option>
                 </select>
-                <input type="text" name="search" placeholder="검색어를 입력하세요">
+            </div>
+            <div class="Search-write">
+                <input type="text" name="id" value="" placeholder="검색어를 입력하세요">
+            </div>
+            <div class="Search-bar">
                 <div class="Search-btn"><button type="submit">검색하기</button></div>
-            </form>
+            </div>
             <div class='Write-btn'><a href='NoticeWrite.php'><button>글쓰기</button></a></div>
+            <!-- <?php
+                session_start();
+                if(isset($_SESSION['id'])) {
+                    if($_SESSION['id'] == 'test') {
+                        echo "<div class='Write-btn'><a href='NoticeWrite.php'><button>글쓰기</button></a></div>";
+                    }
+                }
+                
+            ?> -->
         </div>
-        
-        
+
         <div class="Notice-bottom">
             <table>
                 <tr>
-                    <td style="border-top-left-radius: 12px; border-bottom-left-radius: 12px;">No</td>
+                    <td style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">No</td>
                     <td>제목</td>
-                    <td>조회수</td>
-                    <td style="border-top-right-radius: 12px; border-bottom-right-radius: 12px;">등록일</td>
+                    <td style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;">등록일</td>
                 </tr>
-
                 <tr>
-                    <td style = 'width:120px;'> 01 </td>
-                    <td style = 'width:550px; text-align: left; padding-left:20px;'><a href='NoticeDetail.php'> $title </a></td>
-                    <td style = 'width:150px;'>$title </a></td>
-                    <td style = 'width:150px;'> $date </td>
+                    <td style = "width:170px;">1</td>
+                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
+                    <td>2020.02.24</td>
                 </tr>
-
+                <tr>
+                    <td style = "width:170px;">1</td>
+                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
+                    <td>2020.02.24</td>
+                </tr>
+                <tr>
+                    <td style = "width:170px;">1</td>
+                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
+                    <td>2020.02.24</td>
+                </tr>
+                <tr>
+                    <td style = "width:170px;">1</td>
+                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
+                    <td>2020.02.24</td>
+                </tr>
+                <tr>
+                    <td style = "width:170px;">1</td>
+                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
+                    <td>2020.02.24</td>
+                </tr>
+                <tr>
+                    <td style = "width:170px;">1</td>
+                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
+                    <td>2020.02.24</td>
+                </tr>
+                <tr>
+                    <td style = "width:170px;">1</td>
+                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
+                    <td>2020.02.24</td>
+                </tr>
+                <tr>
+                    <td style = "width:170px;">1</td>
+                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
+                    <td>2020.02.24</td>
+                </tr>
+                <tr>
+                    <td style = "width:170px;">1</td>
+                    <td style = "width:550px;"><a href="NoticeDetail.php">가나다라</a></td>
+                    <td>2020.02.24</td>
+                </tr>
             </table>
         </div>
 
         <div class="Notice-page">
-            <a href='$PHP_SELP?page=$page1'><img class='Left-img' src='IMG/Notice/LeftArrow.png'></a>
-                <a href='$PHP_SELP?page=$p' class='Page-num'>1</a>
-            <a href='$PHP_SELP?page=$page2'><img class='Right-img' src='IMG/Notice/RightArrow.png'></a>
+            <a href="#"><img class="Left-img" src="IMG/Notice/Left.png"></a>
+            <div class="Page-num">1</div>
+            <a href="#"><img class="Right-img" src="IMG/Notice/Right.png"></a>
         </div>
     </div>
 </body>

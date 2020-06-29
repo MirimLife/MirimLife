@@ -1,5 +1,5 @@
 html {
-    background: url(../IMG/FindIdPw/BG.png) no-repeat 50% 50% fixed; 
+    background: url(../IMG/SignUp/BG2.png) no-repeat 50% 50% fixed; 
     background-attachment: fixed ;
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
@@ -29,23 +29,15 @@ html {
 /* 아이디/비밀번호 찾기 글씨 */
 .title {
     width: 100%;
-    margin-bottom: 47px;
+    height: 50px;
+    margin-bottom: 15px; /* 글자와 창 간격 조절 */
 }
 
 .title-p{
     text-align: center;
-    font-size: 40px;
+    font-size: 32px;
     font-family: 'Noto Sans KR', sans-serif;
     margin: 0; 
-    color: #FCAF49;
-}
-
-.descriptions-p{
-    text-align: center;
-    color: #666666;
-    margin-top: 10px;
-    font-size: 16px;
-    margin-bottom: 0;
 }
 
 .bar {
@@ -66,7 +58,7 @@ html {
 }
 
 /* 아이디 찾기/비밀번호 찾기 버튼 css */
-/* .buttons {
+.buttons {
     position: relative;
     width: calc(100% - 22px);
     height: 74px;
@@ -99,14 +91,14 @@ html {
 }
 .button-r a {
     color:white;
-} */
+}
 
 .input {
     position: absolute;
     width: 450px;
     height: 170px;
     left: 50%;
-    top: 30%;
+    top: 27%;
     transform: translate(-50%, 0);
 }
 
@@ -121,18 +113,16 @@ html {
     width: 15%;
     display: inline-block;
     text-align: left;
-    /* margin-left: 20px; */
+    margin-left: 20px;
     font-size: 15px;
-    color:#222222;
 }
 
 .input-info {
     float: right;
     width: 80%;
     height: 100%;
-    border:0px;
+    border:1px solid #3648ec;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 0px 1px 5px #C2C2C2;
     box-sizing: border-box;
     padding-left: 15px;
 }
@@ -153,15 +143,15 @@ html {
 }
 
 .input-info::placeholder {
-    color: #A0A3B5; 
+    color: #a1a1a1; 
     font-size: 13px;
 }
 
 #submit {
     position: absolute;
-    width:169px;
+    width:160px;
     height:60px;
-    background-color: #FDCE08;
+    background-color: black;
     color: white;
     font-size: 16px;
     border-radius: 50px;
@@ -169,6 +159,4 @@ html {
     transform: translate(50%);
     right: 50%;
     bottom: 0;
-    box-shadow: 0px 1px 5px #C2C2C2;
-    border: 0;
 }

@@ -6,7 +6,7 @@
 
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.5">
-    <link rel="stylesheet" type="text/css" href="./CSS/MirimTeam.css?ver=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS/MirimTeam.css?ver=1.1">
 
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
     <link rel="icon" href="IMG/Icon/favicon___.png">
@@ -72,7 +72,6 @@
                 <div id="Notice-word">미림팀</div>
                 <div id="Notice-plus">함께 스터디할 팀원을 구할 수 있는 공간입니다.</div>
             </div>
-            <hr id="Notice-line" style="width:120px;">
 
             <div class="Notice-down">
                 <select name="job">
@@ -89,7 +88,7 @@
                 <ul>
                 <li>
                         <div class="Team">
-                            <img id="Team-img" src="IMG/MirimTeam/library.PNG">
+                            <!-- <img id="Team-img" src="IMG/MirimTeam/library.PNG"> -->
                             <div class="Team-word">
                                 <h1>같이 공모전 할 사람 구해요!</h1>
                                 <h3>by.김모모</h3>
@@ -97,7 +96,7 @@
                                 <h4>아이디어 구상/웹디자인/2020.06.06까지</h4>
                                 <div class="Team-under">
                                     <p>1일전</p>
-                                    <img id="Chat-img" src="IMG/MirimTeam/Chat.png">
+                                    <img id="Chat-img" src="IMG/MirimTeam/Chatting.png">
                                     <p id="Chat-num">2</p>
                                 </div>
                             </div>

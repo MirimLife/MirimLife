@@ -6,7 +6,7 @@
 
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.5">
-    <link rel="stylesheet" type="text/css" href="./CSS/Library.css?ver=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS/Library.css?ver=1.1">
 
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
     <link rel="icon" href="IMG/Icon/favicon___.png">
@@ -75,7 +75,6 @@
                 <div id="Notice-word">도서관</div>
                 <div id="Notice-plus">도서관의 책을 확인할 수 있는 공간입니다.</div>
             </div>
-            <hr id="Notice-line" style="width:120px;">
 
             <div class="Notice-down">
             <form method="post">
@@ -111,14 +110,19 @@
                             $('#book').empty();
                         for (var i = 0; i < data.length; i++) {
                             d = data[i];
-                            strHtml='<li><div class="Book"><img id="Book-img" src="'+d.img+'">';
+                            if(d.rental=='대출가능'){
+                                strHtml='<li><div class="Book"><img id="Book-img" src="'+d.img+'">';
+                            }
+                            else {
+                                strHtml='<li><div class="Book" id="impossible"><img id="Book-img" src="'+d.img+'">';
+                            }
                             strHtml+='<h4>'+d.title+'<h4>';
                             strHtml+='<p>'+d.author+'</p>';
                             if(d.rental=='대출가능'){
-                            strHtml+='<img id="Rental-img" src="IMG/Library/RentalOk.png"></div></li>';
+                                strHtml+='<h5 class='possible'>대여가능</h5></li>';
                             }
                             else {
-                                strHtml+='<img id="Rental-img" src="IMG/Library/RentalNo.png"></div></li>';
+                                strHtml+='<h5 class='impossible'>대여불가</h5></li>';
                             }
                             $('#book').append($(strHtml));
                         }

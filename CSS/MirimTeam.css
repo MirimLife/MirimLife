@@ -12,7 +12,7 @@ html {
     background-size: cover;
 }
 
-* 책 정보창 */
+/* 책 정보창 */
 .Team-list {
     position: relative;
     width: 1100px;
@@ -30,24 +30,21 @@ html {
 .Team-list ul li .Team {
     width:270px;
     border-radius: 15px;
-    box-shadow:         0px 2px 18px 3px rgba(0, 0, 0, 0.08);
+    /* color: #7b95d1; */
+    box-shadow:         0px 2px 18px 3px rgba(123, 151, 215,0.17);
     margin-right: 15px;
     margin-bottom: 25px;
     /* text-align: center */
 }
-.Team-list ul li .Team #Team-img {
-    width:270px;
-    height:110px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
 .Team-list ul li .Team .Team-word {
     padding-left:20px;
     padding-right:20px;
+    padding-top: 20px;
 }
 .Team-list ul li .Team h1 {
     font-size:17px;
     margin-bottom:0;
+    font-weight: normal;
 }
 .Team-list ul li .Team h3 {
     font-weight: lighter;    
@@ -56,20 +53,22 @@ html {
     color:#999999;
 }
 .Team-list ul li .Team h2 {
-    font-size:17px;
-    color:#FFB51F;
-    font-weight: lighter;
+    font-size:18px;
+    color:#7B97D7;
+    font-weight: bold;
     margin-bottom:0;
 }
 .Team-list ul li .Team h4 {
     margin-top:0;
     font-weight: lighter;
     color:#999999;
+    padding-bottom: 10px;
 }
 .Team-list ul li .Team .Team-under {
     position: relative;
     width:270px;
     height:35px;
+    padding-bottom: 10px;
 }
 .Team-list ul li .Team .Team-under p {
     position: absolute;
@@ -84,7 +83,7 @@ html {
 .Team-list ul li .Team .Team-under #Chat-num {
     position: absolute;
     right:40px;
-    color:#FFB51F;
+    color:#7B97D7;
 }
 
 

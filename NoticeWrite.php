@@ -65,7 +65,6 @@
             <div id="Notice-word">글쓰기</div>
             <div id="Notice-plus">HOME - 공지사항 - 글쓰기</div>
         </div>
-        <hr id="Notice-line" style="width:120px;">
 
         <div class="window">
             <img src="IMG/Notice/Write/window.png" id="window-img">
