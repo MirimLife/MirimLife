@@ -1,0 +1,144 @@
+/* 제목 */
+/* @import url(Title.css?ver=1.1); */
+
+html {
+    background: url(../IMG/Notice/Background.png) no-repeat 50% 50% fixed; 
+    background-attachment: fixed ;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+}
+
+.Notice-up {
+    position: relative;
+    width: 1200px;
+    height:80px;
+    text-align: center;
+    margin: 0 auto;
+
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.Notice-up #Notice-word {
+    position: absolute;
+    display: inline-block;
+    color:#FCAF49;
+    transform: translateX(-50%);
+    font-size: 35px; 
+    font-weight: 700; 
+}
+.Notice-up #Notice-plus {
+    position: absolute;
+    display: inline-block;
+    transform: translateX(-50%);
+    font-size:15px;
+    margin-top:60px;
+    font-weight: lighter;
+    color: rgb(221,221,221);
+}
+
+/* 조회수, 올린 시간 */
+.Title-info {
+    position: relative;
+    width: 1000px;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto;
+}
+
+.Title-info #time {
+    margin-right:10px;
+}
+.Title-info img {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateY(-10%);
+}
+
+/* 게시글 */
+.Text-1 {
+    position: relative;
+    width: 900px;
+    margin: 0 auto;
+    margin-top:20px;
+    border-top: rgb(221,221,221) 2px solid;
+    border-bottom: rgb(221,221,221) 2px solid;
+}
+.Text-1 .InnerText {
+    /* margin:20px 50px 20px 50px; */
+    padding: 15px;
+    font-size: 13px;
+}
+
+/* 추가정보 */
+.Text-2 {
+    position: relative;
+    width: 900px;
+    margin: 0 auto;
+    margin-top:20px;
+    border-bottom: rgb(221,221,221) 2px solid;
+}
+.InnerText-item1 {
+    font-size: 13px;
+    display: inline-block;
+}
+
+.InnerText-item1 .text{
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.InnerText-item1 .detail{
+    display: inline-block;
+    font-size: 14px;
+}
+
+/* 추가정보 */
+.InnerText-item2{
+    position: absolute;
+    right: 400px;
+    padding: 15px;
+    padding-top: 0;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.InnerText-item2 .text{
+    font-weight: bold;
+}
+
+td{
+    width: 80px;
+    height: 35px;
+}
+
+/* 추가정보 */
+.InnerText-item3{
+    margin-right: 20px;
+}
+
+.InnerText-item3 .text{
+    padding: 14px;
+    padding-bottom: 5px;
+    margin: 0;
+    color: rgb(123, 151, 215);  
+    font-size: 20px;
+}
+
+.InnerText-item3 .detail{
+    padding: 14px;
+    padding-top : 5px;
+    margin: 0; 
+    font-size: 14px;
+}
+
+.InnerText-item3 .btn{
+    background-image: url(../IMG/MirimTeam/Detail/Team.png);
+    width: 135px;
+    height: 58px;
+    border: 0;
+    outline: 0;   
+}
