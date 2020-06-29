@@ -78,15 +78,30 @@
             <hr id="Notice-line" style="width:120px;">
 
             <div class="Notice-down">
-                <select name="job">
-                    <option value="">&nbsp;&nbsp;전체</option>
-                    <option value="" selected>&nbsp;&nbsp;제목</option>
-                    <option value="">&nbsp;&nbsp;저자</option>
+            <form method="post">
+                <select name="job" id="op">
+                    <option value="all">&nbsp;&nbsp;전체</option>
+                    <option value="title" selected>&nbsp;&nbsp;제목</option>
+                    <option value="author">&nbsp;&nbsp;저자</option>
                 </select>
-                <input type="text" name="id" value="" placeholder="검색어를 입력하세요">
+                <input type="text" id="qe" name="id" value="" placeholder="검색어를 입력하세요">
                 <div class="Search-btn"><button type="submit">검색하기</button></div>
+                </form>
             </div>
+
             <script>
+                <?php
+                $title=$_POST[id];
+                $option=$_POST[job];
+
+                    $myfile = fopen("./api/qe", "w") or die("Unable to open file!");
+                    $txt = "{\"option\" : \"".$option."\",\n";
+                    fwrite($myfile, $txt);
+                    $txt = "\"title\" : \"".$title."\"}";
+                    fwrite($myfile, $txt);
+                    fclose($myfile);
+                ?>
+
                 $(document).ready(function() {
                     strUrl="./api/des2";
                     $.ajax({
