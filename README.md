@@ -8,3 +8,7 @@
 frontend                |  backend      | design
 -------------           | ------------- | -------------
 이예슬 &middot; 양아름 &middot; 황다영   | 양아름 &middot; 박소영 &middot; 김민지  | 공석희
+
+### 사용언어
+* HTML5, CSS3, JavaScript
+* PHP
