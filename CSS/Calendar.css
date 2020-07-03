@@ -1,0 +1,119 @@
+/* 제목 */
+@import url(Title.css);
+/* 글쓰기 및 검색 */
+@import url(SearchBar.css);
+
+html {
+    background: url(../IMG/Calendar/ScheduleWindow/BG.png) no-repeat 50% 50% fixed; 
+    background-attachment: fixed ;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+}
+
+.Notice-up {
+    position: relative;
+    width: 1200px;
+    height:80px;
+    text-align: center;
+    margin: 0 auto;
+
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.Notice-up #Notice-word {
+    position: absolute;
+    display: inline-block;
+    color:#FCAF49;
+    transform: translateX(-50%);
+    font-size: 35px; 
+    font-weight: 700; 
+}
+
+.Notice-up #Notice-plus {
+    position: absolute;
+    display: inline-block;
+    transform: translateX(-50%);
+    font-size:15px;
+    margin-top:60px;
+    font-weight: lighter;
+    color: rgb(221,221,221);
+}
+
+.Content
+{
+    width: 1300px;
+    height: 900px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.calendar-left, .calendar-right
+{
+    margin: 9px;
+    text-align: center;
+    display:inline-block;
+    width : 600px;
+    height: 590px;
+}
+
+.calendar-left
+{
+    background-image: url(../IMG/Calendar/ScheduleWindow/WindowBig.png);
+    float: left;
+}
+
+.calendar-item1
+{
+    text-align : left;
+    margin : 34px;
+    font-size : 30px;
+    color: #7B97D7;
+}
+
+.calendar-item2
+{
+    text-align: center;
+    width: 442px;
+    height: 405px;
+    font-size: 20px;
+    /* top, right, bottom, left  */
+    margin: 34px 70px 68px 70px;
+}
+.calendar-item2-h
+{
+    
+}
+
+.calendar-item2-d
+{
+    color : #B2B2B2;
+}
+
+.calendar-right
+{
+
+}
+
+.calendar-right-item
+{
+    width: 600px;
+    height: 160px;
+    background-image: url(../IMG/Calendar/ScheduleWindow/WindowSmall.png);
+    background-repeat: no-repeat;
+    display: inherit;
+}
+
+.Plus-Btn
+{
+    border : 0;
+    outline : 0;
+    top : 20px;
+    background-color: transparent !important;
+    text-align : center;
+}
+
+button:active 
+{
+    transform: scale(0.90);
+}

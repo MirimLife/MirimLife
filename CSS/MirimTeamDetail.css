@@ -50,6 +50,7 @@ html {
 .Title-info #time {
     margin-right:10px;
 }
+
 .Title-info img {
     display: inline-block;
     vertical-align: middle;
@@ -118,6 +119,7 @@ td{
 /* 추가정보 */
 .InnerText-item3{
     margin-right: 20px;
+    margin-bottom : 15px;
 }
 
 .InnerText-item3 .text{
@@ -136,9 +138,14 @@ td{
 }
 
 .InnerText-item3 .btn{
-    background-image: url(../IMG/MirimTeam/Detail/Team.png);
-    width: 135px;
-    height: 58px;
-    border: 0;
-    outline: 0;   
+    width: 174.99px;
+    height: 58.01px;
+    background-color : #7B97D7;
+    border: 1px solid #7B97D7;
+    border-radius : 29px 29px 29px 29px;
+    outline : 0;
+}
+
+button:active {
+    transform: scale(0.90);
 }
