@@ -117,3 +117,138 @@ button:active
 {
     transform: scale(0.90);
 }
+
+#item1-Btn-evnet
+{
+    display: none; 
+    position: fixed; 
+    left: 30%; 
+    top: 20%; 
+    width: 780px; 
+    height: 610px;
+    z-index: 1;
+}
+
+#item1-Btn-evnet .close
+{
+    position:absolute;
+    right:40px;
+    top:40px;
+    padding:1px 6px;
+    color:#fff;
+}
+
+#item1-Btn-evnet .close:hover {text-decoration:underline;}
+
+.item1-Btn-evnet-head-item1
+{
+    position:fixed; 
+    top:20%; 
+    font-family: 'Noto Sans KR', sans-serddif;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0;
+    padding: 30px;
+}
+
+.item1-Btn-evnet-head-item2
+{
+    font-size: 15px;
+    color: rgb(182, 176, 176);
+    position: fixed;
+    top: 26%;
+    padding-left: 30px;
+}
+
+
+.item1-Btn-evnet-content-item1 span, .item1-Btn-evnet-content-item2 span, .item1-Btn-evnet-content-item3 span
+{
+    font-size: 13px;
+    margin-right: 14px;
+}
+
+.item1-Btn-evnet-content-item1
+{
+    position:fixed; 
+    top:35%; 
+    font-family: 'Noto Sans KR', sans-serddif;
+    font-size: 13px;
+    margin-left: 55px;
+    margin-bottom: 15px;
+}
+
+.item1-Btn-evnet-content-item2
+{
+    position:fixed; 
+    top:45%; 
+    font-family: 'Noto Sans KR', sans-serddif;
+    font-size: 13px;
+    margin-left: 55px;
+    margin-bottom: 15px;
+}
+
+.item1-Btn-evnet-content-item3
+{
+    position:fixed; 
+    top:55%; 
+    font-family: 'Noto Sans KR', sans-serddif;
+    font-size: 13px;
+    margin-left: 55px;
+    margin-bottom: 15px;
+}
+
+#Title
+{
+    width: 430px;
+    height: 30px;
+    border-radius: 15px;
+    padding: 10px;
+    border: 0;
+    box-shadow: 0px 0px 5px #778BB8;
+}
+
+#Date
+{
+    width: 430px;
+    height: 30px;
+    border-radius: 15px;
+    padding: 10px;
+    border: 0;
+    box-shadow: 0px 0px 5px #778BB8;
+}
+
+#Content
+{
+    border-radius: 15px;
+    width: 642px;
+    height: 166px;
+    padding: 10px;
+    resize:none; /* 크기고정 */
+    border: 0;
+    box-shadow: 0px 0px 5px #778BB8;
+}
+
+.item1-Btn-evnet-content-item3 span
+{
+    
+}
+
+#item1-Btn-evnet button
+{
+    width: 150px;
+    height: 70px;
+
+    position:fixed; 
+    top: 77%;
+    left: 48%;
+
+    background-color: transparent !important;
+    background-image: url(../IMG/Calendar/AddSchedule/Submit.png);
+    border:0;
+    outline:0;
+}
+
+button:active 
+{
+    transform: scale(0.90);
+}
