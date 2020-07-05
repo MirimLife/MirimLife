@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.5">
-    <link rel="stylesheet" type="text/css" href="./CSS/BoardDetail.css?ver=1.3">
+    <link rel="stylesheet" type="text/css" href="./CSS/BoardDetail.css?ver=1.4">
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
     <link rel="icon" href="IMG/Icon/favicon___.png">
 
@@ -21,15 +21,15 @@
                 <img id="Logo-img" src="IMG/Main/logo.png">
             </a>
 
-        <ul class="Menu">
-            <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
-            <li class="Menu-item"><a href = "Calendar.html">일정확인</a></li>
-            <li class="Menu-item"><a href = "MirimTeam.php">미림팀</a></li>
-            <li class="Menu-item"><a href = "Forest.php">대나무숲</a></li>
-            <li class="Menu-item"><a href = "cafeteria.php">급식확인</a></li>
-            <li class="Menu-item"><a href = "Library.php">도서관</a></li>
-            <li class="Menu-item"><a href="https://bit.ly/mirimmusic">음악신청</a></li>
-        </ul>
+            <ul class="Menu">
+                <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
+                <li class="Menu-item"><a href = "Calendar.html">일정확인</a></li>
+                <li class="Menu-item"><a href = "MirimTeam.php">미림팀</a></li>
+                <li class="Menu-item"><a href = "Forest.php">대나무숲</a></li>
+                <li class="Menu-item"><a href = "cafeteria.php">급식확인</a></li>
+                <li class="Menu-item"><a href = "Library.php">도서관</a></li>
+                <li class="Menu-item"><a href="https://bit.ly/mirimmusic">음악신청</a></li>
+            </ul>
 
             <div class="Sign"> <!-- 로그인, 회원가입 버튼-->
                 

@@ -75,11 +75,12 @@ html {
     height:40px;
     font-size: 13px;
 }
-.Text .Files .word{
+.Text .Files a{
     padding-left: 15px;
     color:#415EF3;
     font-weight: bold;
 }
+
 
 /* 목록으로 가기 */
 .Back {

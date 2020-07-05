@@ -32,15 +32,15 @@
                 <img id="Logo-img" src="IMG/Main/logo.png">
             </a>
 
-        <ul class="Menu">
-            <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
-            <li class="Menu-item"><a href = "Calendar.html">일정확인</a></li>
-            <li class="Menu-item"><a href = "MirimTeam.php">미림팀</a></li>
-            <li class="Menu-item"><a href = "Forest.php">대나무숲</a></li>
-            <li class="Menu-item"><a href = "cafeteria.php">급식확인</a></li>
-            <li class="Menu-item"><a href = "Library.php">도서관</a></li>
-            <li class="Menu-item"><a href="https://bit.ly/mirimmusic">음악신청</a></li>
-        </ul>
+            <ul class="Menu">
+                <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
+                <li class="Menu-item"><a href = "Calendar.html">일정확인</a></li>
+                <li class="Menu-item"><a href = "MirimTeam.php">미림팀</a></li>
+                <li class="Menu-item"><a href = "Forest.php">대나무숲</a></li>
+                <li class="Menu-item"><a href = "cafeteria.php">급식확인</a></li>
+                <li class="Menu-item"><a href = "Library.php">도서관</a></li>
+                <li class="Menu-item"><a href="https://bit.ly/mirimmusic">음악신청</a></li>
+            </ul>
 
             <div class="Sign"> <!-- 로그인, 회원가입 버튼-->
                 <?php
@@ -59,9 +59,9 @@
                         if(mysqli_num_rows($result) > 0) {
                             $row = mysqli_fetch_array($result);
                             $name = $row['name'];
-                            echo `<a href="MyPage.php"><p id="username">{$name}님&nbsp;</p></a>`;
+                            echo '<a href="MyPage.php"><p id="username">',$name,'님&nbsp;</p></a>';
                         }
-                        echo "<a id='LogOut'  href='logout.php'>로그아웃</a>";
+                        echo "<a id='LogOut' href='logout.php'>로그아웃</a>";
                         mysqli_close($con);
                     }
                     else {

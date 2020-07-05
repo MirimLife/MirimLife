@@ -90,7 +90,7 @@
                         <div class="Team">
                             <!-- <img id="Team-img" src="IMG/MirimTeam/library.PNG"> -->
                             <div class="Team-word">
-                                <h1>같이 공모전 할 사람 구해요!</h1>
+                            <a href="./MirimTeamDetail.html"><h1>같이 공모전 할 사람 구해요!</h1></a>
                                 <h3>by.김모모</h3>
                                 <h2>2학년 디자인</h2>
                                 <h4>아이디어 구상/웹디자인/2020.06.06까지</h4>
