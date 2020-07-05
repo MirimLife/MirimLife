@@ -5,6 +5,10 @@
     $file = substr($down, 14);
     $filesize = filesize($down);
 
+    $file = iconv("utf-8","EUC-KR", $file);
+    $down = iconv("utf-8","EUC-KR", $down);
+
+
     echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
     
     if(file_exists($down)){

@@ -53,8 +53,6 @@
         }
         $DBFile = $uploadFile;
         $uploadFile = iconv("utf-8","EUC-KR", $uploadFile);
-        echo $uploadFile;
-        echo $_FILES[$fileName]['tmp_name'];
         if ( !move_uploaded_file($_FILES[$fileName]['tmp_name'], $uploadFile) ) { // 파일 이동
             echo "파일이 업로드 되지 않았습니다.";
             exit;
