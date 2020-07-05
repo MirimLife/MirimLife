@@ -38,6 +38,7 @@
 
         <?php
             $num = $_GET['num'];
+            $page = $_GET['page'];
 
             include ('db_conn.php');
             if (mysqli_connect_errno()){
@@ -57,6 +58,8 @@
                 $contents = nl2br($contents);
                 $date = $row['date'];
                 $views = $row['views'];
+                $file = $row['file'];
+                $file2 = substr($file, 14);
         
                 echo '<div class="Notice-up">';
                     echo '<div id="Notice-word">공지사항</div>';
@@ -72,14 +75,15 @@
                 echo "</div>";
     
                 echo '<div class="Text">';
-                    echo "<div class='InnerText'>$contents</div>"; ?>
+                    echo "<div class='InnerText'>$contents</div>"; 
 
-                    <div class="Files">
-                        <table>
-                            <tr>
-                                <td><img src='IMG/Notice/Detail/file.png'></td>
-                                <td>첨부파일</td>
-                                <td class="word">아무노래.hwp</td>
+                    echo '<div class="Files">';
+                        echo '<table>';
+                            echo '<tr>';
+                                echo "<td><img src='IMG/Notice/Detail/file.png'></td>";
+                                echo "<td>첨부파일</td>";
+                                echo "<td class='word'><a href='download.php?num=$num&page=$page&file=$file '>".$file2."</a></td>"
+                                ?>
                             </tr>
                         </table>
                     </div>

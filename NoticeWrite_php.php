@@ -1,10 +1,10 @@
 <?php
     include ('db_conn.php');
-    $uploads_dir = '/home/mirimlife/www/notice_file';
+    $uploads_dir = './notice_file';
     $title = $_POST["title"];
     $fileName = "file";
     $contents = $_POST["contents"];
-    $DBFile = 0;
+    $DBFile = "0";
 
     echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
 
@@ -18,11 +18,11 @@
         $name = $_FILES[$fileName]['name'];
         // 오류 확인
         if( $error != UPLOAD_ERR_OK ) {
-	        switch( $error ) {
-		        case UPLOAD_ERR_INI_SIZE:
-		        case UPLOAD_ERR_FORM_SIZE:
+            switch( $error ) {
+                case UPLOAD_ERR_INI_SIZE:
+                    case UPLOAD_ERR_FORM_SIZE:
                     echo "<script> alert('파일 용량이 너무 큽니다.'); location.replace('Write.php'); </script>";
-			        break;
+                break;
                 case UPLOAD_ERR_PARTIAL:
                     echo "<script> alert('파일이 부분적으로 첨부되었습니다.'); location.replace('Write.php'); </script>";
                     break;
@@ -34,11 +34,10 @@
                     break;
                 case UPLOAD_ERR_EXTENSION:
                     echo "<script> alert('업로드 불가능한 파일입니다.'); location.replace('Write.php'); </script>";
-                    break;
-		        default:
+                    default:
                     echo "<script> alert('파일이 제대로 업로드되지 않았습니다.'); location.replace('Write.php'); </script>";
-	        }
-	        exit;
+                }
+                exit;
         }
         
         $uploadFile = $uploads_dir.'/'.$name; // 저장될 디렉토리 및 파일명
@@ -75,6 +74,5 @@
 
     mysqli_close($con);
 
-   
     echo "<script> alert('등록되었습니다.'); location.replace('Notice.php'); </script>";
 ?>
