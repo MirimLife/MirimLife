@@ -34,7 +34,7 @@
                 <li class="Menu-item"><a href = "MirimTeam.php">미림팀</a></li>
                 <li class="Menu-item"><a href = "Library.php">도서관</a></li>
                 <li class="Menu-item"><a href = "#">학습보고서</a></li>
-                <li class="Menu-item"><a href = "Map.html" class="selected">코로나맵</a></li>
+                <li class="Menu-item"><a href = "Map.php" class="selected">코로나맵</a></li>
                 <li class="Menu-item"><a href="https://bit.ly/mirimmusic">음악신청</a></li>
             </ul>
 
