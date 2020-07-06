@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- css -->
-    <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.5">
+    <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.71">
     <link rel="stylesheet" type="text/css" href="./CSS/MyPage.css?ver=1.0">
     
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
@@ -35,7 +35,7 @@
 
         <ul class="Menu">
             <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
-            <li class="Menu-item"><a href = "Calender.html">일정확인</a></li>
+            <li class="Menu-item"><a href = "Calendar.html">일정확인</a></li>
             <li class="Menu-item"><a href = "MirimTeam.php">미림팀</a></li>
             <li class="Menu-item"><a href = "Library.php">도서관</a></li>
             <li class="Menu-item"><a href = "#">학습보고서</a></li>
