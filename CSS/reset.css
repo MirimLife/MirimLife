@@ -117,3 +117,8 @@ input:focus {outline:none;}
     width: 100%;
     height:100%;
 }
+
+/* 메뉴 선택시 */
+#selected {
+    color:#FCAF49;
+}
