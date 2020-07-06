@@ -119,6 +119,6 @@ input:focus {outline:none;}
 }
 
 /* 메뉴 선택시 */
-#selected {
+.Menu-item .selected {
     color:#FCAF49;
 }

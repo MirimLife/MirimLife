@@ -54,7 +54,7 @@
                         if(mysqli_num_rows($result) > 0) {
                             $row = mysqli_fetch_array($result);
                             $name = $row['name'];
-                            echo '<a href="MyPage.php"><p id="username">',$name,'님&nbsp;</p></a>';
+                            echo `<a href="MyPage.php"><p id="username">{$name}님&nbsp;</p></a>`;
                         }
                         echo "<a id='LogOut'  href='logout.php'>로그아웃</a>";
                     }

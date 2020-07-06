@@ -1,0 +1,222 @@
+/* 전체틀 */
+.container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    z-index: 1;
+}
+
+/* select 초기화 */
+select{
+    position: absolute;
+    display: inline-block;
+    padding: 5px; 
+    padding-left: 10px;    
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 1px 3px 1px rgba(163, 173, 192, 0.377);
+    font-size:15px;
+    font-weight: lighter;
+    color:#858585;
+    left: 0;
+}
+
+/* 위, 아래 */
+.MirimTeam-top , .MirimTeam-bottom{
+    position: absolute;
+    display:table-cell;
+}
+
+/* 제목부분입니당 */
+.MirimTeam-top{
+    width: 500px;
+    height:100px;
+    text-align: center;
+    margin-right: 350px;
+    margin-left: 350px;
+}
+
+.MirimTeam-top #MirimTeam-word{
+    font-size: 30px; 
+    margin: 0;
+    color: #fcaf49;
+}
+
+.MirimTeam-top #MirimTeam-plus{
+    font-size:15px;
+    font-weight: lighter;
+    color:#858585;
+    margin-top: 10px;
+}
+
+/* 내용부분입니당 */
+.MirimTeam-bottom{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    bottom: 0;
+}   
+
+/* window 이미지 */
+.MirimTeam-bottom .img{
+    position: relative;
+    width: 1200px;
+    height: 590px;
+    text-align: center;
+}
+
+.form{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 600px;
+    text-align: center;  
+}
+
+/* input, input-box 클래스 관리 + h4 제목 관리*/
+.input{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 1100px;
+    height: 400px;
+}
+
+.input .input-box{
+    position: relative;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+}
+
+.input .input-box .h4-title {
+    position: absolute;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+/* 제목 input */
+.input .input-box .input-info {
+    position: absolute;
+    padding: 10px;
+    left: 140px;
+    width: 390px;
+    height: 18px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 1px 3px 1px rgba(163, 173, 192, 0.377);
+}
+
+/* 현재구성원 select*/
+.input .input-box .select-box-1{
+    position: absolute;
+    left: 140px;
+    width: 100px;
+    margin: 0;
+}
+.input .input-box .select-box-1 select{
+    width: 150px;
+    height: 40px; 
+}
+
+/*모집분야 */
+.button-box{
+    position: absolute;
+    left: 140px;
+}
+
+.button-box Button{
+    background-color: white;
+    width: 140px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 1px 3px 1px rgba(163, 173, 192, 0.377);
+    outline: none;
+    text-align: center;
+    color: gray;
+    margin-right: 10px;
+}
+
+.button-box  Button:hover{
+    color: black;
+}
+
+/* 모집기간 */
+.date-box{
+    position: absolute;
+    left: 140px;
+}
+
+.input-img {
+    position: absolute;
+    padding: 10px;
+    text-align: center;
+}
+
+.input-info-date{
+    width: 150px;
+    height: 40px; 
+    padding-left: 15px; 
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 1px 3px 1px rgba(163, 173, 192, 0.377);
+}
+
+/* 프로젝트 설명 */
+.input .input-box textarea {
+    position: absolute;
+    left: 140px;
+    resize: none;
+    width: 800px;
+    height: 100px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 1px 3px 1px rgba(163, 173, 192, 0.377);
+    outline:0;
+    padding: 10px;
+}
+
+/* 등록 취소 버튼들 */
+.button{
+    margin-top: 52px;
+}
+
+.input .button button {
+    border: none;
+    box-shadow: 0px 1px 3px 1px rgba(163, 173, 192, 0.377);
+    background: white;
+    width:120px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 15px;
+    color:#fcaf49;
+    margin-right:5px;
+}
+
+.input .button input {
+    background: #fcaf49;
+    box-shadow: 0px 1px 3px 1px rgba(163, 173, 192, 0.377);
+    border:0;
+    width:120px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 15px;
+    color:white;
+    margin-left:5px;
+}
+
+.input .button input:active {
+    transform: scale(0.90);
+}
+.input .button button:active {
+    transform: scale(0.90);
+}
+
+.input .input-box .button-box button:active {
+    transform: scale(0.90);
+}   
