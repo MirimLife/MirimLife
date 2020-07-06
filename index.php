@@ -7,7 +7,7 @@
 
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.5">
-    <link rel="stylesheet" type="text/css" href="./CSS/index.css?ver=1.8">
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css?ver=1.9">
     <link rel="stylesheet" type="text/css" href="./CSS/index-ani.css?ver=1.1">
 
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">

@@ -18,8 +18,6 @@ html {
 .contents {
     position: absolute;
     margin-top: 15px; /* nav와 회원가입 글자사이 간격 */
-    width: 509px; /* 맞나..? */
-    height: 646px; /* 맞나... */
     left: 50%;
     transform: translateX(-50%);
 }
@@ -27,14 +25,22 @@ html {
 /* 회원가입 글씨 */
 .title {
     width: 100%;
-    height: 50px;
-    margin-bottom: 7px; /* 회원가입 글자와 창 간격 조절 */
+    margin-bottom: 30px;
 }
 
 .title-p{
     text-align: center;
     font-size: 32px;
     margin: 0;  /* p태그 이 속성 reset.css로 옮겨도 이상없으면 옮기기 */
+    color: #FCAF49;
+    font-size: 40px;
+}
+
+.descriptions-p {
+    text-align: center;
+    color: #666666;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 .bar {
@@ -58,24 +64,25 @@ html {
 
 .input{
     position: absolute;
-    top: 21%;
+    top: 23%;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 397px;
-    height: 470px;
+    /* width: 397px;
+    height: 470px; */
     text-align: center;
 }
 
 .input-box {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     left: 50%;
     transform: translate(-50%, 0);
+    width: 450px;
 }
 
 .half-box {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     display: inline-block;
 }
 
@@ -85,32 +92,38 @@ html {
 }
 
 .input-info, .input-id, .input-pwcheck {
-    width: 291.5px;
-    height: 47px; 
-    margin-left: 47px;
+    width: 350px;
+    height: 48.3px; 
+    margin-left: 50px;
     border-radius: 0 10px 10px 0;
-    border:1px solid #3648ec;
+    border:0px;
     padding: 1.5px;
     padding-left: 15px; 
+    margin-top: 4px;
+    box-shadow: 0px 1px 5px #C2C2C2;
 }
 
 /* 더 간단히 줄일 수 있으면 그렇게.. */
 .input-half, .input-id {
-    height: 47px; 
+    height: 50px; 
     margin-left: 47px;
     border-radius: 0 10px 10px 0;
-    border:1px solid #3648ec;
+    border:0px;
     padding: 1.5px;
     padding-left: 15px; 
+    margin-top: 5px;
     display: inline-block;    
+    box-shadow: 0px 1px 5px #C2C2C2;
+    padding-top: 0;
+    padding-bottom: 0px;
 }
 
 .input-half {
-    width: 110px;
+    width: 142px;
 }
 
 .input-id {
-    width: 127px;
+    width: 142px;
 }
 
 /* e-mirim 박스 */
@@ -118,11 +131,12 @@ html {
     margin-left: 0; 
     border-radius: 10px 10px 10px 10px;
     height: 47px; 
-    border:1px solid #3648ec;
+    border:0px;
     text-align: center;
-    width: 137.5px;
+    width: 180px;
     font-size: 14px;
     background-color: white;
+    box-shadow: 0px 1px 5px #C2C2C2;
 }
 
 
@@ -133,15 +147,19 @@ html {
 }
 
 /* placeholder 색 변경 */
-.input-info::placeholder, .input-id::placeholder, .input-pwcheck::placeholder, .input-half::placeholder { color: #a1a1a1; font-size: 13px; }
+.input-info::placeholder, .input-id::placeholder, .input-pwcheck::placeholder, .input-half::placeholder { color: #A0A3B5; font-size: 13px; }
+.box::placeholder { color: #45464F; }
 
 .input input#sub {
-    width:160px;
-    height:60px;
+    width: 405px;
+    height: 60px;
     border: 0;
     border-radius: 50px;
     background-color: #fac60e;
     color:white;
     font-size: 16px;
-    margin-top: 25px;
+    /* margin-top: 25px; */
+    box-shadow: 0px 1px 5px #C2C2C2;
 }
+
+.half-box>span { color: #707070; }
