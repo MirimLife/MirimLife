@@ -6,7 +6,7 @@
 
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="./CSS/reset.css?ver=1.71">
-    <link rel="stylesheet" type="text/css" href="./CSS/MirimTeam.css?ver=1.1">
+    <link rel="stylesheet" type="text/css" href="./CSS/MirimTeam.css?ver=1.2">
 
     <link rel="shortcut icon" href="IMG/Icon/favicon___.png">
     <link rel="icon" href="IMG/Icon/favicon___.png">
@@ -86,7 +86,6 @@
 
             <div class="Team-list">
                 <ul>
-                <li>
                     <?php
                         include ('db_conn.php');
                         if (mysqli_connect_errno()){
@@ -114,6 +113,7 @@
                                 $field = $row['field'];
                                 $date = $row['date'];
                                 
+                                echo "<li>";
                                 echo "<div class='Team'>";
                                 echo "<div class='Team-word'>";
 
@@ -145,10 +145,9 @@
                         echo '</div>';
                             }
                         }
-                        
+                        echo "<li>";
                         
                     ?>
-                    </li>
                 </ul>
             </div>
 
