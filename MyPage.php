@@ -49,7 +49,8 @@
 
                     if(isset($_SESSION['id'])) {
                         $id = $_SESSION['id'];
-                        $con = mysqli_connect("localhost","mirimlife","itshow1!","mirimlife");
+                        
+                        include ('db_conn.php');
                         if (mysqli_connect_errno()){
                             echo "Failed to connect to MySQL: " . mysqli_connect_error();
                         }
@@ -85,9 +86,27 @@
                 <!-- 내정보 -->
                 <div class = "MyPage-left">
                     <P id="MyInfo">내정보</P>
-                    <img src="IMG/MyPage/1.png" id="grade"> 
-                    <p id="name">미림인</p>
-                    <p id="class">3학년 6반</p>
+                    <?php
+                        include ('db_conn.php');
+                        if (mysqli_connect_errno()){
+                            echo "Failed to connect to MySQL: " . mysqli_connect_error();
+                        }
+                        $sql = "select name, grade, class from members where id = '$id'";
+                        $result = mysqli_query($con, $sql);
+
+                        $name; $grade; $class;
+
+                        if(mysqli_num_rows($result) > 0) {
+                            $row = mysqli_fetch_array($result);
+                            $name = $row['name'];
+                            $grade = $row['grade'];
+                            $class = $row['class'];
+                        }
+
+                        echo "<img src='IMG/MyPage/$grade.png' id='grade'>"; 
+                        echo "<p id='name'>$name</p>";
+                        echo "<p id='class'>${grade}학년 ${class}반</p>";
+                    ?>
                 </div>
 
                 <!-- 수정/ 변경/ 탈퇴 -->
