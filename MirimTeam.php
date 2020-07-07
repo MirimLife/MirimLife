@@ -91,7 +91,7 @@
                         if (mysqli_connect_errno()){
                             echo "Failed to connect to MySQL: " . mysqli_connect_error();
                         }
-                        $sql = "select title, writer,  title, field, date from team order by num desc";
+                        $sql = "select num, title, writer,  title, field, date from team order by num desc";
                         $result = mysqli_query($con, $sql);
                         if (!mysqli_query ($con, $sql)){
                             echo("쿼리오류 발생: " . mysqli_error($con));
@@ -100,7 +100,7 @@
                         
                         //<!-- <img id="Team-img" src="IMG/MirimTeam/library.PNG"> -->
                         
-
+                        $num;
                         $title = "";
                         $writer = "";
                         $field = "";
@@ -109,6 +109,7 @@
 
                         if(mysqli_num_rows($result) > 0) {
                             while($row = mysqli_fetch_array($result)) {
+                                $num = $row['num'];
                                 $title = $row['title'];
                                 $writer = $row['writer'];
                                 $field = $row['field'];
@@ -126,7 +127,7 @@
                                 echo "<div class='Team'>";
                                 echo "<div class='Team-word'>";
 
-                                echo "<a href='./MirimTeamDetail.html'><h1>$title</h1></a>";
+                                echo "<a href='./MirimTeamDetail.php?num=$num'><h1>$title</h1></a>";
                                 echo "<h3>$name</h3>";
                                 echo "<h2>$field</h2>";
                                 echo "<h4>${date}까지</h4>";

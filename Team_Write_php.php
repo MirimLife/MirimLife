@@ -9,10 +9,6 @@
 
     echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
 
-    if($id == null || $id == "") {
-        echo "<script> alert('글 작성은 회원만 가능합니다. 로그인 해주십시오.'); location.replace('MirimTeam.php');; </script>";
-    }
-
     $fieldContents = "";
     for($i = 0; $i < count($_POST['field']); $i++) {
         $field = $_POST['field'];
