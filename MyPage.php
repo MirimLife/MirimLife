@@ -130,8 +130,8 @@
     </div>
 
     <div id="item1-Btn-evnet">
-            <img src="img/MyPage/UpdateClass/Window.png" alt="학년 반 수정">
-            <a href="#" class="item1-Btn-evnet close"><img src="img/MyPage/UpdateClass/Cancle.png"></a>
+            <img src="IMG/MyPage/UpdateClass/Window.png" alt="학년 반 수정">
+            <a href="#" class="item1-Btn-evnet close"><img src="IMG/MyPage/UpdateClass/Cancle.png"></a>
             <P class="item1-Btn-evnet-head-item1">학년/반 수정</p>
             <p class="item1-Btn-evnet-head-item2">학년/반을 수정합니다.</p>
             <select id="grade-select">
@@ -151,8 +151,8 @@
     </div>
 
     <div id="item2-Btn-evnet">
-            <img src="img/MyPage/UpdatePw/Window.png" alt="비밀번호 변경">
-            <a href="#" class="item2-Btn-evnet close"><img src="img/MyPage/UpdatePw/Cancle.png"></a>
+            <img src="IMG/MyPage/UpdatePw/Window.png" alt="비밀번호 변경">
+            <a href="#" class="item2-Btn-evnet close"><img src="IMG/MyPage/UpdatePw/Cancle.png"></a>
             <P class="item2-Btn-evnet-head-item1">비밀번호 변경</p>
             <p class="item2-Btn-evnet-head-item2">비밀번호를 변경합니다.</p>
 
@@ -163,8 +163,8 @@
     </div>
 
     <div id="item3-Btn-evnet">
-            <img src="img/MyPage/Delete/Window.png" alt="회원탈퇴">
-            <a href="#" class="item3-Btn-evnet close"><img src="img/MyPage/Delete/Cancle.png"></a>
+            <img src="IMG/MyPage/Delete/Window.png" alt="회원탈퇴">
+            <a href="#" class="item3-Btn-evnet close"><img src="IMG/MyPage/Delete/Cancle.png"></a>
             <P class="item3-Btn-evnet-head-item1">회원탈퇴</p>
             <p class="item3-Btn-evnet-head-item2">미림라이프에서 탈퇴하시겠습니까?</p>
             <button id="item3-content-item1"></button>
