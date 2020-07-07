@@ -127,8 +127,8 @@
         </div>
 
         <div id="item1-Btn-evnet">
-            <img src="img/Calendar/AddSchedule/window.png" alt="일정추가">
-            <a href="#" class="item1-Btn-evnet close"><img src="img/Calendar/AddSchedule/cancle.png"></a>
+            <img src="IMG/Calendar/AddSchedule/window.png" alt="일정추가">
+            <a href="#" class="item1-Btn-evnet close"><img src="IMG/Calendar/AddSchedule/cancle.png"></a>
             <P class="item1-Btn-evnet-head-item1">일정추가</p>
             <p class="item1-Btn-evnet-head-item2">일정을 추가합니다.</p>
 
