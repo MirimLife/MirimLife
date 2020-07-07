@@ -81,7 +81,7 @@
             <?php
                 session_start();
                 if(isset($_SESSION['id'])) {
-                    if($_SESSION['id'] == 's2018s00') {
+                    if($_SESSION['id'] == 's2018s00' || $_SESSION['id'] == 'mirim') {
                         echo "<div class='Write-btn'><a href='NoticeWrite.php'><button>글쓰기</button></a></div>";
                     }
                 }
