@@ -35,7 +35,7 @@
 
         <ul class="Menu">
             <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
-            <li class="Menu-item"><a href = "Calendar.html">일정확인</a></li>
+            <li class="Menu-item"><a href = "Calendar.php">일정확인</a></li>
             <li class="Menu-item"><a href = "MirimTeam.php">미림팀</a></li>
             <li class="Menu-item"><a href = "Library.php">도서관</a></li>
             <li class="Menu-item"><a href = "#">학습보고서</a></li>
@@ -156,9 +156,9 @@
             <P class="item2-Btn-evnet-head-item1">비밀번호 변경</p>
             <p class="item2-Btn-evnet-head-item2">비밀번호를 변경합니다.</p>
 
-            <p id="item3-content-item1">비밀번호</p>
-            <input type="text" id="item3-content-item2" placeholder="비밀번호"></input>
-            <button id="item3-content-item3"></button>
+            <p id="item2-content-item1">비밀번호</p>
+            <input type="text" id="item2-content-item2" placeholder="비밀번호"></input>
+            <button id="item2-content-item3"></button>
 
     </div>
 
@@ -167,6 +167,8 @@
             <a href="#" class="item3-Btn-evnet close"><img src="img/MyPage/Delete/Cancle.png"></a>
             <P class="item3-Btn-evnet-head-item1">회원탈퇴</p>
             <p class="item3-Btn-evnet-head-item2">미림라이프에서 탈퇴하시겠습니까?</p>
+            <button id="item3-content-item1"></button>
+            <button id="item3-content-item2"></button>
     </div>
     <!-- wrapper 닫기  -->
 

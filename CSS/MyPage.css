@@ -2,6 +2,11 @@ body{
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+button
+{
+    background-color: transparent !important;
+}
+
 /* 전체틀 */
 .container {
     position: relative;
@@ -219,27 +224,27 @@ select
 #grade-select
 {
     background-image: url(../IMG/MyPage/UpdateClass/class2.png);
-    left:40%;
+    left:35%;
 
 }
 
 #class-select
 {
     background-image: url(../IMG/MyPage/UpdateClass/class1.png);
-    left: 55%;
+    left: 50%;
 }
 
 /* 비밀번호 변경 content */
-#item3-content-item1
+#item2-content-item1
 {
     position: fixed;
     font-size: 15px;
     color: black;
     top: 45%;
-    left: 40%;
+    left: 35%;
 }
 
-#item3-content-item2
+#item2-content-item2
 {
     position: fixed;
     font-size: 15px;
@@ -250,18 +255,59 @@ select
     padding: 8px;
     background-image: url(../IMG/MyPage/UpdatePw/PasswordWindow.png);
     top: 45%;
-    left: 45%;
+    left: 40%;
 }
 
-#item3-content-item3
+#item2-content-item3
 {
     position: fixed;
     width: 145px;
     height: 65px;
     top: 55%;
-    left: 50%;
+    left: 45%;
     border:0;
     outline:0;
     background-image: url(../IMG/MyPage/UpdatePw/SubmitBtn.png);
 }
+
 /* 회원탈퇴 content */
+
+.item3-Btn-evnet-head-item1
+{
+    top: 35%;
+    left: 45%;
+}
+
+.item3-Btn-evnet-head-item2
+{
+    top: 42%;
+    left: 42%;
+}
+
+#item3-content-item1
+{
+    position: fixed;
+    font-size: 15px;
+    color: rgb(101, 101, 101);
+    border: 0;
+    width: 145px;
+    height: 65px;
+    padding: 8px;
+    top: 50%;
+    left: 40%;
+    background-image: url(../IMG/MyPage/Delete/CancleBtn.png);
+}
+
+#item3-content-item2
+{
+        position: fixed;
+    font-size: 15px;
+    color: rgb(101, 101, 101);
+    border: 0;
+    width: 145px;
+    height: 65px;
+    padding: 8px;
+    top: 50%;
+    left: 48%;
+    background-image: url(../IMG/MyPage/Delete/DeleteBtn.png);
+}
