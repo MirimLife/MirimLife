@@ -105,6 +105,7 @@
                         $writer = "";
                         $field = "";
                         $date = "";
+                        $name = "";
 
                         if(mysqli_num_rows($result) > 0) {
                             while($row = mysqli_fetch_array($result)) {
@@ -113,12 +114,20 @@
                                 $field = $row['field'];
                                 $date = $row['date'];
                                 
+                                $sql2 = "select name from members where id = '$writer'";
+                                $result2 = mysqli_query($con, $sql2);
+
+                                if(mysqli_num_rows($result2) > 0) {
+                                    $row2 = mysqli_fetch_array($result2);
+                                    $name = $row2['name'];
+                                }
+                                
                                 echo "<li>";
                                 echo "<div class='Team'>";
                                 echo "<div class='Team-word'>";
 
                                 echo "<a href='./MirimTeamDetail.html'><h1>$title</h1></a>";
-                                echo "<h3>$writer</h3>";
+                                echo "<h3>$name</h3>";
                                 echo "<h2>$field</h2>";
                                 echo "<h4>${date}까지</h4>";
                                 echo '<div class="Team-under">';

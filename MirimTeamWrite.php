@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['id'])) {
+        echo "<script> alert('글 작성은 회원만 가능합니다. 로그인 해주십시오.'); location.replace('MirimTeam.php');; </script>";
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
