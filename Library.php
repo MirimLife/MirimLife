@@ -90,8 +90,8 @@
 
             <script>
                 <?php
-                $title=$_POST[id];
-                $option=$_POST[job];
+                $title=$_POST['id'];
+                $option=$_POST['job'];
 
                     $myfile = fopen("./api/qe", "w") or die("Unable to open file!");
                     $txt = "{\"option\" : \"".$option."\",\n";
@@ -119,10 +119,10 @@
                             strHtml+='<h4>'+d.title+'<h4>';
                             strHtml+='<p>'+d.author+'</p>';
                             if(d.rental=='대출가능'){
-                                strHtml+='<h5 class='possible'>대여가능</h5></li>';
+                                strHtml+="<h5 class='possible'>대여가능</h5></li>";
                             }
                             else {
-                                strHtml+='<h5 class='impossible'>대여불가</h5></li>';
+                                strHtml+="<h5 class='impossible'>대여불가</h5></li>";
                             }
                             $('#book').append($(strHtml));
                         }

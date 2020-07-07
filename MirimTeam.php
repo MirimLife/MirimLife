@@ -87,20 +87,67 @@
             <div class="Team-list">
                 <ul>
                 <li>
-                        <div class="Team">
-                            <!-- <img id="Team-img" src="IMG/MirimTeam/library.PNG"> -->
-                            <div class="Team-word">
-                            <a href="./MirimTeamDetail.html"><h1>같이 공모전 할 사람 구해요!</h1></a>
-                                <h3>by.김모모</h3>
-                                <h2>2학년 디자인</h2>
-                                <h4>아이디어 구상/웹디자인/2020.06.06까지</h4>
-                                <div class="Team-under">
-                                    <p>1일전</p>
-                                    <img id="Chat-img" src="IMG/MirimTeam/Chatting.png">
-                                    <p id="Chat-num">2</p>
-                                </div>
-                            </div>
-                        </div>
+                    <?php
+                        include ('db_conn.php');
+                        if (mysqli_connect_errno()){
+                            echo "Failed to connect to MySQL: " . mysqli_connect_error();
+                        }
+                        $sql = "select title, writer,  title, field, date from team order by num desc";
+                        $result = mysqli_query($con, $sql);
+                        if (!mysqli_query ($con, $sql)){
+                            echo("쿼리오류 발생: " . mysqli_error($con));
+                        }
+
+                        
+                        //<!-- <img id="Team-img" src="IMG/MirimTeam/library.PNG"> -->
+                        
+
+                        $title = "";
+                        $writer = "";
+                        $field = "";
+                        $date = "";
+
+                        if(mysqli_num_rows($result) > 0) {
+                            while($row = mysqli_fetch_array($result)) {
+                                $title = $row['title'];
+                                $writer = $row['writer'];
+                                $field = $row['field'];
+                                $date = $row['date'];
+                                
+                                echo "<div class='Team'>";
+                                echo "<div class='Team-word'>";
+
+                                echo "<a href='./MirimTeamDetail.html'><h1>$title</h1></a>";
+                                echo "<h3>$writer</h3>";
+                                echo "<h2>$field</h2>";
+                                echo "<h4>${date}까지</h4>";
+                                echo '<div class="Team-under">';
+
+                                $today = date("Y-m-d");
+                                $startDay = new DateTime($today);
+                                $endDay = new DateTime($date);
+                                $day = date_diff($startDay, $endDay);
+                                $day = $day->days;
+                                if($day > 0) {
+                                    echo "<p>{$day}일전</p>";
+                                } 
+                                else if($day < 0) {
+                                    echo "<p>마감</p>";
+                                }
+                                else {
+                                    echo "<p>오늘</p>";
+                                }
+                                echo '<img id="Chat-img" src="IMG/MirimTeam/Chatting.png">';
+                                echo '<p id="Chat-num">2</p>';
+                                echo '</div>';
+                                echo '</div>';
+                                
+                        echo '</div>';
+                            }
+                        }
+                        
+                        
+                    ?>
                     </li>
                 </ul>
             </div>
