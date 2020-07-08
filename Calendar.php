@@ -132,19 +132,21 @@
             <P class="item1-Btn-evnet-head-item1">일정추가</p>
             <p class="item1-Btn-evnet-head-item2">일정을 추가합니다.</p>
 
-            <div class="item1-Btn-evnet-content-item1">
-                <span>제목</span> <input type="text" id="Title">
-                
-            </div>
+            <from method="post" action="" name="inputForm">
+                <div class="item1-Btn-evnet-content-item1">
+                    <span>제목</span> <input type="text" id="Title">
+                    
+                </div>
 
-            <div class="item1-Btn-evnet-content-item2">
-                <span>날짜</span> <input type="date" id="Date">
+                <div class="item1-Btn-evnet-content-item2">
+                    <span>날짜</span> <input type="date" id="Date">
 
-            </div>
+                </div>
 
-            <div class="item1-Btn-evnet-content-item3">
-                <span>내용</span> <textarea id="Content"></textarea>
-            </div>
+                <div class="item1-Btn-evnet-content-item3">
+                    <span>내용</span> <textarea id="Content"></textarea>
+                </div>
+            </from>
 
             <button type="submit"></button>
         </div>

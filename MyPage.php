@@ -149,6 +149,7 @@
     </div>
 
     <div id="item1-Btn-evnet">
+        <from method="post" action="" name="inputForm1">
             <img src="IMG/MyPage/UpdateClass/Window.png" alt="학년 반 수정">
             <a href="#" class="item1-Btn-evnet close"><img src="IMG/MyPage/UpdateClass/Cancle.png"></a>
             <P class="item1-Btn-evnet-head-item1">학년/반 수정</p>
@@ -167,9 +168,11 @@
                 <option value="class5">5반</option>
                 <option value="class6">6반</option>
             </select>
+        </from>
     </div>
 
     <div id="item2-Btn-evnet">
+        <from method="post" action="" name="inputForm2">
             <img src="IMG/MyPage/UpdatePw/Window.png" alt="비밀번호 변경">
             <a href="#" class="item2-Btn-evnet close"><img src="IMG/MyPage/UpdatePw/Cancle.png"></a>
             <P class="item2-Btn-evnet-head-item1">비밀번호 변경</p>
@@ -177,17 +180,20 @@
 
             <p id="item2-content-item1">비밀번호</p>
             <input type="text" id="item2-content-item2" placeholder="비밀번호"></input>
-            <button id="item2-content-item3"></button>
+            <button id="item2-content-item3" type="submit"></button>
+        </from>
 
     </div>
 
     <div id="item3-Btn-evnet">
+        <from method="post" action="" name="inputForm3">
             <img src="IMG/MyPage/Delete/Window.png" alt="회원탈퇴">
             <a href="#" class="item3-Btn-evnet close"><img src="IMG/MyPage/Delete/Cancle.png"></a>
             <P class="item3-Btn-evnet-head-item1">회원탈퇴</p>
             <p class="item3-Btn-evnet-head-item2">미림라이프에서 탈퇴하시겠습니까?</p>
-            <button id="item3-content-item1"></button>
-            <button id="item3-content-item2"></button>
+            <button id="item3-content-item1" type="submit"></button>
+            <button id="item3-content-item2" type="submit"></button>
+        </form>
     </div>
     <!-- wrapper 닫기  -->
 
