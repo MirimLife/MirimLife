@@ -23,7 +23,7 @@
 
             <ul class="Menu">
             <li class="Menu-item"><a href = "Notice.php" class="selected">공지사항</a></li>
-            <li class="Menu-item"><a href = "Calendar.html">일정확인</a></li>
+            <li class="Menu-item"><a href = "Calendar.php">일정확인</a></li>
             <li class="Menu-item"><a href = "MirimTeam.php">미림팀</a></li>
             <li class="Menu-item"><a href = "Library.php">도서관</a></li>
             <li class="Menu-item"><a href = "#">학습보고서</a></li>
@@ -81,7 +81,7 @@
             <?php
                 session_start();
                 if(isset($_SESSION['id'])) {
-                    if($_SESSION['id'] == 's2018s00') {
+                    if($_SESSION['id'] == 's2018s00' || $_SESSION['id'] == 'mirim') {
                         echo "<div class='Write-btn'><a href='NoticeWrite.php'><button>글쓰기</button></a></div>";
                     }
                 }

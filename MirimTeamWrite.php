@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['id'])) {
+        echo "<script> alert('글 작성은 회원만 가능합니다. 로그인 해주십시오.'); location.replace('MirimTeam.php');; </script>";
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +39,7 @@
 
         <ul class="Menu">
             <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
-            <li class="Menu-item"><a href = "Calendar.html">일정확인</a></li>
+            <li class="Menu-item"><a href = "Calendar.php">일정확인</a></li>
             <li class="Menu-item"><a href = "MirimTeam.php" class="selected">미림팀</a></li>
             <li class="Menu-item"><a href = "Library.php">도서관</a></li>
             <li class="Menu-item"><a href = "#">학습보고서</a></li>

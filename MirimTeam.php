@@ -29,7 +29,7 @@
 
         <ul class="Menu">
             <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
-            <li class="Menu-item"><a href = "Calendar.html">일정확인</a></li>
+            <li class="Menu-item"><a href = "Calendar.php">일정확인</a></li>
             <li class="Menu-item"><a href = "MirimTeam.php" class="selected">미림팀</a></li>
             <li class="Menu-item"><a href = "Library.php">도서관</a></li>
             <li class="Menu-item"><a href = "#">학습보고서</a></li>
@@ -91,7 +91,7 @@
                         if (mysqli_connect_errno()){
                             echo "Failed to connect to MySQL: " . mysqli_connect_error();
                         }
-                        $sql = "select title, writer,  title, field, date from team order by num desc";
+                        $sql = "select num, title, writer,  title, field, date from team order by num desc";
                         $result = mysqli_query($con, $sql);
                         if (!mysqli_query ($con, $sql)){
                             echo("쿼리오류 발생: " . mysqli_error($con));
@@ -100,25 +100,35 @@
                         
                         //<!-- <img id="Team-img" src="IMG/MirimTeam/library.PNG"> -->
                         
-
+                        $num;
                         $title = "";
                         $writer = "";
                         $field = "";
                         $date = "";
+                        $name = "";
 
                         if(mysqli_num_rows($result) > 0) {
                             while($row = mysqli_fetch_array($result)) {
+                                $num = $row['num'];
                                 $title = $row['title'];
                                 $writer = $row['writer'];
                                 $field = $row['field'];
                                 $date = $row['date'];
                                 
+                                $sql2 = "select name from members where id = '$writer'";
+                                $result2 = mysqli_query($con, $sql2);
+
+                                if(mysqli_num_rows($result2) > 0) {
+                                    $row2 = mysqli_fetch_array($result2);
+                                    $name = $row2['name'];
+                                }
+                                
                                 echo "<li>";
                                 echo "<div class='Team'>";
                                 echo "<div class='Team-word'>";
 
-                                echo "<a href='./MirimTeamDetail.html'><h1>$title</h1></a>";
-                                echo "<h3>$writer</h3>";
+                                echo "<a href='./MirimTeamDetail.php?num=$num'><h1>$title</h1></a>";
+                                echo "<h3>$name</h3>";
                                 echo "<h2>$field</h2>";
                                 echo "<h4>${date}까지</h4>";
                                 echo '<div class="Team-under">';

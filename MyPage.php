@@ -35,7 +35,7 @@
 
         <ul class="Menu">
             <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
-            <li class="Menu-item"><a href = "Calendar.html">일정확인</a></li>
+            <li class="Menu-item"><a href = "Calendar.php">일정확인</a></li>
             <li class="Menu-item"><a href = "MirimTeam.php">미림팀</a></li>
             <li class="Menu-item"><a href = "Library.php">도서관</a></li>
             <li class="Menu-item"><a href = "#">학습보고서</a></li>
@@ -49,7 +49,8 @@
 
                     if(isset($_SESSION['id'])) {
                         $id = $_SESSION['id'];
-                        $con = mysqli_connect("localhost","mirimlife","itshow1!","mirimlife");
+                        
+                        include ('db_conn.php');
                         if (mysqli_connect_errno()){
                             echo "Failed to connect to MySQL: " . mysqli_connect_error();
                         }
@@ -85,9 +86,27 @@
                 <!-- 내정보 -->
                 <div class = "MyPage-left">
                     <P id="MyInfo">내정보</P>
-                    <img src="IMG/MyPage/1.png" id="grade"> 
-                    <p id="name">미림인</p>
-                    <p id="class">3학년 6반</p>
+                    <?php
+                        include ('db_conn.php');
+                        if (mysqli_connect_errno()){
+                            echo "Failed to connect to MySQL: " . mysqli_connect_error();
+                        }
+                        $sql = "select name, grade, class from members where id = '$id'";
+                        $result = mysqli_query($con, $sql);
+
+                        $name; $grade; $class;
+
+                        if(mysqli_num_rows($result) > 0) {
+                            $row = mysqli_fetch_array($result);
+                            $name = $row['name'];
+                            $grade = $row['grade'];
+                            $class = $row['class'];
+                        }
+
+                        echo "<img src='IMG/MyPage/$grade.png' id='grade'>"; 
+                        echo "<p id='name'>$name</p>";
+                        echo "<p id='class'>${grade}학년 ${class}반</p>";
+                    ?>
                 </div>
 
                 <!-- 수정/ 변경/ 탈퇴 -->
@@ -130,43 +149,53 @@
     </div>
 
     <div id="item1-Btn-evnet">
-            <img src="img/MyPage/UpdateClass/Window.png" alt="학년 반 수정">
-            <a href="#" class="item1-Btn-evnet close"><img src="img/MyPage/UpdateClass/Cancle.png"></a>
+        <form method="post" action="MyPage_php1.php" name="inputForm1">
+            <img src="IMG/MyPage/UpdateClass/Window.png" alt="학년 반 수정">
+            <a href="#" class="item1-Btn-evnet close"><img src="IMG/MyPage/UpdateClass/Cancle.png"></a>
             <P class="item1-Btn-evnet-head-item1">학년/반 수정</p>
             <p class="item1-Btn-evnet-head-item2">학년/반을 수정합니다.</p>
-            <select id="grade-select">
+            <select id="grade-select" name="grade">
                 <option value="1">1학년</option>
                 <option value="2">2학년</option>
                 <option value="3">3학년</option>
             </select>
 
-            <select id="class-select">
-                <option value="class1">1반</option>
-                <option value="class2">2반</option>
-                <option value="class3">3반</option>
-                <option value="class4">4반</option>
-                <option value="class5">5반</option>
-                <option value="class6">6반</option>
+            <select id="class-select" name="class">
+                <option value="1">1반</option>
+                <option value="2">2반</option>
+                <option value="3">3반</option>
+                <option value="4">4반</option>
+                <option value="5">5반</option>
+                <option value="6">6반</option>
             </select>
+
+            <input type="submit" value="확인">
+        </form>
     </div>
 
     <div id="item2-Btn-evnet">
-            <img src="img/MyPage/UpdatePw/Window.png" alt="비밀번호 변경">
-            <a href="#" class="item2-Btn-evnet close"><img src="img/MyPage/UpdatePw/Cancle.png"></a>
+        <form method="post" action="MyPage_php2.php" name="inputForm2">
+            <img src="IMG/MyPage/UpdatePw/Window.png" alt="비밀번호 변경">
+            <a href="#" class="item2-Btn-evnet close"><img src="IMG/MyPage/UpdatePw/Cancle.png"></a>
             <P class="item2-Btn-evnet-head-item1">비밀번호 변경</p>
             <p class="item2-Btn-evnet-head-item2">비밀번호를 변경합니다.</p>
 
-            <p id="item3-content-item1">비밀번호</p>
-            <input type="text" id="item3-content-item2" placeholder="비밀번호"></input>
-            <button id="item3-content-item3"></button>
+            <p id="item2-content-item1">비밀번호</p>
+            <input type="text" id="item2-content-item2" placeholder="비밀번호" name='pw'></input>
+            <button id="item2-content-item3" type="submit"></button>
+        </form>
 
     </div>
 
     <div id="item3-Btn-evnet">
-            <img src="img/MyPage/Delete/Window.png" alt="회원탈퇴">
-            <a href="#" class="item3-Btn-evnet close"><img src="img/MyPage/Delete/Cancle.png"></a>
+        <form method="post" action="MyPage_php3.php" name="inputForm3">
+            <img src="IMG/MyPage/Delete/Window.png" alt="회원탈퇴">
+            <a href="#" class="item3-Btn-evnet close"><img src="IMG/MyPage/Delete/Cancle.png"></a>
             <P class="item3-Btn-evnet-head-item1">회원탈퇴</p>
             <p class="item3-Btn-evnet-head-item2">미림라이프에서 탈퇴하시겠습니까?</p>
+            <button id="item3-content-item1"></button>
+            <button id="item3-content-item2" type="submit"></button>
+        </form>
     </div>
     <!-- wrapper 닫기  -->
 
