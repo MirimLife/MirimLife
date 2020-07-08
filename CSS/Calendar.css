@@ -248,6 +248,52 @@ button:active
     outline:0;
 }
 
+.calendar-right-item
+{
+    position: relative;
+}
+
+.calendar-right-item-c
+{
+    border-radius: 100px;
+    width: 70px;
+    height: 70px;
+    background-color: #7b97d7;
+    text-align: center;
+    line-height: 70px;
+    margin-top: 32px;
+    margin-left: 30px;
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.calendar-right-item-head
+{
+    position: absolute;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #7b97d7;
+    font-size: 25pt;
+    top: 0px;
+    margin-bottom:20px;
+    margin-left: 120px;
+}
+
+.calendar-right-item-content1
+{
+    position: absolute;
+    top: 70px;
+    margin-bottom:20px;
+    margin-left: 120px;
+}
+
+.calendar-right-item-content2
+{
+    position: absolute;
+    top: 95px;
+    margin-bottom:20px;
+    margin-left: 120px;
+}
+
 button:active 
 {
     transform: scale(0.90);

@@ -64,56 +64,60 @@
                                 <td>토</td>
                             </tr>
                             <?php
-                                $day = 1;
-                                $yoil = date('w', strtotime('2020-7-1'));
-                                $flag = true;
-                                $today = date('d');
+                            $day = 1;
+                            $yoil = date('w', strtotime('2020-7-1'));
+                            $flag = true;
+                            $today = date('d');
 
-                                for($i = 0; $i < 5; $i++) {
-                                    echo "<tr class='calendar-item2-d'>";
-                                    for($j = 0; $j < 7; $j++) {
-                                        if($i == 0 && $flag) {
-                                            for($k = 0; $k < $yoil; $k++) {
-                                                echo "<td></td>";
-                                                $j++;
-                                            }
-                                            $flag = false;
+                            for($i = 0; $i < 5; $i++) {
+                                echo "<tr class='calendar-item2-d'>";
+                                for($j = 0; $j < 7; $j++) {
+                                    if($i == 0 && $flag) {
+                                        for($k = 0; $k < $yoil; $k++) {
+                                            echo "<td></td>";
+                                            $j++;
                                         }
-                                        if($today == $day)
-                                            echo "<td><font color='orange'>$day</font></td>";
-                                        else 
-                                            echo "<td>$day</td>";
-                                        $day++;
-                                        if($day > 31) 
-                                            break;
+                                        $flag = false;
                                     }
-                                    echo "</tr>";
+                                    if($today == $day)
+                                        echo "<td><font color='orange'>$day</font></td>";
+                                    else 
+                                        echo "<td>$day</td>";
+                                    $day++;
+                                    if($day > 31) 
+                                        break;
                                 }
-                            ?>
+                                echo "</tr>";
+                            }
+                        ?>
                         </table>
 
                 </div>
 
                 <div class="calendar-right">
                     <div class="calendar-right-item">
+                        <div class="calendar-right-item-c">12~14</div>
+                        <p class="calendar-right-item-head">IT show</p>
+                        <p class="calendar-right-item-content1">존버하기</P>
+                        <p class="calendar-right-item-content2">오류 없는지 확인하기</p>
                         <?php
-                            include ('db_conn.php');
-                            if (mysqli_connect_errno()){
-                                echo "Failed to connect to MySQL: " . mysqli_connect_error();
-                            }
+                        include ('db_conn.php');
+                        if (mysqli_connect_errno()){
+                            echo "Failed to connect to MySQL: " . mysqli_connect_error();
+                        }
 
-                            $sql = "select schedule from schedule where day = $today;";
-                            $result = mysqli_query($con, $sql);
-                            $contents;
+                        $sql = "select schedule from schedule where day = $today;";
+                        $result = mysqli_query($con, $sql);
+                        $contents;
 
-                            if(mysqli_num_rows($result) > 0) {
-                                $row = mysqli_fetch_array($result);
-                                $contents = $row['schedule'];
-                            }
+                        if(mysqli_num_rows($result) > 0) {
+                            $row = mysqli_fetch_array($result);
+                            $contents = $row['schedule'];
+                        }
 
-                            $contents = nl2br($contents);
+                        $contents = nl2br($contents);
 
-                            echo $contents;
+                        echo $contents;
                         ?>
                     </div>
                     
