@@ -1,0 +1,21 @@
+/* 제목 */
+@import url(Title.css);
+
+html {
+    background: url(../IMG/Calendar/ScheduleWindow/BG.png) no-repeat 50% 50% fixed; 
+    background-attachment: fixed ;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+}
+
+.Content>.ban {
+    background-image: url('../IMG/Teacher_ban/box.png');
+    width: 195px;
+    height: 195px;
+    display: inline-block;
+}
+
+.Content>.ban>.text { text-align: center; line-height: 200px; }
+.Content>.ban>.text>a {  font-size: 26px; color: #7b95d1; }
