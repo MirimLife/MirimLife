@@ -14,7 +14,7 @@
         $field = $_POST['field'];
         $fieldContents = $fieldContents.$field[$i]." / ";
     }
-    $fieldContents = substr($fieldContents, 0, strlen($fieldContents) - 1);
+    $fieldContents = substr($fieldContents, 0, strlen($fieldContents) - 2);
 
     
 
