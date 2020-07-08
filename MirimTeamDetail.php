@@ -89,10 +89,10 @@
                 $views = $row['views'];
             } 
 
-            $sql = "select name, grade from member where id = '$writer';";
-            $result = mysqli_query($con, $sql);
-            if(mysqli_num_rows($result) > 0) {
-                $row = mysqli_fetch_array($result);
+            $sql2 = "select name, grade from members where id = '$writer'";
+            $result2 = mysqli_query($con, $sql2);
+            if(mysqli_num_rows($result2) > 0) {
+                $row = mysqli_fetch_array($result2);
                 $name = $row['name'];
                 $grade= $row['grade'];
             } 
@@ -133,7 +133,7 @@
                     echo "</tr>";
                     echo "<tr>";
                         echo "<td>학년</td>";
-                        echo "<td>$grade</td>";
+                        echo "<td>${grade}학년</td>";
                     echo "</tr>";
                 echo "</table>";
             echo "</div>";
