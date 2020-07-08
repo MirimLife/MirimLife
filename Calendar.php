@@ -134,7 +134,7 @@
 
             <from method="post" action="" name="inputForm">
                 <div class="item1-Btn-evnet-content-item1">
-                    <span>제목</span> <input type="text" id="Title">
+                    <span>제목</span> <input type="text" id="title">
                     
                 </div>
 
