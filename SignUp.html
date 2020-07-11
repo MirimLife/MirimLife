@@ -124,10 +124,10 @@
                 id.value = '';
                 id.placeholder = '잘못된 입력입니다.';
             }
-            else if(idValue[0]!='s' || !(idValue[5]=='s' || idValue[5]=='w' || idValue[5]=='d')) {
-                id.value = '';
-                id.placeholder = '잘못된 입력입니다.';
-            }
+            // else if(idValue[0]!='s' || !(idValue[5]=='s' || idValue[5]=='w' || idValue[5]=='d')) {
+            //     id.value = '';
+            //     id.placeholder = '잘못된 입력입니다.';
+            // }
             else if(parseInt(idValue.slice(1,5)) > Year.getFullYear() || (parseInt(idValue.slice(6,8)) < 1 || parseInt(idValue.slice(6,8)) > 40)) {
                 id.value = '';
                 id.placeholder = '잘못된 입력입니다.';
