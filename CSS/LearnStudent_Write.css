@@ -1,0 +1,123 @@
+/* 제목 */
+@import url(Title.css);
+/* 글쓰기 및 검색 */
+@import url(SearchBar.css);
+
+html {
+    background: url(../IMG/Calendar/ScheduleWindow/BG.png) no-repeat 50% 50% fixed; 
+    background-attachment: fixed ;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+}
+
+button
+{
+    background-color: transparent !important;
+    outline:0;
+    border:0;
+}
+
+.Notice-up {
+    position: relative;
+    width: 1200px;
+    height:80px;
+    text-align: center;
+    margin: 0 auto;
+
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.Notice-up #Notice-word {
+    position: absolute;
+    display: inline-block;
+    color:#FCAF49;
+    transform: translateX(-50%);
+    font-size: 35px; 
+    font-weight: 700; 
+}
+
+.Notice-up #Notice-plus {
+    position: absolute;
+    display: inline-block;
+    transform: translateX(-50%);
+    font-size:15px;
+    margin-top:60px;
+    font-weight: lighter;
+    color: rgb(221,221,221);
+}
+
+.Content
+{
+    position: relative;
+    width: 1300px;
+    height: 900px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+
+button:active 
+{
+    transform: scale(0.90);
+}
+
+.item1
+{
+    background-image: url(../IMG/Learn/Student_Write/Window1.png);
+    width: 498px;
+    height: 590px;
+    display: inline-block;
+}
+
+.item2
+{
+    background-image: url(../IMG/Learn/Student_Write/Window2.png);
+    width: 690px;
+    height: 580px;
+    color: #b2b2b2;
+    font-size: 15px;
+    display: inline-block;
+    border:0;
+    position: absolute;
+}
+
+.itemt1-head
+{
+    padding-top: 15px;
+    padding-left: 30px;
+    color: #7B97D7;
+    font-size: 25px;
+    font-family: 'Noto Sans KR', sans-serddif;
+}
+
+.item2-table
+{
+    width: 480px;
+    height: 370px;
+}
+
+#th-week
+{
+    color: black;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.item2-table th
+{
+    color: #b2b2b2;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+
+.SubmitBtn{
+    background-image: url(../IMG/Learn/Student_Write/SubmitBtn.png);
+    width: 135px;
+    height: 58px;
+    position: absolute;
+    bottom: 240px;
+    right: 100px;
+}

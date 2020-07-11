@@ -57,29 +57,29 @@ html {
     width: 114px;
 }
 
-.deco1 {
+/* .deco1 {
     width: 87px;
     margin-top: 129.5px;
-}
+} */
 
 .person1 {
     width: 253.5px;
-    margin-left: 38px;
+    margin-left: 30px;
     margin-top: 20px;
 }
 
 /* 왼쪽 컨텐츠의 오른족 이미지 */
 .deco2 {
     width: 130px;
-    margin-left: 33px;
-    margin-top: 95px;
+    margin-left: 30px;
+    margin-top: 65px;
 }
 
 .person2 {
     margin-top: 96px;
     width: 355px;
     box-sizing: border-box;
-    left: -15px;
+    /* left: -15px; */
 }
 
 /* 오른쪽 컨텐츠 */

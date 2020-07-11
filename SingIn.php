@@ -1,8 +1,6 @@
 <?php
     $id = $_POST["id"];
     $pw = $_POST['pw'];
-    $email = substr($id, 8);
-    $id = substr($id, 0, 8);
 
     // if($email == "@e-mirim.hs.kr") {
         include ('db_conn.php');

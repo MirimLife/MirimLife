@@ -32,7 +32,7 @@
 
         <ul class="Menu">
             <li class="Menu-item"><a href = "Notice.php">공지사항</a></li>
-            <li class="Menu-item"><a href = "Calendar.html">일정확인</a></li>
+            <li class="Menu-item"><a href = "Calendar.php">일정확인</a></li>
             <li class="Menu-item"><a href = "MirimTeam.php">미림팀</a></li>
             <li class="Menu-item"><a href = "Library.php" class="selected">도서관</a></li>
             <li class="Menu-item"><a href = "#">학습보고서</a></li>

@@ -1,0 +1,38 @@
+/* 제목 */
+@import url(Title.css);
+
+@import url(SearchBar.css);
+
+html {
+    background: url(../IMG/Calendar/ScheduleWindow/BG.png) no-repeat 50% 50% fixed; 
+    background-attachment: fixed ;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+}
+
+.yes { background-image: url('../IMG/Teacher_ban/box.png'); }
+.no {background-image: url('../IMG/Teacher_ban/box1.png'); }
+
+.Content>.ban {
+    width: 195px;
+    height: 195px;
+    display: inline-block;
+}
+
+.Content>.ban>.text { text-align: center; line-height: 200px; }
+.Content>.ban>.text>a {  font-size: 26px; color: #7b95d1; }
+
+.Content>span:first-child { margin-left: 10px; margin-right: 45px; }
+.Content>span { font-size: 26px; color: #7b95d1; }
+
+form { display: inline-block; }
+select:first-child { margin-left: 495px; }
+select{ 
+    width: 120px;
+    height: 40px;
+    color: #505050;
+    border: 1.9px solid #d2d2d2;
+    border-radius: 10px;
+}

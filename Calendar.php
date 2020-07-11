@@ -63,58 +63,62 @@
                                 <td>금</td>
                                 <td>토</td>
                             </tr>
-                            <tr class="calendar-item2-d">
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                            </tr>
-                            <tr class="calendar-item2-d">
-                                <td>5</td>
-                                <td>6</td>
-                                <td>7</td>
-                                <td>8</td>
-                                <td>9</td>
-                                <td>10</td>
-                                <td>11</td>
-                            </tr>
-                            <tr class="calendar-item2-d">
-                                <td>12</td>
-                                <td>13</td>
-                                <td>14</td>
-                                <td>15</td>
-                                <td>16</td>
-                                <td>17</td>
-                                <td>18</td>
-                            </tr>
-                            <tr class="calendar-item2-d">
-                                <td>19</td>
-                                <td>20</td>
-                                <td>21</td>
-                                <td>22</td>
-                                <td>23</td>
-                                <td>24</td>
-                                <td>25</td>
-                            </tr>
-                            <tr class="calendar-item2-d">
-                                <td>26</td>
-                                <td>27</td>
-                                <td>28</td>
-                                <td>29</td>
-                                <td>30</td>
-                                <td>31</td>
-                                <td></td>
-                            </tr>
+                            <?php
+                            $day = 1;
+                            $yoil = date('w', strtotime('2020-7-1'));
+                            $flag = true;
+                            $today = date('d');
+
+                            for($i = 0; $i < 5; $i++) {
+                                echo "<tr class='calendar-item2-d'>";
+                                for($j = 0; $j < 7; $j++) {
+                                    if($i == 0 && $flag) {
+                                        for($k = 0; $k < $yoil; $k++) {
+                                            echo "<td></td>";
+                                            $j++;
+                                        }
+                                        $flag = false;
+                                    }
+                                    if($today == $day)
+                                        echo "<td><font color='orange'>$day</font></td>";
+                                    else 
+                                        echo "<td>$day</td>";
+                                    $day++;
+                                    if($day > 31) 
+                                        break;
+                                }
+                                echo "</tr>";
+                            }
+                        ?>
                         </table>
 
                 </div>
 
                 <div class="calendar-right">
                     <div class="calendar-right-item">
-                        
+                        <div class="calendar-right-item-c">12~14</div>
+                        <p class="calendar-right-item-head">IT show</p>
+                        <p class="calendar-right-item-content1">존버하기</P>
+                        <p class="calendar-right-item-content2">오류 없는지 확인하기</p>
+                        <?php
+                        include ('db_conn.php');
+                        if (mysqli_connect_errno()){
+                            echo "Failed to connect to MySQL: " . mysqli_connect_error();
+                        }
+
+                        $sql = "select schedule from schedule where day = $today;";
+                        $result = mysqli_query($con, $sql);
+                        $contents;
+
+                        if(mysqli_num_rows($result) > 0) {
+                            $row = mysqli_fetch_array($result);
+                            $contents = $row['schedule'];
+                        }
+
+                        $contents = nl2br($contents);
+
+                        echo $contents;
+                        ?>
                     </div>
                     
                     <button class="Plus-Btn">
@@ -127,24 +131,26 @@
         </div>
 
         <div id="item1-Btn-evnet">
-            <img src="img/Calendar/AddSchedule/window.png" alt="일정추가">
-            <a href="#" class="item1-Btn-evnet close"><img src="img/Calendar/AddSchedule/cancle.png"></a>
+            <img src="IMG/Calendar/AddSchedule/window.png" alt="일정추가">
+            <a href="#" class="item1-Btn-evnet close"><img src="IMG/Calendar/AddSchedule/cancle.png"></a>
             <P class="item1-Btn-evnet-head-item1">일정추가</p>
             <p class="item1-Btn-evnet-head-item2">일정을 추가합니다.</p>
 
-            <div class="item1-Btn-evnet-content-item1">
-                <span>제목</span> <input type="text" id="Title">
-                
-            </div>
+            <from method="post" action="" name="inputForm">
+                <div class="item1-Btn-evnet-content-item1">
+                    <span>제목</span> <input type="text" id="title">
+                    
+                </div>
 
-            <div class="item1-Btn-evnet-content-item2">
-                <span>날짜</span> <input type="date" id="Date">
+                <div class="item1-Btn-evnet-content-item2">
+                    <span>날짜</span> <input type="date" id="Date">
 
-            </div>
+                </div>
 
-            <div class="item1-Btn-evnet-content-item3">
-                <span>내용</span> <textarea id="Content"></textarea>
-            </div>
+                <div class="item1-Btn-evnet-content-item3">
+                    <span>내용</span> <textarea id="Content"></textarea>
+                </div>
+            </from>
 
             <button type="submit"></button>
         </div>
